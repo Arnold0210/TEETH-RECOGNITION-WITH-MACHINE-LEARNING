@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2c1ee42-7076-4f95-8db9-617d09cf6a8e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Tonality/featureExtraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tonality/Teeth_Recognition.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tonality/Teeth_Recognition.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tonality/border_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tonality/border_detection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tonality/featureExtraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tonality/featureExtraction.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +14,7 @@
     <SUITE FILE_PATH="coverage/Experiment$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1543329046495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Experiment$border_detection.coverage" NAME="border_detection Coverage Results" MODIFIED="1543511342539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tonality" />
     <SUITE FILE_PATH="coverage/Experiment$Teeth_Recognition.coverage" NAME="Teeth_Recognition Coverage Results" MODIFIED="1543514401871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tonality" />
-    <SUITE FILE_PATH="coverage/Experiment$featureExtraction.coverage" NAME="featureExtraction Coverage Results" MODIFIED="1543517917502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tonality" />
+    <SUITE FILE_PATH="coverage/Experiment$featureExtraction.coverage" NAME="featureExtraction Coverage Results" MODIFIED="1543522744491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tonality" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -51,15 +48,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tonality/featureExtraction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
+            <state relative-caret-position="404">
+              <caret line="97" column="67" lean-forward="true" selection-start-line="97" selection-start-column="67" selection-end-line="97" selection-end-column="67" />
               <folding>
-                <element signature="e#0#59#0" expanded="true" />
+                <element signature="e#0#70#0" expanded="true" />
                 <element signature="e#178#268#0" />
-                <element signature="e#128#327#0" />
+                <element signature="e#1012#1102#0" />
                 <element signature="e#1156#1240#0" />
                 <element signature="e#1280#1360#0" />
-                <element signature="e#1992#2243#0" />
+                <element signature="e#1447#1954#0" />
               </folding>
             </state>
           </provider>
@@ -89,11 +86,12 @@
         <option value="$PROJECT_DIR$/../../../2018-III/Deep Learning/ejemplo.py" />
         <option value="$PROJECT_DIR$/Tonality/border_detection.py" />
         <option value="$PROJECT_DIR$/Tonality/Teeth_Recognition.py" />
+        <option value="$PROJECT_DIR$/Tonality/f.py" />
         <option value="$PROJECT_DIR$/Tonality/featureExtraction.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -153,7 +151,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.featureExtraction">
+  <component name="RunManager" selected="Python.f">
     <configuration name="Teeth_Recognition" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Experiment" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -242,6 +240,25 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="f" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Experiment" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tonality" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tonality/f.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="featureExtraction" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Experiment" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -261,42 +278,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="project" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Experiment" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../2018-III/Deep Learning" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../2018-III/Deep Learning/project.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="true" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.border_detection" />
       <item itemvalue="Python.ejemplo" />
-      <item itemvalue="Python.project" />
       <item itemvalue="Python.Teeth_Recognition" />
       <item itemvalue="Python.featureExtraction" />
+      <item itemvalue="Python.f" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.f" />
         <item itemvalue="Python.featureExtraction" />
         <item itemvalue="Python.Teeth_Recognition" />
         <item itemvalue="Python.border_detection" />
         <item itemvalue="Python.ejemplo" />
-        <item itemvalue="Python.project" />
       </list>
     </recent_temporary>
   </component>
@@ -313,7 +308,7 @@
       <workItem from="1543365767431" duration="2525000" />
       <workItem from="1543378930612" duration="6433000" />
       <workItem from="1543434807881" duration="18514000" />
-      <workItem from="1543507517720" duration="10741000" />
+      <workItem from="1543507517720" duration="16830000" />
     </task>
     <task id="LOCAL-00001" summary="Border Detection">
       <created>1543463816618</created>
@@ -326,7 +321,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38213000" />
+    <option name="totallyTimeSpent" value="44302000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -338,7 +333,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="676" y="0" width="697" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.3419062" />
@@ -346,7 +341,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.38297874" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.3820598" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -356,7 +351,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.45499182" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49924356" weight="0.45499182" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3289689" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.19639935" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -449,17 +444,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Tonality/f.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="50" column="28" lean-forward="true" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+          <folding>
+            <element signature="e#9#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Tonality/featureExtraction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
+        <state relative-caret-position="404">
+          <caret line="97" column="67" lean-forward="true" selection-start-line="97" selection-start-column="67" selection-end-line="97" selection-end-column="67" />
           <folding>
-            <element signature="e#0#59#0" expanded="true" />
+            <element signature="e#0#70#0" expanded="true" />
             <element signature="e#178#268#0" />
-            <element signature="e#128#327#0" />
+            <element signature="e#1012#1102#0" />
             <element signature="e#1156#1240#0" />
             <element signature="e#1280#1360#0" />
-            <element signature="e#1992#2243#0" />
+            <element signature="e#1447#1954#0" />
           </folding>
         </state>
       </provider>

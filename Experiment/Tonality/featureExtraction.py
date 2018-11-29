@@ -1,5 +1,5 @@
 import os, cv2 as cv, numpy as np, matplotlib.pyplot as plt, sys, glob
-import extcolors as ext
+import extcolors as ext,sklearn.decomposition.pca as pca
 
 PATH = 'C:/Users/TRABAJO/Documents/Semillero/TEETH-RECOGNITION-WITH-MACHINE-LEARNING/DATASET/'
 PATH_SAVE = 'C:/Users/TRABAJO/Documents/Semillero/TEETH-RECOGNITION-WITH-MACHINE-LEARNING/DATASETRESIZE/'
@@ -9,8 +9,6 @@ def show(image):
     plt.figure(figsize=(15, 15))
     plt.imshow(image, interpolation='nearest')
     plt.show()
-
-
 def readAllImagesPath(PATH):
     file_List = []
     for dirName, subdirList, fileList in os.walk(PATH):
@@ -19,8 +17,6 @@ def readAllImagesPath(PATH):
                 file_List.append(i)
     print("Termino de añadirpath")
     return file_List
-
-
 def readAllImages(file_List, PATH):
     images = []
     for i in file_List:
@@ -34,27 +30,19 @@ def readAllImages(file_List, PATH):
         images.append(image)
     print("Termino Carga")
     return images
-
-
 def imagesBGR2RGB(images):
     for i in images:
         i = cv.cvtColor(i, cv.COLOR_BGR2RGB)
     print("Termino convertir")
     return images
-
-
 def imagesRGB2HSV(imagesRGB):
     for i in imagesRGB:
         i = cv.cvtColor(i, cv.COLOR_RGB2HSV)
     return imagesRGB
-
-
 def imagesGaussianBlur(imagesHSV):
     for i in imagesHSV:
         i = cv.GaussianBlur(i, (5, 5), 0)
     return imagesHSV
-
-
 def extractFeatures(PATH,fileList):
     matrix_data = []
     a = len(fileList)
@@ -77,8 +65,6 @@ def extractFeatures(PATH,fileList):
         cont = cont + 1
         os.system('cls')
     return matrix_data
-
-
 def standar_matrix(matrix_data):
     maxi = []
     for c in matrix_data:
@@ -90,8 +76,11 @@ def standar_matrix(matrix_data):
             for j in range(dif):
                 i.append(0)
     return maxi
-
-
+def saveFile(matrix,filename):
+    file = open(filename,"w")
+    for i in matrix:
+        file.write(i)
+    file.close()
 def main():
     matrixData = []
     filelist = readAllImagesPath(PATH_SAVE)
@@ -101,6 +90,10 @@ def main():
     # imagesGaussBlur = imagesGaussianBlur(imagesHSV)
     matrixData = extractFeatures(PATH_SAVE,filelist)
     standarMatriz = standar_matrix(matrixData)
-
-
+    saveFile(standarMatriz,"features.txt")
+    cov = np.cov(np.array(matrixData).T)
+    pca_train = pca.PCA(n_components=2)
+    transf = pca_train.fit((np.array(matrixData).T))
+    saveFile(pca_train.components_.T,"pca_train.txt")
+    saveFile(np.array(matrixData).shape,"formaoriginal matriz.txt")
 main()
