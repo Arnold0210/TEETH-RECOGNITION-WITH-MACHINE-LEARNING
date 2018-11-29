@@ -21,8 +21,17 @@ for dirName, subdirList, fileList in os.walk(path):
         if ('JPG' in i) or ('jpg' in i):
             file_List.append(i)
 print("file_List tamaño:", len(file_List))
-test = '101_0091.JPG'#file_List[34]
+test = '101_0091.JPG'  # file_List[34]
 print(test)
+white = np.uint8([[[255,255,255]]])
+red = np.uint8([[[255,0,0]]])
+green = np.uint8([[[0,255,0 ]]])
+hsv_green = cv2.cvtColor(green,cv2.COLOR_BGR2HSV)
+hsv_white = cv2.cvtColor(white,cv2.COLOR_BGR2HSV)
+hsv_red = cv2.cvtColor(red,cv2.COLOR_BGR2HSV)
+print('HSV_WHITE',hsv_white)
+print('HSV_RED',hsv_red)
+print('HSV_GREEN',hsv_green)
 testpath = path + test
 image = cv2.imread(testpath)
 image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
@@ -32,7 +41,7 @@ for i in [0, 1, 2]:
     if i != 0: colour[:, :, 0] = 0
     if i != 1: colour[:, :, 1] = 0
     if i != 2: colour[:, :, 2] = 0
-    show(colour)
+    #show(colour)
 
 
 def show_rgb_hist(image):
@@ -46,17 +55,20 @@ def show_rgb_hist(image):
         plt.bar(range(0, 256), np.squeeze(histr), color=c, edgecolor=colours, width=1)
         plt.show()
 
-
-show_rgb_hist(image)
+# show_rgb_hist(image)
 hsv = cv2.cvtColor(image, cv2.COLOR_RGB2HSV)
-show(hsv)
+plt.figure(figsize=(15, 15))
+plt.imshow(hsv, interpolation='nearest')
+plt.title("HSV Image")
+plt.show()
+#show(hsv)
 images = []
 for i in [0, 1, 2]:
     colour = hsv.copy()
     if i != 0: colour[:, :, 0] = 0
     if i != 1: colour[:, :, 1] = 255
     if i != 2: colour[:, :, 2] = 255
-    show(colour)
+    # show(colour)
 
 
 def show_hsv_hist(image):
@@ -87,14 +99,14 @@ def show_hsv_hist(image):
     plt.show()
 
 
-show_hsv_hist(hsv)
+# show_hsv_hist(hsv)
 image_blur = cv2.GaussianBlur(image, (7, 7), 0)
 show(image_blur)
 image_blur_hsv = cv2.cvtColor(image_blur, cv2.COLOR_RGB2HSV)
 
 # 0-10 hue
-min_red = np.array([0, 100, 80])
-max_red = np.array([10, 256, 256])
+min_red = np.array([0, 0, 255])
+max_red = np.array([20, 256, 255])
 image_red1 = cv2.inRange(image_blur_hsv, min_red, max_red)
 
 
@@ -120,7 +132,7 @@ show_mask(image_red_closed)
 
 # Remove specks
 image_red_closed_then_opened = cv2.morphologyEx(image_red_closed, cv2.MORPH_OPEN, kernel)
-plt.figure(figsize=(10,10))
+plt.figure(figsize=(10, 10))
 plt.imshow(image_red_closed_then_opened)
 plt.title('image_red_closed_then_opened')
 show_mask(image_red_closed_then_opened)
@@ -157,7 +169,6 @@ centre_of_mass = (
     int(moments['m01'] / moments['m00'])
 )
 image_with_com = image.copy()
-cv2.circle(image_with_com, centre_of_mass, 10, (0, 255, 0), -1, cv2.CV_AA)
+cv2.circle(image_with_com, centre_of_mass, 10, (0, 255, 0), -1)
 show(image_with_com)
 image_with_ellipse = image.copy()
-
