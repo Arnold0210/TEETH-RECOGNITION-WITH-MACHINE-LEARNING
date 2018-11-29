@@ -21,7 +21,7 @@ for dirName, subdirList, fileList in os.walk(path):
         if ('JPG' in i) or ('jpg' in i):
             file_List.append(i)
 print("file_List tamaño:", len(file_List))
-test = file_List[34]
+test = '101_0091.JPG'#file_List[34]
 print(test)
 testpath = path + test
 image = cv2.imread(testpath)
@@ -100,6 +100,7 @@ image_red1 = cv2.inRange(image_blur_hsv, min_red, max_red)
 
 def show_mask(mask):
     plt.figure(figsize=(10, 10))
+    plt.title('mask')
     plt.imshow(mask, cmap='gray')
 
 
@@ -119,6 +120,9 @@ show_mask(image_red_closed)
 
 # Remove specks
 image_red_closed_then_opened = cv2.morphologyEx(image_red_closed, cv2.MORPH_OPEN, kernel)
+plt.figure(figsize=(10,10))
+plt.imshow(image_red_closed_then_opened)
+plt.title('image_red_closed_then_opened')
 show_mask(image_red_closed_then_opened)
 
 
@@ -156,6 +160,4 @@ image_with_com = image.copy()
 cv2.circle(image_with_com, centre_of_mass, 10, (0, 255, 0), -1, cv2.CV_AA)
 show(image_with_com)
 image_with_ellipse = image.copy()
-ellipse = cv2.fitEllipse(big_contour)
-cv2.ellipse(image_with_ellipse, ellipse, (0, 255, 0), 2)
-show(image_with_ellipse)
+
