@@ -4,7 +4,7 @@ PATH = 'C:/Users/TRABAJO/Documents/Semillero/TEETH-RECOGNITION-WITH-MACHINE-LEAR
 
 
 def test():
-    source_image = '101_0091.JPG'
+    source_image = '101_0040.JPG'
     src = PATH + source_image
     print(src)
     image = cv.imread(src)
@@ -46,9 +46,7 @@ def readAllImagesPath(PATH):
                 file_List.append(i)
     return file_List
 
-
 fileList = readAllImagesPath(PATH)
-
 
 def readAllImages(file_List, PATH):
     images = []
@@ -59,6 +57,5 @@ def readAllImages(file_List, PATH):
         image = cv.resize(image, (800, 1000))
         images.append(image)
     return images
-
 
 test()
