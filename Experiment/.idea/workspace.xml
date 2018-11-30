@@ -2,155 +2,1054 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2c1ee42-7076-4f95-8db9-617d09cf6a8e" name="Default Changelist" comment="Border Detection">
-      <change beforePath="$PROJECT_DIR$/../DATASET/labels.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/labels.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/000_0001.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/000_0002.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/000_0003.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/000_0006.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/000_0008.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/000_0010.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/000_0011.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/000_0012.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/000_0013.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/000_0014.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/000_0015.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/000_0016.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0049.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0050.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0051.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0052.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0053.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0054.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0055.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0056.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0057.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0058.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0059.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0060.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0061.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0062.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0063.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0064.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0065.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0066.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0067.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0068.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0069.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0070.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0071.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0072.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0073.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0074.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0075.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0076.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0077.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0078.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0079.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0080.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0081.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0086.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0087.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0088.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0090.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0092.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0093.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0095.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0096.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0098.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0101.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0102.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0103.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0104.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0105.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101E0019.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101E0020.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101E0021.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101E0022.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101E0023.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101E0024.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101E0025.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0001.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0002.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0003.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0006.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0007.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0008.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0009.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0010.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0011.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0012.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0014.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0015.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0016.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0018.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0019.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0020.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0021.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0022.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0023.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0024.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0026.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0028.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0030.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0031.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0032.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0033.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0034.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0035.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0036.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0037.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0038.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0039.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0040.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0041.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0042.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0044.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0045.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0046.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0047.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0048.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0049.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0050.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0051.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0052.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0054.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0055.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0056.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0057.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0058.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0059.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0060.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0061.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0063.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0065.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0066.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0067.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0069.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0070.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0071.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0072.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0073.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0074.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0075.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0076.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0077.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0078.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0079.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0082.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0083.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0084.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0085.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0086.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0087.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0088.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0090.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0091.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0092.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0093.JPG" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tonality/Teeth_Recognition.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tonality/Teeth_Recognition.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tonality/border_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tonality/border_detection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tonality/featureExtraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tonality/featureExtraction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tonality/Teeth_Recognition.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tonality/barplot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tonality/border_detection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tonality/featureExtraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tonality/TeethDetection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/000_0001.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/100_0050.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/100_0051.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/100_0062.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/100_0063.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/100_0064.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/100_0066.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/100_0067.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/100_0068.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/100_0076.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/100_0077.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/100_0078.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/100_0079.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/100_0080.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/100_0081.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/100_0093.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/100_0095.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/100_0096.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/100_0098.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101E0023.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101E0025.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0001.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0002.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0003.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0006.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0007.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0008.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0009.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0010.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0011.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0012.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0014.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0015.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0016.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0018.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0019.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0020.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0021.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0022.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0023.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0024.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0026.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0044.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0045.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0046.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0060.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0061.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0063.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0065.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0066.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0067.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0069.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0073.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0074.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0075.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0076.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0077.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0078.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0091.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0092.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResizeDATASET/101_0093.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/000_0001/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/000_0001/HSV_000_0001.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/000_0001/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/000_0001/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/000_0002/HSV_000_0002.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/000_0003/HSV_000_0003.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/000_0006/HSV_000_0006.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/000_0008/HSV_000_0008.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/000_0010/HSV_000_0010.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/000_0011/HSV_000_0011.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/000_0012/HSV_000_0012.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/000_0013/HSV_000_0013.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/000_0014/HSV_000_0014.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/000_0015/HSV_000_0015.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/000_0016/HSV_000_0016.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0049/HSV_100_0049.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0050/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0050/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0050/HSV_100_0050.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0050/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0051/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0051/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0051/HSV_100_0051.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0051/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0052/HSV_100_0052.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0053/HSV_100_0053.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0054/HSV_100_0054.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0055/HSV_100_0055.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0056/HSV_100_0056.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0057/HSV_100_0057.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0058/HSV_100_0058.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0059/HSV_100_0059.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0060/HSV_100_0060.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0061/HSV_100_0061.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0062/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0062/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0062/HSV_100_0062.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0062/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0063/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0063/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0063/HSV_100_0063.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0063/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0064/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0064/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0064/HSV_100_0064.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0064/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0065/HSV_100_0065.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0066/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0066/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0066/HSV_100_0066.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0066/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0067/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0067/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0067/HSV_100_0067.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0067/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0068/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0068/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0068/HSV_100_0068.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0068/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0069/HSV_100_0069.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0070/HSV_100_0070.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0071/HSV_100_0071.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0072/HSV_100_0072.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0073/HSV_100_0073.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0074/HSV_100_0074.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0075/HSV_100_0075.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0076/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0076/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0076/HSV_100_0076.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0076/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0077/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0077/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0077/HSV_100_0077.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0077/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0078/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0078/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0078/HSV_100_0078.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0078/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0079/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0079/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0079/HSV_100_0079.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0079/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0080/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0080/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0080/HSV_100_0080.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0080/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0081/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0081/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0081/HSV_100_0081.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0081/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0086/HSV_100_0086.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0087/HSV_100_0087.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0088/HSV_100_0088.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0090/HSV_100_0090.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0092/HSV_100_0092.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0093/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0093/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0093/HSV_100_0093.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0093/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0095/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0095/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0095/HSV_100_0095.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0095/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0096/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0096/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0096/HSV_100_0096.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0096/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0098/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0098/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0098/HSV_100_0098.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0098/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0101/HSV_100_0101.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0102/HSV_100_0102.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0103/HSV_100_0103.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0104/HSV_100_0104.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/100_0105/HSV_100_0105.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101E0019/HSV_101E0019.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101E0020/HSV_101E0020.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101E0021/HSV_101E0021.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101E0022/HSV_101E0022.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101E0023/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101E0023/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101E0023/HSV_101E0023.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101E0023/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101E0024/HSV_101E0024.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101E0025/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101E0025/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101E0025/HSV_101E0025.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101E0025/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0001/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0001/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0001/HSV_101_0001.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0001/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0002/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0002/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0002/HSV_101_0002.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0002/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0003/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0003/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0003/HSV_101_0003.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0003/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0006/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0006/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0006/HSV_101_0006.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0006/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0007/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0007/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0007/HSV_101_0007.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0007/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0008/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0008/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0008/HSV_101_0008.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0008/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0009/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0009/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0009/HSV_101_0009.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0009/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0010/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0010/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0010/HSV_101_0010.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0010/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0011/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0011/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0011/HSV_101_0011.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0011/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0012/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0012/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0012/HSV_101_0012.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0012/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0014/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0014/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0014/HSV_101_0014.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0014/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0015/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0015/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0015/HSV_101_0015.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0015/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0016/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0016/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0016/HSV_101_0016.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0016/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0018/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0018/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0018/HSV_101_0018.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0018/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0019/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0019/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0019/HSV_101_0019.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0019/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0020/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0020/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0020/HSV_101_0020.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0020/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0021/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0021/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0021/HSV_101_0021.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0021/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0022/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0022/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0022/HSV_101_0022.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0022/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0023/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0023/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0023/HSV_101_0023.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0023/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0024/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0024/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0024/HSV_101_0024.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0024/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0026/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0026/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0026/HSV_101_0026.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0026/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0028/HSV_101_0028.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0030/HSV_101_0030.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0031/HSV_101_0031.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0032/HSV_101_0032.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0033/HSV_101_0033.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0034/HSV_101_0034.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0035/HSV_101_0035.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0036/HSV_101_0036.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0037/HSV_101_0037.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0038/HSV_101_0038.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0039/HSV_101_0039.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0040/HSV_101_0040.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0041/HSV_101_0041.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0042/HSV_101_0042.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0044/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0044/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0044/HSV_101_0044.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0044/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0045/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0045/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0045/HSV_101_0045.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0045/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0046/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0046/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0046/HSV_101_0046.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0046/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0047/HSV_101_0047.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0048/HSV_101_0048.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0049/HSV_101_0049.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0050/HSV_101_0050.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0051/HSV_101_0051.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0052/HSV_101_0052.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0054/HSV_101_0054.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0055/HSV_101_0055.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0056/HSV_101_0056.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0057/HSV_101_0057.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0058/HSV_101_0058.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0059/HSV_101_0059.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0060/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0060/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0060/HSV_101_0060.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0060/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0061/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0061/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0061/HSV_101_0061.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0061/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0063/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0063/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0063/HSV_101_0063.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0063/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0065/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0065/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0065/HSV_101_0065.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0065/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0066/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0066/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0066/HSV_101_0066.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0066/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0067/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0067/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0067/HSV_101_0067.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0067/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0069/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0069/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0069/HSV_101_0069.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0069/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0070/HSV_101_0070.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0071/HSV_101_0071.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0072/HSV_101_0072.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0073/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0073/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0073/HSV_101_0073.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0073/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0074/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0074/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0074/HSV_101_0074.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0074/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0075/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0075/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0075/HSV_101_0075.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0075/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0076/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0076/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0076/HSV_101_0076.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0076/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0077/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0077/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0077/HSV_101_0077.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0077/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0078/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0078/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0078/HSV_101_0078.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0078/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0079/HSV_101_0079.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0082/HSV_101_0082.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0083/HSV_101_0083.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0084/HSV_101_0084.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0085/HSV_101_0085.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0086/HSV_101_0086.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0087/HSV_101_0087.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0088/HSV_101_0088.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0090/HSV_101_0090.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0091/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0091/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0091/HSV_101_0091.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0091/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0092/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0092/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0092/HSV_101_0092.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0092/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0093/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0093/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0093/HSV_101_0093.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/BGR2HSV/101_0093/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/000_0001/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/000_0001/HSV_000_0001.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/000_0001/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/000_0001/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/000_0002/HSV_000_0002.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/000_0003/HSV_000_0003.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/000_0006/HSV_000_0006.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/000_0008/HSV_000_0008.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/000_0010/HSV_000_0010.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/000_0011/HSV_000_0011.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/000_0012/HSV_000_0012.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/000_0013/HSV_000_0013.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/000_0014/HSV_000_0014.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/000_0015/HSV_000_0015.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/000_0016/HSV_000_0016.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0049/HSV_100_0049.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0050/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0050/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0050/HSV_100_0050.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0050/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0051/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0051/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0051/HSV_100_0051.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0051/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0052/HSV_100_0052.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0053/HSV_100_0053.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0054/HSV_100_0054.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0055/HSV_100_0055.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0056/HSV_100_0056.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0057/HSV_100_0057.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0058/HSV_100_0058.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0059/HSV_100_0059.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0060/HSV_100_0060.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0061/HSV_100_0061.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0062/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0062/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0062/HSV_100_0062.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0062/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0063/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0063/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0063/HSV_100_0063.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0063/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0064/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0064/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0064/HSV_100_0064.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0064/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0065/HSV_100_0065.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0066/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0066/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0066/HSV_100_0066.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0066/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0067/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0067/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0067/HSV_100_0067.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0067/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0068/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0068/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0068/HSV_100_0068.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0068/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0069/HSV_100_0069.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0070/HSV_100_0070.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0071/HSV_100_0071.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0072/HSV_100_0072.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0073/HSV_100_0073.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0074/HSV_100_0074.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0075/HSV_100_0075.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0076/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0076/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0076/HSV_100_0076.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0076/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0077/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0077/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0077/HSV_100_0077.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0077/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0078/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0078/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0078/HSV_100_0078.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0078/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0079/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0079/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0079/HSV_100_0079.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0079/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0080/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0080/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0080/HSV_100_0080.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0080/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0081/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0081/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0081/HSV_100_0081.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0081/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0086/HSV_100_0086.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0087/HSV_100_0087.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0088/HSV_100_0088.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0090/HSV_100_0090.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0092/HSV_100_0092.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0093/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0093/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0093/HSV_100_0093.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0093/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0095/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0095/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0095/HSV_100_0095.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0095/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0096/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0096/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0096/HSV_100_0096.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0096/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0098/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0098/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0098/HSV_100_0098.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0098/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0101/HSV_100_0101.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0102/HSV_100_0102.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0103/HSV_100_0103.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0104/HSV_100_0104.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/100_0105/HSV_100_0105.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101E0019/HSV_101E0019.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101E0020/HSV_101E0020.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101E0021/HSV_101E0021.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101E0022/HSV_101E0022.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101E0023/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101E0023/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101E0023/HSV_101E0023.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101E0023/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101E0024/HSV_101E0024.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101E0025/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101E0025/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101E0025/HSV_101E0025.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101E0025/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0001/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0001/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0001/HSV_101_0001.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0001/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0002/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0002/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0002/HSV_101_0002.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0002/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0003/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0003/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0003/HSV_101_0003.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0003/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0006/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0006/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0006/HSV_101_0006.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0006/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0007/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0007/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0007/HSV_101_0007.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0007/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0008/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0008/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0008/HSV_101_0008.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0008/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0009/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0009/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0009/HSV_101_0009.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0009/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0010/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0010/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0010/HSV_101_0010.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0010/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0011/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0011/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0011/HSV_101_0011.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0011/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0012/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0012/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0012/HSV_101_0012.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0012/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0014/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0014/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0014/HSV_101_0014.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0014/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0015/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0015/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0015/HSV_101_0015.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0015/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0016/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0016/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0016/HSV_101_0016.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0016/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0018/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0018/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0018/HSV_101_0018.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0018/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0019/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0019/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0019/HSV_101_0019.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0019/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0020/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0020/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0020/HSV_101_0020.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0020/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0021/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0021/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0021/HSV_101_0021.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0021/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0022/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0022/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0022/HSV_101_0022.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0022/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0023/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0023/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0023/HSV_101_0023.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0023/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0024/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0024/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0024/HSV_101_0024.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0024/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0026/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0026/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0026/HSV_101_0026.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0026/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0028/HSV_101_0028.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0030/HSV_101_0030.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0031/HSV_101_0031.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0032/HSV_101_0032.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0033/HSV_101_0033.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0034/HSV_101_0034.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0035/HSV_101_0035.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0036/HSV_101_0036.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0037/HSV_101_0037.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0038/HSV_101_0038.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0039/HSV_101_0039.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0040/HSV_101_0040.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0041/HSV_101_0041.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0042/HSV_101_0042.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0044/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0044/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0044/HSV_101_0044.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0044/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0045/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0045/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0045/HSV_101_0045.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0045/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0046/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0046/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0046/HSV_101_0046.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0046/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0047/HSV_101_0047.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0048/HSV_101_0048.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0049/HSV_101_0049.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0050/HSV_101_0050.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0051/HSV_101_0051.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0052/HSV_101_0052.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0054/HSV_101_0054.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0055/HSV_101_0055.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0056/HSV_101_0056.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0057/HSV_101_0057.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0058/HSV_101_0058.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0059/HSV_101_0059.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0060/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0060/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0060/HSV_101_0060.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0060/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0061/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0061/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0061/HSV_101_0061.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0061/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0063/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0063/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0063/HSV_101_0063.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0063/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0065/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0065/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0065/HSV_101_0065.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0065/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0066/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0066/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0066/HSV_101_0066.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0066/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0067/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0067/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0067/HSV_101_0067.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0067/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0069/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0069/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0069/HSV_101_0069.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0069/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0070/HSV_101_0070.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0071/HSV_101_0071.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0072/HSV_101_0072.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0073/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0073/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0073/HSV_101_0073.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0073/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0074/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0074/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0074/HSV_101_0074.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0074/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0075/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0075/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0075/HSV_101_0075.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0075/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0076/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0076/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0076/HSV_101_0076.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0076/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0077/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0077/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0077/HSV_101_0077.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0077/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0078/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0078/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0078/HSV_101_0078.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0078/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0079/HSV_101_0079.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0082/HSV_101_0082.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0083/HSV_101_0083.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0084/HSV_101_0084.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0085/HSV_101_0085.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0086/HSV_101_0086.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0087/HSV_101_0087.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0088/HSV_101_0088.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0090/HSV_101_0090.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0091/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0091/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0091/HSV_101_0091.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0091/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0092/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0092/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0092/HSV_101_0092.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0092/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0093/HSV_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0093/HSV_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0093/HSV_101_0093.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/HSV/RGB2HSV/101_0093/HSV_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/000_0001/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/000_0001/RGB_000_0001.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/000_0001/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/000_0001/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/000_0002/RGB_000_0002.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/000_0003/RGB_000_0003.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/000_0006/RGB_000_0006.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/000_0008/RGB_000_0008.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/000_0010/RGB_000_0010.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/000_0011/RGB_000_0011.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/000_0012/RGB_000_0012.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/000_0013/RGB_000_0013.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/000_0014/RGB_000_0014.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/000_0015/RGB_000_0015.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/000_0016/RGB_000_0016.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0049/RGB_100_0049.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0050/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0050/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0050/RGB_100_0050.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0050/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0051/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0051/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0051/RGB_100_0051.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0051/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0052/RGB_100_0052.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0053/RGB_100_0053.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0054/RGB_100_0054.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0055/RGB_100_0055.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0056/RGB_100_0056.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0057/RGB_100_0057.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0058/RGB_100_0058.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0059/RGB_100_0059.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0060/RGB_100_0060.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0061/RGB_100_0061.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0062/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0062/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0062/RGB_100_0062.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0062/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0063/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0063/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0063/RGB_100_0063.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0063/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0064/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0064/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0064/RGB_100_0064.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0064/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0065/RGB_100_0065.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0066/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0066/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0066/RGB_100_0066.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0066/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0067/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0067/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0067/RGB_100_0067.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0067/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0068/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0068/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0068/RGB_100_0068.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0068/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0069/RGB_100_0069.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0070/RGB_100_0070.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0071/RGB_100_0071.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0072/RGB_100_0072.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0073/RGB_100_0073.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0074/RGB_100_0074.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0075/RGB_100_0075.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0076/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0076/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0076/RGB_100_0076.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0076/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0077/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0077/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0077/RGB_100_0077.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0077/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0078/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0078/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0078/RGB_100_0078.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0078/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0079/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0079/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0079/RGB_100_0079.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0079/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0080/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0080/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0080/RGB_100_0080.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0080/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0081/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0081/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0081/RGB_100_0081.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0081/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0086/RGB_100_0086.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0087/RGB_100_0087.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0088/RGB_100_0088.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0090/RGB_100_0090.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0092/RGB_100_0092.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0093/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0093/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0093/RGB_100_0093.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0093/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0095/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0095/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0095/RGB_100_0095.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0095/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0096/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0096/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0096/RGB_100_0096.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0096/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0098/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0098/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0098/RGB_100_0098.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0098/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0101/RGB_100_0101.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0102/RGB_100_0102.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0103/RGB_100_0103.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0104/RGB_100_0104.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/100_0105/RGB_100_0105.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101E0019/RGB_101E0019.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101E0020/RGB_101E0020.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101E0021/RGB_101E0021.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101E0022/RGB_101E0022.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101E0023/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101E0023/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101E0023/RGB_101E0023.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101E0023/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101E0024/RGB_101E0024.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101E0025/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101E0025/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101E0025/RGB_101E0025.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101E0025/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0001/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0001/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0001/RGB_101_0001.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0001/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0002/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0002/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0002/RGB_101_0002.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0002/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0003/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0003/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0003/RGB_101_0003.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0003/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0006/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0006/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0006/RGB_101_0006.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0006/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0007/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0007/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0007/RGB_101_0007.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0007/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0008/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0008/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0008/RGB_101_0008.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0008/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0009/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0009/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0009/RGB_101_0009.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0009/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0010/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0010/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0010/RGB_101_0010.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0010/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0011/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0011/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0011/RGB_101_0011.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0011/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0012/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0012/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0012/RGB_101_0012.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0012/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0014/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0014/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0014/RGB_101_0014.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0014/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0015/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0015/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0015/RGB_101_0015.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0015/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0016/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0016/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0016/RGB_101_0016.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0016/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0018/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0018/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0018/RGB_101_0018.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0018/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0019/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0019/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0019/RGB_101_0019.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0019/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0020/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0020/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0020/RGB_101_0020.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0020/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0021/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0021/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0021/RGB_101_0021.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0021/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0022/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0022/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0022/RGB_101_0022.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0022/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0023/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0023/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0023/RGB_101_0023.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0023/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0024/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0024/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0024/RGB_101_0024.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0024/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0026/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0026/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0026/RGB_101_0026.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0026/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0028/RGB_101_0028.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0030/RGB_101_0030.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0031/RGB_101_0031.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0032/RGB_101_0032.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0033/RGB_101_0033.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0034/RGB_101_0034.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0035/RGB_101_0035.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0036/RGB_101_0036.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0037/RGB_101_0037.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0038/RGB_101_0038.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0039/RGB_101_0039.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0040/RGB_101_0040.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0041/RGB_101_0041.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0042/RGB_101_0042.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0044/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0044/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0044/RGB_101_0044.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0044/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0045/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0045/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0045/RGB_101_0045.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0045/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0046/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0046/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0046/RGB_101_0046.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0046/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0047/RGB_101_0047.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0048/RGB_101_0048.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0049/RGB_101_0049.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0050/RGB_101_0050.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0051/RGB_101_0051.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0052/RGB_101_0052.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0054/RGB_101_0054.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0055/RGB_101_0055.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0056/RGB_101_0056.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0057/RGB_101_0057.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0058/RGB_101_0058.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0059/RGB_101_0059.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0060/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0060/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0060/RGB_101_0060.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0060/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0061/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0061/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0061/RGB_101_0061.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0061/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0063/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0063/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0063/RGB_101_0063.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0063/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0065/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0065/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0065/RGB_101_0065.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0065/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0066/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0066/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0066/RGB_101_0066.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0066/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0067/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0067/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0067/RGB_101_0067.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0067/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0069/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0069/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0069/RGB_101_0069.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0069/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0070/RGB_101_0070.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0071/RGB_101_0071.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0072/RGB_101_0072.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0073/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0073/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0073/RGB_101_0073.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0073/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0074/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0074/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0074/RGB_101_0074.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0074/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0075/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0075/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0075/RGB_101_0075.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0075/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0076/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0076/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0076/RGB_101_0076.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0076/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0077/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0077/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0077/RGB_101_0077.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0077/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0078/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0078/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0078/RGB_101_0078.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0078/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0079/RGB_101_0079.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0082/RGB_101_0082.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0083/RGB_101_0083.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0084/RGB_101_0084.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0085/RGB_101_0085.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0086/RGB_101_0086.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0087/RGB_101_0087.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0088/RGB_101_0088.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0090/RGB_101_0090.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0091/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0091/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0091/RGB_101_0091.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0091/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0092/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0092/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0092/RGB_101_0092.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0092/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0093/RGB_0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0093/RGB_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0093/RGB_101_0093.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Segmentation/RGB/101_0093/RGB_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../featureExtraction.py - Acceso directo.lnk" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -163,8 +1062,10 @@
     <SUITE FILE_PATH="coverage/Experiment$border_detection.coverage" NAME="border_detection Coverage Results" MODIFIED="1543535995662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tonality" />
     <SUITE FILE_PATH="coverage/Experiment$barplot.coverage" NAME="barplot Coverage Results" MODIFIED="1543553085693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tonality" />
     <SUITE FILE_PATH="coverage/Experiment$Teeth_Recognition.coverage" NAME="Teeth_Recognition Coverage Results" MODIFIED="1543530802549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tonality" />
+    <SUITE FILE_PATH="coverage/Experiment$TeethDetection.coverage" NAME="TeethDetection Coverage Results" MODIFIED="1543610495795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tonality" />
     <SUITE FILE_PATH="coverage/Experiment$SEGMENTATION.coverage" NAME="SEGMENTATION Coverage Results" MODIFIED="1543545724964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tonality" />
-    <SUITE FILE_PATH="coverage/Experiment$featureExtraction.coverage" NAME="featureExtraction Coverage Results" MODIFIED="1543562182788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tonality" />
+    <SUITE FILE_PATH="coverage/Experiment$librearies_t.coverage" NAME="librearies_t Coverage Results" MODIFIED="1543593836202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tonality" />
+    <SUITE FILE_PATH="coverage/Experiment$featureExtraction.coverage" NAME="featureExtraction Coverage Results" MODIFIED="1543586569339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tonality" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -182,70 +1083,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tonality/border_detection.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tonality/Teeth_Recognition.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-153">
-              <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Tonality/featureExtraction.py">
+        <entry file="file://$PROJECT_DIR$/Tonality/TeethDetection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1138">
-              <caret line="251" column="59" lean-forward="true" selection-start-line="251" selection-start-column="59" selection-end-line="251" selection-end-column="59" />
+            <state relative-caret-position="153">
+              <caret line="272" column="62" lean-forward="true" selection-start-line="272" selection-start-column="62" selection-end-line="272" selection-end-column="62" />
               <folding>
                 <element signature="e#0#78#0" expanded="true" />
-                <element signature="e#378#468#0" />
-                <element signature="e#456#1089#0" />
-                <element signature="e#1337#1472#0" />
-                <element signature="e#1927#2241#0" />
-                <element signature="e#1939#2852#0" />
-                <element signature="e#2996#3996#0" />
-                <element signature="e#4393#5280#0" />
-                <element signature="e#5542#6483#0" />
-                <element signature="e#1485#1567#0" />
-                <element signature="e#1611#2163#0" />
-                <element signature="e#2203#2454#0" />
-                <element signature="e#3145#3303#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../EVER/Hand-Gesture-Recognition-Machine-Learning/src/PYTHON_CODE/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="49" column="32" lean-forward="true" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tonality/barplot.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -279,6 +1123,10 @@
         <option value="$PROJECT_DIR$/Tonality/SEGMENTATION" />
         <option value="$PROJECT_DIR$/Tonality/barplot.py" />
         <option value="$PROJECT_DIR$/Tonality/featureExtraction.py" />
+        <option value="$PROJECT_DIR$/Tonality/features.py" />
+        <option value="$PROJECT_DIR$/Tonality/__init__.py" />
+        <option value="$PROJECT_DIR$/Tonality/librearies_t.py" />
+        <option value="$PROJECT_DIR$/Tonality/TeethDetection.py" />
       </list>
     </option>
   </component>
@@ -315,7 +1163,7 @@
   <component name="PropertiesComponent">
     <property name="ChangesTree.GroupingKeys" value="directory" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../2018-III/Deep Learning/ejemplo.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../2018-III/Deep Learning/Deep Learning/mnist_DeepLearning.ipynb" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -342,7 +1190,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.featureExtraction">
+  <component name="RunManager" selected="Python.TeethDetection">
     <configuration name="SEGMENTATION" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Experiment" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -365,7 +1213,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Teeth_Recognition" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="TeethDetection" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Experiment" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -374,11 +1222,11 @@
       </envs>
       <option name="SDK_HOME" value="C:\Python36\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tonality" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tonality/Teeth_Recognition.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tonality/TeethDetection.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="true" />
@@ -413,25 +1261,6 @@
       <module name="Experiment" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tonality" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tonality/barplot.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="true" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="border_detection" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Experiment" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
@@ -441,7 +1270,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tonality/border_detection.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tonality/barplot.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="true" />
@@ -463,7 +1292,29 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tonality/featureExtraction.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\TRABAJO\Documents\Semillero\TEETH-RECOGNITION-WITH-MACHINE-LEARNING\Experiment\Tonality\TeethDetection.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="librearies_t" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Experiment" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python36\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tonality" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tonality/librearies_t.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="true" />
@@ -473,19 +1324,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.border_detection" />
-      <item itemvalue="Python.Teeth_Recognition" />
       <item itemvalue="Python.featureExtraction" />
       <item itemvalue="Python.SEGMENTATION" />
       <item itemvalue="Python.barplot" />
+      <item itemvalue="Python.librearies_t" />
+      <item itemvalue="Python.TeethDetection" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.TeethDetection" />
+        <item itemvalue="Python.librearies_t" />
         <item itemvalue="Python.featureExtraction" />
         <item itemvalue="Python.barplot" />
         <item itemvalue="Python.SEGMENTATION" />
-        <item itemvalue="Python.border_detection" />
-        <item itemvalue="Python.Teeth_Recognition" />
       </list>
     </recent_temporary>
   </component>
@@ -505,7 +1356,9 @@
       <workItem from="1543507517720" duration="19321000" />
       <workItem from="1543530504206" duration="9698000" />
       <workItem from="1543541836185" duration="4039000" />
-      <workItem from="1543550972319" duration="12193000" />
+      <workItem from="1543550972319" duration="17219000" />
+      <workItem from="1543584997074" duration="8329000" />
+      <workItem from="1543606448423" duration="3785000" />
     </task>
     <task id="LOCAL-00001" summary="Border Detection">
       <created>1543463816618</created>
@@ -514,11 +1367,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543463816618</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Image Segmentation V0.0.1">
+      <created>1543588737914</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1543588737914</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72723000" />
+    <option name="totallyTimeSpent" value="89863000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -533,7 +1393,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.3207262" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17019667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -546,51 +1406,26 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5015129" side_tool="true" weight="0.38134205" />
-      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.49848714" weight="0.27168575" />
+      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.49848714" visible="true" weight="0.28150573" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49924356" weight="0.45499182" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.39443535" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" x="486" y="175" width="393" height="378" id="SciView" order="3" sideWeight="0.7973422" weight="0.20408164" />
+      <window_info anchor="right" x="486" y="175" width="393" height="378" id="SciView" order="3" sideWeight="0.7951542" weight="0.31543118" />
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32980332" />
       <window_info anchor="right" id="R Packages" order="5" weight="0.32980332" />
       <window_info anchor="right" id="Database" order="6" weight="0.32980332" />
-      <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" order="7" sideWeight="0.2026578" side_tool="true" weight="0.20408164" />
+      <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" order="7" sideWeight="0.20620842" side_tool="true" weight="0.24357034" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.3422292" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.2405892" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.45499182" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49924356" weight="0.45499182" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3289689" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="SciView" order="3" sideWeight="0.4945534" visible="true" weight="0.34493193" />
-      <window_info anchor="right" id="R Graphics" order="4" weight="0.32980332" />
-      <window_info anchor="right" id="R Packages" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" order="7" sideWeight="0.5054466" side_tool="true" weight="0.290469" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Border Detection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Border Detection" />
+    <MESSAGE value="Image Segmentation V0.0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Image Segmentation V0.0.1" />
   </component>
   <component name="WindowStateProjectService">
     <state width="178" height="152" key="Git.Branch.Popup" />
@@ -619,71 +1454,63 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tonality/f.py" />
-    <entry file="file://$PROJECT_DIR$/Tonality/SEGMENTATION">
+    <entry file="file://$PROJECT_DIR$/Tonality/SEGMENTATION" />
+    <entry file="file://$PROJECT_DIR$/Tonality/barplot.py" />
+    <entry file="file://C:/Python36/Lib/site-packages/scipy/ndimage/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="134" column="28" lean-forward="true" selection-start-line="134" selection-start-column="28" selection-end-line="134" selection-end-column="28" />
+        <state relative-caret-position="-2497">
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#4562#4626#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tonality/border_detection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Tonality/000_0001.JPG" />
+    <entry file="file://$PROJECT_DIR$/Tonality/border_detection.py" />
+    <entry file="file://$PROJECT_DIR$/Tonality/Teeth_Recognition.py" />
+    <entry file="file://$PROJECT_DIR$/Tonality/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tonality/barplot.py">
+    <entry file="file://$PROJECT_DIR$/Tonality/librearies_t.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tonality/Teeth_Recognition.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../EVER/Hand-Gesture-Recognition-Machine-Learning/src/PYTHON_CODE/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="49" column="32" lean-forward="true" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+        <state relative-caret-position="799">
+          <caret line="47" column="52" selection-start-line="46" selection-start-column="16" selection-end-line="47" selection-end-column="52" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#2452#4212#0" />
+            <element signature="e#4229#6165#0" />
+            <element signature="e#6190#7981#0" />
+            <element signature="e#8006#10324#0" />
+            <element signature="e#10346#12794#0" />
+            <element signature="e#12827#16770#0" />
+            <element signature="e#16803#20734#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tonality/featureExtraction.py">
+    <entry file="file://$PROJECT_DIR$/../../../2018-III/Deep Learning/Deep Learning/mnist_DeepLearning.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tonality/untitled.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tonality/TeethDetection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1138">
-          <caret line="251" column="59" lean-forward="true" selection-start-line="251" selection-start-column="59" selection-end-line="251" selection-end-column="59" />
+        <state relative-caret-position="153">
+          <caret line="272" column="62" lean-forward="true" selection-start-line="272" selection-start-column="62" selection-end-line="272" selection-end-column="62" />
           <folding>
             <element signature="e#0#78#0" expanded="true" />
-            <element signature="e#378#468#0" />
-            <element signature="e#456#1089#0" />
-            <element signature="e#1337#1472#0" />
-            <element signature="e#1927#2241#0" />
-            <element signature="e#1939#2852#0" />
-            <element signature="e#2996#3996#0" />
-            <element signature="e#4393#5280#0" />
-            <element signature="e#5542#6483#0" />
-            <element signature="e#1485#1567#0" />
-            <element signature="e#1611#2163#0" />
-            <element signature="e#2203#2454#0" />
-            <element signature="e#3145#3303#0" />
           </folding>
         </state>
       </provider>
