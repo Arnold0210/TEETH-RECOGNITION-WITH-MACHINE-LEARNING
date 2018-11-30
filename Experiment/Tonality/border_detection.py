@@ -2,6 +2,13 @@ import os, cv2 as cv, numpy as np, matplotlib.pyplot as plt
 
 PATH = 'C:/Users/TRABAJO/Documents/Semillero/TEETH-RECOGNITION-WITH-MACHINE-LEARNING/DATASET/'
 
+
+def show(image):
+    plt.figure(figsize=(15, 15))
+    plt.imshow(image, interpolation='nearest')
+    plt.show()
+
+
 def test():
     source_image = '101_0083.JPG'
     src = PATH + source_image
@@ -10,6 +17,12 @@ def test():
     height, width, channels = image.shape
     reheight, rewidth = int(height / 9), int(width / 9)  # Resize inage to 1/9
     image = cv.cvtColor(image, cv.COLOR_BGR2RGB)  # Convert Color from BFR to RGB
+    for i in [0, 1, 2]:
+        colour = image.copy()
+    if i != 0: colour[:, :, 0] = 0
+    if i != 1: colour[:, :, 1] = 0
+    if i != 2: colour[:, :, 2] = 0
+    show(colour)
     image = cv.resize(image, (rewidth, reheight))
     image_gray = cv.cvtColor(image, cv.COLOR_RGB2GRAY)
     img_gauss_blur = cv.GaussianBlur(image_gray, (5, 5), 1)
@@ -27,6 +40,7 @@ def test():
     cv.waitKey(0)
     cv.destroyAllWindows()
 
+
 def find_biggest_contour(image):
     a, contours, hierarchy = cv.findContours(image, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_NONE)
     contour_sizes = [(cv.contourArea(contour), contour) for contour in contours]
@@ -37,6 +51,7 @@ def find_biggest_contour(image):
     mask = cv.cvtColor(mask, cv.COLOR_GRAY2BGR)
     return biggest_contour, mask
 
+
 def readAllImagesPath(PATH):
     file_List = []
     for dirName, subdirList, fileList in os.walk(PATH):
@@ -44,6 +59,7 @@ def readAllImagesPath(PATH):
             if ('JPG' in i) or ('jpg' in i):
                 file_List.append(i)
     return file_List
+
 
 def readAllImages(file_List, PATH):
     images = []
@@ -56,7 +72,11 @@ def readAllImages(file_List, PATH):
         image = cv.resize(image, (rewidth, reheight))
         images.append(image)
     return images
+
+
 def main():
     file_list = readAllImagesPath(PATH)
-    imagesOriginal = readAllImages(file_list,PATH)
+    imagesOriginal = readAllImages(file_list, PATH)
+
+
 test()

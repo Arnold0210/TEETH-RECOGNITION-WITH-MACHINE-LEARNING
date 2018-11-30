@@ -1,49 +1,205 @@
-import os, cv2 as cv, numpy as np, matplotlib.pyplot as plt, sys, glob
-import extcolors as ext,sklearn.decomposition.pca as pca
+import os, cv2 as cv, numpy as np, matplotlib.pyplot as plt, sys, glob, random
+import extcolors as ext, sklearn.decomposition.pca as pca
+from time import time
+import time as tm
+from tqdm import tqdm, trange
+from progress.bar import Bar, ChargingBar
 
-PATH = 'C:/Users/TRABAJO/Documents/Semillero/TEETH-RECOGNITION-WITH-MACHINE-LEARNING/DATASET/'
-PATH_SAVE = 'C:/Users/TRABAJO/Documents/Semillero/TEETH-RECOGNITION-WITH-MACHINE-LEARNING/DATASETRESIZE/'
+PATH = 'C:/Users/TRABAJO/Documents/Semillero/TEETH-RECOGNITION-WITH-MACHINE-LEARNING/'
 
 
 def show(image):
     plt.figure(figsize=(15, 15))
     plt.imshow(image, interpolation='nearest')
     plt.show()
+
+
 def readAllImagesPath(PATH):
+    start_time = time()
     file_List = []
+    cantidad = len(glob.glob(PATH + "*"))
+    procesing = Bar('Leyendo archivos:', max=cantidad)
     for dirName, subdirList, fileList in os.walk(PATH):
         for i in fileList:
             if ('JPG' in i) or ('jpg' in i):
                 file_List.append(i)
-    print("Termino de añadirpath")
+            procesing.next()
+    procesing.finish()
+    end_time = time()
+    elapsed_time = end_time - start_time
+    print("Tiempo de cargue de ruta de atchivos: %0.10f segundos." % elapsed_time)
     return file_List
-def readAllImages(file_List, PATH):
+
+
+def resizeAllImages(file_List, PATHSRC, PATHRESIZE):
+    start_time = time()
+    if not os.path.exists(PATHRESIZE):
+        os.mkdir(PATHRESIZE)
+    for i in tqdm(file_List):
+        src = PATHSRC + i
+        image = cv.imread(src, 1)
+        image = cv.resize(image, (600, 400))
+        if not os.path.exists(PATHRESIZE + i):
+            cv.imwrite(os.path.join(PATHRESIZE, i), image)
+    end_time = time()
+    elapsed_time = end_time - start_time
+    print("Tiempo de re-escalar imagenes: %0.10f segundos." % elapsed_time)
+
+
+def readImagesRGB(PATH, fileList):
+    start_time = time()
     images = []
-    for i in file_List:
+    for i in tqdm(fileList):
         src = PATH + i
         image = cv.imread(src, 1)
-        # image = cv.cvtColor(image, cv.COLOR_BGR2RGB)
-        height, width, channels = image.shape
-        reheight, rewidth = int(height / 9), int(width / 9)  # Resize inage to 1/9
-        image = cv.resize(image, (rewidth, reheight))
-        cv.imwrite(os.path.join(PATH_SAVE, i), image)
         images.append(image)
-    print("Termino Carga")
+    end_time = time()
+    elapsed_time = end_time - start_time
+    print("Tiempo cargando imagenes a un vector: %0.10f segundos." % elapsed_time)
     return images
-def imagesBGR2RGB(images):
-    for i in images:
-        i = cv.cvtColor(i, cv.COLOR_BGR2RGB)
-    print("Termino convertir")
+
+
+def readImages(PATH, fileList):
+    start_time = time()
+    images = []
+    for i in tqdm(fileList):
+        src = PATH + i
+        image = cv.imread(src)
+        images.append(image)
+    end_time = time()
+    elapsed_time = end_time - start_time
+    print("Tiempo cargando imagenes a un vector: %0.10f segundos." % elapsed_time)
     return images
-def imagesRGB2HSV(imagesRGB):
-    for i in imagesRGB:
+
+
+def imagesRGB2HSV(imagesRGB, directory, files):
+    if not os.path.exists(directory):
+        os.mkdir(directory)
+    folder = directory + 'HSV/'
+    if not os.path.exists(folder):
+        os.mkdir(folder)
+    folder = directory + 'HSV/' + 'RGB2HSV/'
+    if not os.path.exists(folder):
+        os.mkdir(folder)
+    HSV_ = Bar('Convirtiendo RGB a HSV:', max=len(files) * 4)
+    for i, file in zip(imagesRGB, files):
         i = cv.cvtColor(i, cv.COLOR_RGB2HSV)
-    return imagesRGB
-def imagesGaussianBlur(imagesHSV):
+        (nomArch, ext) = os.path.splitext(file)
+        src = folder + nomArch
+        if not os.path.exists(src):
+            os.mkdir(folder + nomArch)
+        fil = 'HSV_' + nomArch + ".JPG"
+        if not os.path.exists(src + '/' + fil):
+            cv.imwrite(os.path.join(src, fil), i)
+        cv.imwrite(os.path.join(src, fil), i)
+        HSV_.next()
+        for l in [0, 1, 2]:
+            colour = i.copy()
+            if l != 0: colour[:, :, 0] = 0
+            if l != 1: colour[:, :, 1] = 255
+            if l != 2: colour[:, :, 2] = 255
+            fil = 'HSV_' + str(l) + ".JPG"
+            cv.imwrite(os.path.join(src, fil), colour)
+            HSV_.next()
+    HSV_.finish()
+
+
+def imagesBGR2HSV(images, directory, files):
+    if not os.path.exists(directory):
+        os.mkdir(directory)
+    folder = directory + 'HSV/'
+    if not os.path.exists(folder):
+        os.mkdir(folder)
+    folder = directory + 'HSV/' + 'BGR2HSV/'
+    if not os.path.exists(folder):
+        os.mkdir(folder)
+    HSV_ = Bar('Convirtiendo BGR a HSV:', max=len(files) * 4)
+    for i, file in zip(images, files):
+        i = cv.cvtColor(i, cv.COLOR_BGR2HSV)
+        (nomArch, ext) = os.path.splitext(file)
+        src = folder + nomArch
+        if not os.path.exists(src):
+            os.mkdir(folder + nomArch)
+        fil = 'HSV_' + nomArch + ".JPG"
+        if not os.path.exists(src + '/' + fil):
+            cv.imwrite(os.path.join(src, fil), i)
+        HSV_.next()
+        for l in [0, 1, 2]:
+            colour = i.copy()
+            if l != 0: colour[:, :, 0] = 0
+            if l != 1: colour[:, :, 1] = 255
+            if l != 2: colour[:, :, 2] = 255
+            fil = 'HSV_' + str(l) + ".JPG"
+            cv.imwrite(os.path.join(src, fil), colour)
+            HSV_.next()
+    HSV_.finish()
+
+
+def imagesBGR2RGB(images, directory, files):
+    if not os.path.exists(directory):
+        os.mkdir(directory)
+    folder = directory + 'RGB/'
+    if not os.path.exists(folder):
+        os.mkdir(folder)
+    RGB_ = Bar('Convirtiendo BGR a RGB:', max=len(files) * 4)
+    for i, file in zip(images, files):
+        i = cv.cvtColor(i, cv.COLOR_BGR2RGB)
+        (nomArch, ext) = os.path.splitext(file)
+        src = folder + nomArch
+        if not os.path.exists(src):
+            os.mkdir(folder + nomArch)
+        fil = 'RGB_' + nomArch + ".JPG"
+        if not os.path.exists(src + '/' + fil):
+            cv.imwrite(os.path.join(src, fil), i)
+        RGB_.next()
+        for l in [0, 1, 2]:
+            colour = i.copy()
+            if l != 0: colour[:, :, 0] = 0
+            if l != 1: colour[:, :, 1] = 0
+            if l != 2: colour[:, :, 2] = 0
+            fil = 'RGB_' + str(l) + ".JPG"
+            cv.imwrite(os.path.join(src, fil), colour)
+            RGB_.next()
+    RGB_.finish()
+
+def imagesBGR2YCR_CB(images, directory, files):
+    if not os.path.exists(directory):
+        os.mkdir(directory)
+    folder = directory + 'YCR_CB/'
+    if not os.path.exists(folder):
+        os.mkdir(folder)
+    YCR_CB_ = Bar('Convirtiendo BGR a YCR_CB:', max=len(files) * 4)
+    for i, file in zip(images, files):
+        i = cv.cvtColor(i, cv.COLOR_BGR2RGB)
+        (nomArch, ext) = os.path.splitext(file)
+        src = folder + nomArch
+        if not os.path.exists(src):
+            os.mkdir(folder + nomArch)
+        fil = 'YCR_CB_' + nomArch + ".JPG"
+        if not os.path.exists(src + '/' + fil):
+            cv.imwrite(os.path.join(src, fil), i)
+        YCR_CB_.next()
+        for l in [0, 1, 2]:
+            colour = i.copy()
+            if l != 0: colour[:, :, 0] = 0
+            if l != 1: colour[:, :, 1] = 0
+            if l != 2: colour[:, :, 2] = 0
+            fil = 'YCR_CB_' + str(l) + ".JPG"
+            cv.imwrite(os.path.join(src, fil), colour)
+            YCR_CB_.next()
+    YCR_CB_.finish()
+
+def imagesGaussianBlurHSV(imagesHSV, directory):
     for i in imagesHSV:
         i = cv.GaussianBlur(i, (5, 5), 0)
     return imagesHSV
-def extractFeatures(PATH,fileList):
+
+def imagesGaussianBlurRGB(imagesHSV, directory):
+    for i in imagesHSV:
+        i = cv.GaussianBlur(i, (5, 5), 0)
+    return imagesHSV
+
+def extractFeatures(PATH, fileList):
     matrix_data = []
     a = len(fileList)
     cont = 0
@@ -54,17 +210,16 @@ def extractFeatures(PATH,fileList):
             print('\u2588', end="")
         print(" ", int((cont * 100) / a), "%")
         extract, countPixel = ext.extract(src)
-        print('postextract')
         colors_image = []
         for colors in extract:
-            print('f')
             for l in colors[0]:
-                print('e')
                 colors_image.append((l))
         matrix_data.append(colors_image)
         cont = cont + 1
         os.system('cls')
     return matrix_data
+
+
 def standar_matrix(matrix_data):
     maxi = []
     for c in matrix_data:
@@ -76,24 +231,32 @@ def standar_matrix(matrix_data):
             for j in range(dif):
                 i.append(0)
     return maxi
-def saveFile(matrix,filename):
-    file = open(filename,"w")
-    for i in matrix:
-        file.write(i)
-    file.close()
+
+
+def readlabels(PATH):
+    with open(os.path.join(PATH, 'labels.txt')) as f:
+        lines = f.readlines()
+    lines = [x.strip() for x in lines]
+    return lines
+
+
 def main():
-    matrixData = []
-    filelist = readAllImagesPath(PATH_SAVE)
-    # images = readAllImages(filelist, PATH)
-    # imagesRGB = imagesBGR2RGB(images)
-    # imagesHSV = imagesRGB2HSV(imagesRGB)
-    # imagesGaussBlur = imagesGaussianBlur(imagesHSV)
-    matrixData = extractFeatures(PATH_SAVE,filelist)
-    standarMatriz = standar_matrix(matrixData)
-    saveFile(standarMatriz,"features.txt")
-    cov = np.cov(np.array(matrixData).T)
-    pca_train = pca.PCA(n_components=2)
-    transf = pca_train.fit((np.array(matrixData).T))
-    saveFile(pca_train.components_.T,"pca_train.txt")
-    saveFile(np.array(matrixData).shape,"formaoriginal matriz.txt")
+    srcdataset = PATH + 'DATASET/'
+    datasetresize = PATH + 'ResizeDATASET/'
+    directory_segmentation = PATH + 'Segmentation/'
+    labels = readlabels(srcdataset)
+    files = readAllImagesPath(srcdataset)
+    resizeAllImages(files, srcdataset, datasetresize)
+    images = readImages(datasetresize, files)
+    imagesRGB = readImagesRGB(datasetresize, files)
+    imagesRGB2HSV(imagesRGB, directory_segmentation, files)
+    imagesBGR2HSV(images, directory_segmentation, files)
+    imagesBGR2RGB(images, directory_segmentation, files)
+    imagesBGR2YCR_CB(images,directory_segmentation,files)
+
+start_time = time()
 main()
+end_time = time()
+elapsed_time = end_time - start_time
+print("Tiempo de ejecucuón del programa: %0.10f segundos." % elapsed_time)
+os.system("PAUSE")

@@ -1,7 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2c1ee42-7076-4f95-8db9-617d09cf6a8e" name="Default Changelist" comment="">
+    <list default="true" id="e2c1ee42-7076-4f95-8db9-617d09cf6a8e" name="Default Changelist" comment="Border Detection">
+      <change beforePath="$PROJECT_DIR$/../DATASET/labels.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/labels.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/000_0001.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/000_0002.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/000_0003.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/000_0006.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/000_0008.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/000_0010.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/000_0011.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/000_0012.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/000_0013.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/000_0014.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/000_0015.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/000_0016.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0049.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0050.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0051.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0052.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0053.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0054.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0055.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0056.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0057.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0058.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0059.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0060.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0061.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0062.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0063.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0064.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0065.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0066.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0067.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0068.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0069.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0070.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0071.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0072.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0073.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0074.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0075.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0076.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0077.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0078.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0079.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0080.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0081.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0086.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0087.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0088.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0090.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0092.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0093.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0095.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0096.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0098.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0101.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0102.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0103.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0104.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/100_0105.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101E0019.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101E0020.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101E0021.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101E0022.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101E0023.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101E0024.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101E0025.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0001.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0002.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0003.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0006.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0007.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0008.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0009.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0010.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0011.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0012.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0014.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0015.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0016.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0018.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0019.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0020.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0021.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0022.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0023.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0024.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0026.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0028.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0030.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0031.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0032.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0033.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0034.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0035.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0036.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0037.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0038.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0039.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0040.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0041.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0042.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0044.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0045.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0046.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0047.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0048.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0049.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0050.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0051.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0052.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0054.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0055.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0056.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0057.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0058.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0059.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0060.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0061.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0063.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0065.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0066.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0067.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0069.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0070.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0071.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0072.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0073.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0074.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0075.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0076.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0077.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0078.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0079.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0082.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0083.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0084.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0085.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0086.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0087.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0088.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0090.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0091.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0092.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DATASETRESIZE/101_0093.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tonality/Teeth_Recognition.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tonality/Teeth_Recognition.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tonality/border_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tonality/border_detection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tonality/featureExtraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tonality/featureExtraction.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,21 +160,33 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Experiment$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1543329046495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/Experiment$border_detection.coverage" NAME="border_detection Coverage Results" MODIFIED="1543511342539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tonality" />
-    <SUITE FILE_PATH="coverage/Experiment$Teeth_Recognition.coverage" NAME="Teeth_Recognition Coverage Results" MODIFIED="1543514401871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tonality" />
-    <SUITE FILE_PATH="coverage/Experiment$featureExtraction.coverage" NAME="featureExtraction Coverage Results" MODIFIED="1543522744491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tonality" />
+    <SUITE FILE_PATH="coverage/Experiment$border_detection.coverage" NAME="border_detection Coverage Results" MODIFIED="1543535995662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tonality" />
+    <SUITE FILE_PATH="coverage/Experiment$barplot.coverage" NAME="barplot Coverage Results" MODIFIED="1543553085693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tonality" />
+    <SUITE FILE_PATH="coverage/Experiment$Teeth_Recognition.coverage" NAME="Teeth_Recognition Coverage Results" MODIFIED="1543530802549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tonality" />
+    <SUITE FILE_PATH="coverage/Experiment$SEGMENTATION.coverage" NAME="SEGMENTATION Coverage Results" MODIFIED="1543545724964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tonality" />
+    <SUITE FILE_PATH="coverage/Experiment$featureExtraction.coverage" NAME="featureExtraction Coverage Results" MODIFIED="1543562182788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tonality" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tonality/border_detection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="59" />
-              <folding>
-                <element signature="e#174#1162#0" />
-                <element signature="e#1201#1615#0" />
-              </folding>
+            <state relative-caret-position="238">
+              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -34,12 +194,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tonality/Teeth_Recognition.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-293">
-              <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+            <state relative-caret-position="-153">
+              <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-                <element signature="e#1030#1521#0" />
-                <element signature="e#1814#2772#0" />
               </folding>
             </state>
           </provider>
@@ -48,15 +206,46 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tonality/featureExtraction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="97" column="67" lean-forward="true" selection-start-line="97" selection-start-column="67" selection-end-line="97" selection-end-column="67" />
+            <state relative-caret-position="1138">
+              <caret line="251" column="59" lean-forward="true" selection-start-line="251" selection-start-column="59" selection-end-line="251" selection-end-column="59" />
               <folding>
-                <element signature="e#0#70#0" expanded="true" />
-                <element signature="e#178#268#0" />
-                <element signature="e#1012#1102#0" />
-                <element signature="e#1156#1240#0" />
-                <element signature="e#1280#1360#0" />
-                <element signature="e#1447#1954#0" />
+                <element signature="e#0#78#0" expanded="true" />
+                <element signature="e#378#468#0" />
+                <element signature="e#456#1089#0" />
+                <element signature="e#1337#1472#0" />
+                <element signature="e#1927#2241#0" />
+                <element signature="e#1939#2852#0" />
+                <element signature="e#2996#3996#0" />
+                <element signature="e#4393#5280#0" />
+                <element signature="e#5542#6483#0" />
+                <element signature="e#1485#1567#0" />
+                <element signature="e#1611#2163#0" />
+                <element signature="e#2203#2454#0" />
+                <element signature="e#3145#3303#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../EVER/Hand-Gesture-Recognition-Machine-Learning/src/PYTHON_CODE/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="49" column="32" lean-forward="true" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tonality/barplot.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -84,14 +273,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/../../../2018-III/Deep Learning/ejemplo.py" />
+        <option value="$PROJECT_DIR$/Tonality/f.py" />
         <option value="$PROJECT_DIR$/Tonality/border_detection.py" />
         <option value="$PROJECT_DIR$/Tonality/Teeth_Recognition.py" />
-        <option value="$PROJECT_DIR$/Tonality/f.py" />
+        <option value="$PROJECT_DIR$/Tonality/SEGMENTATION" />
+        <option value="$PROJECT_DIR$/Tonality/barplot.py" />
         <option value="$PROJECT_DIR$/Tonality/featureExtraction.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -102,6 +293,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -118,7 +310,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -151,7 +342,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.f">
+  <component name="RunManager" selected="Python.featureExtraction">
+    <configuration name="SEGMENTATION" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Experiment" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tonality" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tonality/SEGMENTATION" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Teeth_Recognition" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Experiment" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -181,7 +394,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Python36\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -189,8 +402,27 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="barplot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Experiment" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tonality" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tonality/barplot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
@@ -218,51 +450,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ejemplo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="featureExtraction" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Experiment" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../2018-III/Deep Learning" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../2018-III/Deep Learning/ejemplo.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="true" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="f" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Experiment" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tonality" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tonality/f.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="featureExtraction" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Experiment" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tonality" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -280,18 +474,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.border_detection" />
-      <item itemvalue="Python.ejemplo" />
       <item itemvalue="Python.Teeth_Recognition" />
       <item itemvalue="Python.featureExtraction" />
-      <item itemvalue="Python.f" />
+      <item itemvalue="Python.SEGMENTATION" />
+      <item itemvalue="Python.barplot" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.f" />
         <item itemvalue="Python.featureExtraction" />
-        <item itemvalue="Python.Teeth_Recognition" />
+        <item itemvalue="Python.barplot" />
+        <item itemvalue="Python.SEGMENTATION" />
         <item itemvalue="Python.border_detection" />
-        <item itemvalue="Python.ejemplo" />
+        <item itemvalue="Python.Teeth_Recognition" />
       </list>
     </recent_temporary>
   </component>
@@ -308,7 +502,10 @@
       <workItem from="1543365767431" duration="2525000" />
       <workItem from="1543378930612" duration="6433000" />
       <workItem from="1543434807881" duration="18514000" />
-      <workItem from="1543507517720" duration="16830000" />
+      <workItem from="1543507517720" duration="19321000" />
+      <workItem from="1543530504206" duration="9698000" />
+      <workItem from="1543541836185" duration="4039000" />
+      <workItem from="1543550972319" duration="12193000" />
     </task>
     <task id="LOCAL-00001" summary="Border Detection">
       <created>1543463816618</created>
@@ -321,7 +518,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44302000" />
+    <option name="totallyTimeSpent" value="72723000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -333,33 +530,33 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="676" y="0" width="697" height="735" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.3419062" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3207262" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.3820598" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.45499182" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.3289689" />
+      <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5015129" side_tool="true" weight="0.38134205" />
+      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.49848714" weight="0.27168575" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49924356" weight="0.45499182" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.19639935" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.39443535" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.4945534" weight="0.29727685" />
+      <window_info anchor="right" x="486" y="175" width="393" height="378" id="SciView" order="3" sideWeight="0.7973422" weight="0.20408164" />
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32980332" />
-      <window_info anchor="right" id="R Packages" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" order="7" sideWeight="0.5054466" side_tool="true" weight="0.290469" />
+      <window_info anchor="right" id="R Packages" order="5" weight="0.32980332" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32980332" />
+      <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" order="7" sideWeight="0.2026578" side_tool="true" weight="0.20408164" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" weight="0.3422292" />
@@ -421,50 +618,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Tonality/f.py" />
+    <entry file="file://$PROJECT_DIR$/Tonality/SEGMENTATION">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="134" column="28" lean-forward="true" selection-start-line="134" selection-start-column="28" selection-end-line="134" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Tonality/border_detection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="59" />
+        <state relative-caret-position="238">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tonality/barplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="33" />
           <folding>
-            <element signature="e#174#1162#0" />
-            <element signature="e#1201#1615#0" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tonality/Teeth_Recognition.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-293">
-          <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+        <state relative-caret-position="-153">
+          <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <element signature="e#1030#1521#0" />
-            <element signature="e#1814#2772#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tonality/f.py">
+    <entry file="file://$PROJECT_DIR$/../../EVER/Hand-Gesture-Recognition-Machine-Learning/src/PYTHON_CODE/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="50" column="28" lean-forward="true" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+        <state relative-caret-position="170">
+          <caret line="49" column="32" lean-forward="true" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
           <folding>
-            <element signature="e#9#27#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tonality/featureExtraction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="97" column="67" lean-forward="true" selection-start-line="97" selection-start-column="67" selection-end-line="97" selection-end-column="67" />
+        <state relative-caret-position="1138">
+          <caret line="251" column="59" lean-forward="true" selection-start-line="251" selection-start-column="59" selection-end-line="251" selection-end-column="59" />
           <folding>
-            <element signature="e#0#70#0" expanded="true" />
-            <element signature="e#178#268#0" />
-            <element signature="e#1012#1102#0" />
-            <element signature="e#1156#1240#0" />
-            <element signature="e#1280#1360#0" />
-            <element signature="e#1447#1954#0" />
+            <element signature="e#0#78#0" expanded="true" />
+            <element signature="e#378#468#0" />
+            <element signature="e#456#1089#0" />
+            <element signature="e#1337#1472#0" />
+            <element signature="e#1927#2241#0" />
+            <element signature="e#1939#2852#0" />
+            <element signature="e#2996#3996#0" />
+            <element signature="e#4393#5280#0" />
+            <element signature="e#5542#6483#0" />
+            <element signature="e#1485#1567#0" />
+            <element signature="e#1611#2163#0" />
+            <element signature="e#2203#2454#0" />
+            <element signature="e#3145#3303#0" />
           </folding>
         </state>
       </provider>
