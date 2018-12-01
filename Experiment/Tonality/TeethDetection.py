@@ -1,4 +1,4 @@
-import os, cv2 as cv, numpy as np, matplotlib.pyplot as plt, glob, csv, pandas as pd, imageio
+import os, cv2 as cv, numpy as np, matplotlib.pyplot as plt, glob, csv, pandas as pd, imageio,random
 from time import time
 from tqdm import tqdm
 from progress.bar import Bar
@@ -238,7 +238,6 @@ def imagesRGB2YCR_CB(images, directory, files):
     return imagesycr_cb
 
 
-
 def imagesGaussianBlur(imagesHSV, directory):
     for i in imagesHSV:
         i = cv.GaussianBlur(i, (5, 5), 0)
@@ -334,26 +333,33 @@ def ImageSegmentation(images, directory, files):
 def writefeats(PATH, matrix):
     if not os.path.exists(PATH):
         os.mkdir(PATH)
-    src = PATH + 'feats.csv'
+    src = PATH + 'feats2.csv'
     headers = []
     for i in range(len(matrix[0])):
         headers.append('pixel' + str(i))
     with open(src, 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow(headers)
+        # writer.writerow(headers)
         writer.writerows(matrix)
 
 
 def tooth_recognition(file, labels):
     print("Clasificacion")
-    data = pd.read_csv(file + "feats.csv").as_matrix()
-    print(data)
+    data = pd.read_csv(file + "feats2.csv").as_matrix()
     clf = DecisionTreeClassifier()
-    xtrain = data[1:20, 2:]
-    train_label = labels
+    xtrain = data[0:20, 0:]
+    train_label = labels[:20]
     clf.fit(xtrain, train_label)
-    xtest = data[20:, 1:]
+    xtest = data[20:, 0:]
     actual_label = labels[20]
+    file_Random = random.randint(0,20)
+    d = xtest[file_Random]
+    print("size xtest: ",len(d))
+    d.shape=(200,600)
+    plt.imshow(255-d)
+    plt.axis("off")
+    plt.show()
+    print(clf.predict([xtest[file_Random]]))
     p = clf.predict(xtest)
     count = 0
     for i in range(0, 20):
@@ -364,14 +370,14 @@ def tooth_recognition(file, labels):
 def main():
     srcdataset = PATH + 'DATASET - copia/'
     datasetresize = PATH + 'ResizeDATASET/'
-    #directory_segmentation = PATH + 'Segmentation/'
+    # directory_segmentation = PATH + 'Segmentation/'
     directory_feats = PATH + 'Features/'
     labels = readlabels(srcdataset)
     files = readAllImagesPath(srcdataset)
     # resizeAllImages(files, srcdataset, datasetresize)
     # images = readImages(datasetresize, files)
     matrix_features = extractFeatures(datasetresize, files)
-    writefeats(directory_feats, matrix_features)
+    #writefeats(directory_feats, matrix_features)
     tooth_recognition(directory_feats, labels)
 
 
