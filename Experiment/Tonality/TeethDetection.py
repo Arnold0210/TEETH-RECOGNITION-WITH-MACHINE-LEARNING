@@ -1,4 +1,4 @@
-import os, cv2 as cv, numpy as np, matplotlib.pyplot as plt, glob, csv, pandas as pd, imageio,random
+import os, cv2 as cv, numpy as np, matplotlib.pyplot as plt, glob, csv, pandas as pd, imageio, random
 from time import time
 from tqdm import tqdm
 from progress.bar import Bar
@@ -6,7 +6,8 @@ from scipy import ndimage as ndi
 from matplotlib import colors
 from sklearn.tree import DecisionTreeClassifier
 
-PATH = 'C:/Users/TRABAJO/Documents/Semillero/TEETH-RECOGNITION-WITH-MACHINE-LEARNING/'
+PATH = os.path.abspath(os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "DATASET - copia"))
+print(PATH)
 
 
 def show(image):
@@ -25,8 +26,8 @@ def readAllImagesPath(PATH):
             if ('JPG' in i) or ('jpg' in i):
                 file_List.append(i)
             bar.set_description("Leyendo archivo %s" % i)
-        # procesing.next()
-    # procesing.finish()
+        procesing.next()
+    procesing.finish()
     return file_List
 
 
@@ -213,7 +214,7 @@ def imagesRGB2YCR_CB(images, directory, files):
         os.mkdir(folder)
     YCR_CB_ = Bar('Convirtiendo BGR a YCR_CB:', max=len(files) * 4)
     for i, file in zip(images, files):
-        i = cv.cvtColor(i, cv.COLOR_BGR2YCR_CB)
+        i = cv.cvtColor(i, cv.COLOR_)
         imagesycr_cb.append(i)
         (nomArch, ext) = os.path.splitext(file)
         src = folder + nomArch
@@ -253,8 +254,9 @@ def extractFeatures(PATH, fileList):
         image = cv.imread(src, 1)
         image_f = []
         for row in image:
-            for pixel in row:
-                image_f.append(pixel[0])
+            for col in row:
+                for pixel in col:
+                    image_f.append(pixel)
         matrix_data.append(image_f)
     return matrix_data
 
@@ -343,7 +345,7 @@ def writefeats(PATH, matrix):
         writer.writerows(matrix)
 
 
-def tooth_recognition(file, labels):
+def tooth_recognition(file, labels, images, filename):
     print("Clasificacion")
     data = pd.read_csv(file + "feats2.csv").as_matrix()
     clf = DecisionTreeClassifier()
@@ -352,14 +354,16 @@ def tooth_recognition(file, labels):
     clf.fit(xtrain, train_label)
     xtest = data[20:, 0:]
     actual_label = labels[20]
-    file_Random = random.randint(0,20)
+    file_Random = random.randint(0, 20)
     d = xtest[file_Random]
-    print("size xtest: ",len(d))
-    d.shape=(200,600)
-    plt.imshow(255-d)
+    color = str(clf.predict([xtest[file_Random]]))
+    print(clf.predict([xtest[file_Random]]))
+    plt.imshow(images[file_Random])
+    plt.title(filename[file_Random] + " color: " + color)
     plt.axis("off")
     plt.show()
-    print(clf.predict([xtest[file_Random]]))
+    print("size xtest: ", len(d))
+
     p = clf.predict(xtest)
     count = 0
     for i in range(0, 20):
@@ -370,15 +374,17 @@ def tooth_recognition(file, labels):
 def main():
     srcdataset = PATH + 'DATASET - copia/'
     datasetresize = PATH + 'ResizeDATASET/'
-    # directory_segmentation = PATH + 'Segmentation/'
+    directory_segmentation = PATH + 'Segmentation/'
     directory_feats = PATH + 'Features/'
-    labels = readlabels(srcdataset)
-    files = readAllImagesPath(srcdataset)
+    labels = readlabels(PATH)
+    files = readAllImagesPath(PATH)
     # resizeAllImages(files, srcdataset, datasetresize)
     # images = readImages(datasetresize, files)
-    matrix_features = extractFeatures(datasetresize, files)
-    #writefeats(directory_feats, matrix_features)
-    tooth_recognition(directory_feats, labels)
+    # imagesRgb = imagesBGR2RGB(images, directory_segmentation, files)
+    # imagesHsv=imagesBGR2HSV(images,directory_segmentation,files)
+    # matrix_features = extractFeatures(datasetresize, files)
+    # writefeats(directory_feats, matrix_features)
+    # tooth_recognition(directory_feats, labels, imagesRgb,files)
 
 
 if __name__ == '__main__':
