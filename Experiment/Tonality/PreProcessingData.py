@@ -5,3 +5,5 @@ class PreProcessingData:
         pass
     def ImageSegmentation(self,images):
         pass
+    def ImageBinarization(self,images):
+        pass
