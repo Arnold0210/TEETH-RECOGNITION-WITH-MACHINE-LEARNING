@@ -1,4 +1,4 @@
-import Experiment.Tonality.ReadImages as rI
+import TEETHRECOGNITIONWITHMACHINELEARNING.Experiment.Tonality.ReadImages as rI
 import os
 
 if __name__== '__main__':
