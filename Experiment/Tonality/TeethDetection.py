@@ -239,10 +239,10 @@ def imagesRGB2YCR_CB(images, directory, files):
     return imagesycr_cb
 
 
-def imagesGaussianBlur(imagesHSV, directory):
-    for i in imagesHSV:
+def imagesGaussianBlur(images_hsv, directory):
+    for i in images_hsv:
         i = cv.GaussianBlur(i, (5, 5), 0)
-    return imagesHSV
+    return images_hsv
 
 
 def extractFeatures(PATH, fileList):
