@@ -1,5 +1,5 @@
 <h1 align="center"><B> Teeth Recognition With Machine Learning</B></h1>
-# Arnold Julian Herrera Quiñones - Cristhian Camilo Arce García
+Arnold Julian Herrera Quiñones - Cristhian Camilo Arce García
 <p align="justify">
 Tesis: Method to classification and recognition of hue in human teeth using image processing implementing techniques of Machine Learning
 
