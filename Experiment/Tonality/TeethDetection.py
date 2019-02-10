@@ -1,3 +1,12 @@
+
+#  Copyright (c) 2019. Arnold Julian Herrera Quiñones
+#  All Rights Reserved
+#
+#  This product is protected by copyright and distributed under
+#  licenses restricting copying, distribution, and decompilation.
+#  It is forbidden the use partial or global of this algorithm  unless authors written permission.
+#
+
 import os, cv2 as cv, numpy as np, matplotlib.pyplot as plt, glob, csv, pandas as pd, imageio, random
 from time import time
 from tqdm import tqdm
