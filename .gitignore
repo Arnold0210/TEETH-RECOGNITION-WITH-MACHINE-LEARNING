@@ -1,7 +1,9 @@
 __pycache__/*
 __init__.py
  .idea/*
-Desktop.ini
+desktop.ini
+*.pyc
+*.class
 #------
 # -- Symfony2 -----------------------------------------
 app/bootstrap.php.cache
