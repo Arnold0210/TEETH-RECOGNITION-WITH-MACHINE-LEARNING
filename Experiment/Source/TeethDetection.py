@@ -26,25 +26,25 @@ def show(image):
 
 
 def readAllImagesPath(PATH):
-    file_List = []
+    file_list = []
     cantidad = len(glob.glob(PATH + "*"))
     procesing = Bar('Leyendo archivos:', max=cantidad)
     bar = tqdm(os.walk(PATH))
     for dirName, subdirList, fileList in bar:
         for i in fileList:
             if ('JPG' in i) or ('jpg' in i):
-                file_List.append(i)
+                file_list.append(i)
             bar.set_description("Leyendo archivo %s" % i)
         procesing.next()
     procesing.finish()
-    return file_List
+    return file_list
 
 
-def resizeAllImages(file_List, PATHSRC, PATHRESIZE):
+def resize_All_Images(file_list, PATHSRC, PATHRESIZE):
     start_time = time()
     if not os.path.exists(PATHRESIZE):
         os.mkdir(PATHRESIZE)
-    resizing = tqdm(file_List)
+    resizing = tqdm(file_list)
     for i in resizing:
         resizing.set_description("Re escalando imagen %s" % i)
         src = PATHSRC + i
