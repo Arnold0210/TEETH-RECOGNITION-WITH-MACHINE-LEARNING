@@ -6,14 +6,18 @@
 #  It is forbidden the use partial or global of this algorithm  unless authors written permission.
 #
 
-import os, cv2 as cv
+import os
+
+import cv2 as cv
 from tqdm import tqdm
 
 
 class LoadData:
     PATH = ''
-    def __init__(self,PATH_IMAGES):
+
+    def __init__(self, PATH_IMAGES):
         self.PATH = PATH_IMAGES
+
     def read_Images(self, PATH):
         images = []
         amount = len(os.listdir(PATH))
@@ -26,6 +30,9 @@ class LoadData:
         return images
 
     def read_One_Image(self, PATH):
-        image_string = os.path.join(PATH, "100_0055.JPG")
-        image = cv.imread(image_string)
-        return image
+        test_image = "100_0055.JPG"
+        cristhian_mouth = "000_0001.JPG"
+        name = cristhian_mouth
+        image_string = os.path.join(PATH, name)
+        image = cv.imread(image_string, cv.IMREAD_COLOR)
+        return image, name

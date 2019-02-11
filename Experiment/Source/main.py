@@ -10,6 +10,7 @@ import errno
 import os
 
 import cv2 as cv
+import easygui
 
 import Experiment.Source.PreProcessingData as pD
 import Experiment.Source.ReadImages as rI
@@ -69,10 +70,21 @@ class MainClass:
         self.preprocessing = pD.PreProcessingData(self.PROJECT_PATH, self.PATH_IMAGES)
 
     def main_run(self):
-        # read = self.readimages
-        # pp = self.preprocessing
-        pass
+        read = self.readimages
+        pp = self.preprocessing
+        img, name = read.read_One_Image(self.PATH_IMAGES)
+        height_ori, width_ori, depth_ori = img.shape
+        print("Image original shape: \n Height:", height_ori, ", Width:", width_ori)
+        img_resize = pp.resize_Image(img, name)
+        height_res, width_res, depth_res = img_resize.shape
+        print("Image Resize shape: \n Height:", height_res, ", Width:", width_res)
+        easygui.msgbox("Image original shape: \n Height:" + str(height_ori) + "px, Width:" + str(width_ori) + "px" +
+                          "\n Image Resize shape: \n Height:" + str(height_res) + "px, Width:" + str(width_res) + "px",
+                          image=os.path.join(os.path.join(os.getcwd(), os.path.pardir),
+                                             'PreProcessing/ResizeImages/' + name),
+                          title="Image Shape - PreProcessing ")
 
 
 if __name__ == '__main__':
     tesis = MainClass()
+    tesis.main_run()
