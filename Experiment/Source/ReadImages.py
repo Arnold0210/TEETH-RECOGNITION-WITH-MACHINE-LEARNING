@@ -32,7 +32,7 @@ class LoadData:
     def read_One_Image(self, PATH):
         test_image = "100_0055.JPG"
         cristhian_mouth = "000_0001.JPG"
-        name = cristhian_mouth
+        name = test_image
         image_string = os.path.join(PATH, name)
         image = cv.imread(image_string, cv.IMREAD_COLOR)
         return image, name

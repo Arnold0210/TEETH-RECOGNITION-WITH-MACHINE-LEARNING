@@ -14,7 +14,7 @@ import cv2 as cv
 
 class PreProcessingData:
     path_resize = None
-    path_RGB2YCbCr = None
+    path_RGB2YCrCb = None
     path_segmentation = None
     path_project = None
     path_dataset = None
@@ -35,10 +35,10 @@ class PreProcessingData:
             else:
                 raise
         try:
-            if not os.path.exists(self.path_project + 'RGB2YCbCr'):
-                self.path_RGB2YCbCr = os.path.join(self.path_project, 'RGB2YCbCr')
-                os.mkdir(self.path_RGB2YCbCr)
-                print('RGB2YCbCr Directory Created')
+            if not os.path.exists(self.path_project + 'RGB2YCrCb'):
+                self.path_RGB2YCrCb = os.path.join(self.path_project, 'RGB2YCrCb')
+                os.mkdir(self.path_RGB2YCrCb)
+                print('RGB2YCrCb Directory Created')
         except OSError as e:
             if e.errno == errno.EEXIST:
                 print('RGB2YCbCr Directory Already Exists.')
@@ -64,9 +64,21 @@ class PreProcessingData:
             cv.imwrite(path_name_image, img)
         return img
 
-    def rgb_2_YCbCr(self, image):
-        img = cv.COLOR_BGR2YCrCb(image)
+    def rgb_2_YCrCb(self, image, name):
+        img = cv.cvtColor(image, cv.COLOR_RGB2YCR_CB)
+        path_name_image = os.path.join(self.path_RGB2YCrCb, name)
+        if os.path.exists(path_name_image):
+            pass
+        else:
+            cv.imwrite(path_name_image, img)
         return img
 
-    def segmentation(self, image):
-        pass
+    def segmentation(self, image, name):
+        img = cv.cvtColor(image,cv.COLOR_RGB2GRAY)
+        ret, thresh1 = cv.threshold(img, 127, 255, cv.THRESH_BINARY)
+        path_name_image = os.path.join(self.path_segmentation, name)
+        if os.path.exists(path_name_image):
+            pass
+        else:
+            cv.imwrite(path_name_image, thresh1)
+        return thresh1

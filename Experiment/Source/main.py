@@ -76,13 +76,17 @@ class MainClass:
         height_ori, width_ori, depth_ori = img.shape
         print("Image original shape: \n Height:", height_ori, ", Width:", width_ori)
         img_resize = pp.resize_Image(img, name)
-        height_res, width_res, depth_res = img_resize.shape
+        img_rgb2ycbcr = pp.rgb_2_YCrCb(img_resize,name)
+        img_segmentation = pp.segmentation(img_resize, name)
+        height_res, width_res, depth_res = img_rgb2ycbcr.shape
+        # img_resize.shape
+
         print("Image Resize shape: \n Height:", height_res, ", Width:", width_res)
         easygui.msgbox("Image original shape: \n Height:" + str(height_ori) + "px, Width:" + str(width_ori) + "px" +
-                          "\n Image Resize shape: \n Height:" + str(height_res) + "px, Width:" + str(width_res) + "px",
-                          image=os.path.join(os.path.join(os.getcwd(), os.path.pardir),
-                                             'PreProcessing/ResizeImages/' + name),
-                          title="Image Shape - PreProcessing ")
+                       "\n Image Resize shape: \n Height:" + str(height_res) + "px, Width:" + str(width_res) + "px",
+                       image=os.path.join(os.path.join(os.getcwd(), os.path.pardir),
+                                          'PreProcessing/Segmentation/' + name),
+                       title="Image Shape - PreProcessing ")
 
 
 if __name__ == '__main__':
