@@ -18,6 +18,8 @@ class PreProcessingData:
     path_segmentation = None
     path_project = None
     path_dataset = None
+    path_RGB2HSV = None
+    path_RGB2HSV_Full = None
 
     def __init__(self, PATH_PROJECT, PATH_DATASET):
 
@@ -54,6 +56,26 @@ class PreProcessingData:
                 print('Segmentation Directory Already Exists.')
             else:
                 raise
+        try:
+            if not os.path.exists(self.path_project + 'RGB2HSV'):
+                self.path_RGB2HSV = os.path.join(self.path_project, 'RGB2HSV')
+                os.mkdir(self.path_segmentation)
+                print('RGB2HSV Directory Created')
+        except OSError as e:
+            if e.errno == errno.EEXIST:
+                print('RGB2HSV Directory Already Exists.')
+            else:
+                raise
+        try:
+            if not os.path.exists(self.path_project + 'RGB2HSV_Full'):
+                self.path_RGB2HSV_Full = os.path.join(self.path_project, 'RGB2HSV_Full')
+                os.mkdir(self.path_segmentation)
+                print('RGB2HSV_Full Directory Created')
+        except OSError as e:
+            if e.errno == errno.EEXIST:
+                print('RGB2HSV_Full Directory Already Exists.')
+            else:
+                raise
 
     def resize_Image(self, image, name):
         img = cv.resize(image, (600, 400))
@@ -73,8 +95,26 @@ class PreProcessingData:
             cv.imwrite(path_name_image, img)
         return img
 
+    def rgb_2_hsv(self, image, name):
+        img = cv.cvtColor(image, cv.COLOR_RGB2HSV)
+        path_name_image = os.path.join(self.path_RGB2HSV, name)
+        if os.path.exists(path_name_image):
+            pass
+        else:
+            cv.imwrite(path_name_image, img)
+        return img
+
+    def rgb_2_hsv_Full(self, image, name):
+        img = cv.cvtColor(image, cv.COLOR_RGB2HSV_FULL)
+        path_name_image = os.path.join(self.path_RGB2HSV_Full, name)
+        if os.path.exists(path_name_image):
+            pass
+        else:
+            cv.imwrite(path_name_image, img)
+        return img
+
     def segmentation(self, image, name):
-        img = cv.cvtColor(image,cv.COLOR_RGB2GRAY)
+        img = cv.cvtColor(image, cv.COLOR_RGB2GRAY)
         ret, thresh1 = cv.threshold(img, 127, 255, cv.THRESH_BINARY)
         path_name_image = os.path.join(self.path_segmentation, name)
         if os.path.exists(path_name_image):
