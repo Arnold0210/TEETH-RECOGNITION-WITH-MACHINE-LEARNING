@@ -77,15 +77,17 @@ class MainClass:
         print("Image original shape: \n Height:", height_ori, ", Width:", width_ori)
         img_resize = pp.resize_Image(img, name)
         img_rgb2ycbcr = pp.rgb_2_YCrCb(img_resize,name)
+        img_rgb2hsv = pp.rgb_2_HSV(img_resize,name)
+        img_rgb2hsv = pp.rgb_2_LAB(img_resize, name)
+        img_rgb2hsv = pp.rgb_2_Lab(img_resize, name)
         img_segmentation = pp.segmentation(img_resize, name)
-        height_res, width_res, depth_res = img_rgb2ycbcr.shape
-        # img_resize.shape
+        height_res, width_res, depth_res = img_rgb2hsv.shape
 
         print("Image Resize shape: \n Height:", height_res, ", Width:", width_res)
         easygui.msgbox("Image original shape: \n Height:" + str(height_ori) + "px, Width:" + str(width_ori) + "px" +
                        "\n Image Resize shape: \n Height:" + str(height_res) + "px, Width:" + str(width_res) + "px",
                        image=os.path.join(os.path.join(os.getcwd(), os.path.pardir),
-                                          'PreProcessing/Segmentation/' + name),
+                                          'PreProcessing/HSV/' + name),
                        title="Image Shape - PreProcessing ")
 
 

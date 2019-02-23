@@ -15,11 +15,12 @@ import cv2 as cv
 class PreProcessingData:
     path_resize = None
     path_RGB2YCrCb = None
+    path_RGB2HSV = None
+    path_RGB2Lab = None
+    path_RGB2LAB = None
     path_segmentation = None
     path_project = None
     path_dataset = None
-    path_RGB2HSV = None
-    path_RGB2HSV_Full = None
 
     def __init__(self, PATH_PROJECT, PATH_DATASET):
 
@@ -47,6 +48,36 @@ class PreProcessingData:
             else:
                 raise
         try:
+            if not os.path.exists(self.path_project + 'HSV'):
+                self.path_RGB2HSV = os.path.join(self.path_project, 'HSV')
+                os.mkdir(self.path_RGB2HSV)
+                print('HSV Directory Created')
+        except OSError as e:
+            if e.errno == errno.EEXIST:
+                print('HSV Directory Already Exists.')
+            else:
+                raise
+        try:
+            if not os.path.exists(self.path_project + 'LAB'):
+                self.path_RGB2LAB = os.path.join(self.path_project, 'LAB')
+                os.mkdir(self.path_RGB2LAB)
+                print('LAB Directory Created')
+        except OSError as e:
+            if e.errno == errno.EEXIST:
+                print('LAB Directory Already Exists.')
+            else:
+                raise
+        try:
+            if not os.path.exists(self.path_project + 'Lab_'):
+                self.path_RGB2Lab = os.path.join(self.path_project, 'Lab_')
+                os.mkdir(self.path_RGB2Lab)
+                print('Lab_ Directory Created')
+        except OSError as e:
+            if e.errno == errno.EEXIST:
+                print('Lab_ Directory Already Exists.')
+            else:
+                raise
+        try:
             if not os.path.exists(self.path_project + 'Segmentation'):
                 self.path_segmentation = os.path.join(self.path_project, 'Segmentation')
                 os.mkdir(self.path_segmentation)
@@ -54,26 +85,6 @@ class PreProcessingData:
         except OSError as e:
             if e.errno == errno.EEXIST:
                 print('Segmentation Directory Already Exists.')
-            else:
-                raise
-        try:
-            if not os.path.exists(self.path_project + 'RGB2HSV'):
-                self.path_RGB2HSV = os.path.join(self.path_project, 'RGB2HSV')
-                os.mkdir(self.path_segmentation)
-                print('RGB2HSV Directory Created')
-        except OSError as e:
-            if e.errno == errno.EEXIST:
-                print('RGB2HSV Directory Already Exists.')
-            else:
-                raise
-        try:
-            if not os.path.exists(self.path_project + 'RGB2HSV_Full'):
-                self.path_RGB2HSV_Full = os.path.join(self.path_project, 'RGB2HSV_Full')
-                os.mkdir(self.path_segmentation)
-                print('RGB2HSV_Full Directory Created')
-        except OSError as e:
-            if e.errno == errno.EEXIST:
-                print('RGB2HSV_Full Directory Already Exists.')
             else:
                 raise
 
@@ -95,8 +106,8 @@ class PreProcessingData:
             cv.imwrite(path_name_image, img)
         return img
 
-    def rgb_2_hsv(self, image, name):
-        img = cv.cvtColor(image, cv.COLOR_RGB2HSV)
+    def rgb_2_HSV(self, image, name):
+        img = cv.cvtColor(image, cv.COLOR_RGB2HSV_FULL)
         path_name_image = os.path.join(self.path_RGB2HSV, name)
         if os.path.exists(path_name_image):
             pass
@@ -104,9 +115,28 @@ class PreProcessingData:
             cv.imwrite(path_name_image, img)
         return img
 
-    def rgb_2_hsv_Full(self, image, name):
-        img = cv.cvtColor(image, cv.COLOR_RGB2HSV_FULL)
-        path_name_image = os.path.join(self.path_RGB2HSV_Full, name)
+    def rgb_2_HSI(self, image, name):
+        img = cv.cvtColor(image, cv.COLOR_HS)
+        path_name_image = os.path.join(self.path_RGB2HSI, name)
+        if os.path.exists(path_name_image):
+            pass
+        else:
+            cv.imwrite(path_name_image, img)
+        return img
+
+    def rgb_2_LAB(self, image, name):
+        img = cv.cvtColor(image, cv.COLOR_RGB2LAB)
+        path_name_image = os.path.join(self.path_RGB2LAB, name)
+        if os.path.exists(path_name_image):
+            pass
+        else:
+            cv.imwrite(path_name_image, img)
+        return img
+
+    def rgb_2_Lab(self, image, name):
+        img = cv.cvtColor(image, cv.COLOR_RGB2Lab)
+        path_name_image = os.path.join(self.path_RGB2Lab, name)
+        print('Exitoso')
         if os.path.exists(path_name_image):
             pass
         else:
@@ -114,7 +144,7 @@ class PreProcessingData:
         return img
 
     def segmentation(self, image, name):
-        img = cv.cvtColor(image, cv.COLOR_RGB2GRAY)
+        img = cv.cvtColor(image,cv.COLOR_RGB2GRAY)
         ret, thresh1 = cv.threshold(img, 127, 255, cv.THRESH_BINARY)
         path_name_image = os.path.join(self.path_segmentation, name)
         if os.path.exists(path_name_image):

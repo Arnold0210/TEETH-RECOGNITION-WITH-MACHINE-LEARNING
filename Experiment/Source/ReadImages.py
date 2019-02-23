@@ -13,7 +13,7 @@ from tqdm import tqdm
 
 
 class LoadData:
-    PATH = ''
+    PATH = None
 
     def __init__(self, PATH_IMAGES):
         self.PATH = PATH_IMAGES
@@ -30,10 +30,9 @@ class LoadData:
         return images
 
     def read_One_Image(self, PATH):
-        test_image = "101_0092.JPG"
-		test_image2 = "101_0164.JPG"
-        cristhian_mouth = "101_0000.JPG"
-        name = test_image2
+        #test_image = "100_0055.JPG"
+        cristhian_mouth ="101_0000.JPG"
+        name = cristhian_mouth
         image_string = os.path.join(PATH, name)
         image = cv.imread(image_string, cv.IMREAD_COLOR)
         return image, name
