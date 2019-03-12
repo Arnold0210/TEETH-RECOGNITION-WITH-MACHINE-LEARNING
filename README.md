@@ -1,13 +1,20 @@
-
-<h1 align="center"><B> Teeth Recognition With Machine Learning</B></h1>
+<head>
+	<meta name="author"  content="Arnold Julian Herrera Quiñones - 625569 Cristhian Camilo Arce García - 625577">
+</head>
+<header>
+	<title>An Authomatic Color Classification Method in 2D Images of Human Teeth Based in machine Learning</title>
+	<h1 align="center">
+		<B> An Authomatic Color Classification Method in 2D Images of Human Teeth Based in machine Learning</B>
+	</h1>
+</header>
+<body>
 Arnold Julian Herrera Quiñones - Cristhian Camilo Arce García
-<p align="justify">
-    Tesis: Method to classification and recognition of hue in human teeth using image processing implementing techniques
-    of Machine Learning.
 
-    In this repository, an empirical comparison of different supervised learning algorithms is made for the automatic
-    recognition of hues in human teeth to help minimize the process of manufacturing dental prostheses.
-</p>
+Tesis: Method to classification and recognition of hue in human teeth using image processing implementing techniques of Machine Learning.
+
+In this repository, an empirical comparison of different supervised learning algorithms is made for the automatic
+   recognition of hues in human teeth to help minimize the process of manufacturing dental prostheses.
+
 
 The methodological For this specific project is divided into 5 stages which will be presented below:
 <ol type="1)">
@@ -27,3 +34,4 @@ The methodological For this specific project is divided into 5 stages which will
         specific case are 5 different groups since they refer to the hues in human teeth.
     </li>
 </ol>
+</body>
