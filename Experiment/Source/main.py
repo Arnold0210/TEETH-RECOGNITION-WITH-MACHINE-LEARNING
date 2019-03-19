@@ -1,4 +1,4 @@
-#  Copyright (c) 2019. Arnold Julian Herrera Quiñones -  Cristhian Camilo Arce García.
+#  Copyright (c) 2019. Arnold Julian Herrera Quinones -  Cristhian Camilo Arce Garcia.
 #  All Rights Reserved
 #
 #  This product is protected by copyright and distributed under
@@ -10,10 +10,10 @@ import errno
 import os
 
 import cv2 as cv
-import easygui
+#import easygui
 
-import Experiment.Source.PreProcessingData as pD
-import Experiment.Source.ReadImages as rI
+import PreProcessingData as pD
+import ReadImages as rI
 
 
 def show(image):
@@ -82,13 +82,13 @@ class MainClass:
         img_rgb2hsv = pp.rgb_2_Lab(img_resize, name)
         img_segmentation = pp.segmentation(img_resize, name)
         height_res, width_res, depth_res = img_rgb2hsv.shape
-
+        print("name",name)
         print("Image Resize shape: \n Height:", height_res, ", Width:", width_res)
-        easygui.msgbox("Image original shape: \n Height:" + str(height_ori) + "px, Width:" + str(width_ori) + "px" +
+        '''easygui.msgbox("Image original shape: \n Height:" + str(height_ori) + "px, Width:" + str(width_ori) + "px" +
                        "\n Image Resize shape: \n Height:" + str(height_res) + "px, Width:" + str(width_res) + "px",
                        image=os.path.join(os.path.join(os.getcwd(), os.path.pardir),
                                           'PreProcessing/HSV/' + name),
-                       title="Image Shape - PreProcessing ")
+                       title="Image Shape - PreProcessing ")'''
 
 
 if __name__ == '__main__':

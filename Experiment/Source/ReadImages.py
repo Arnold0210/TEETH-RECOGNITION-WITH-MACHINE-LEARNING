@@ -30,7 +30,7 @@ class LoadData:
         return images
 
     def read_One_Image(self, PATH):
-        #test_image = "100_0055.JPG"
+        test_image = "101_0092.JPG"#"100_0055.JPG"
         cristhian_mouth ="101_0000.JPG"
         name = cristhian_mouth
         image_string = os.path.join(PATH, name)
