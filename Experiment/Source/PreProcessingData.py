@@ -146,11 +146,11 @@ class PreProcessingData:
 
     def segmentation(self, image, name):
         img = cv.cvtColor(image,cv.COLOR_RGB2GRAY)
-        thresh1 = cv.adaptiveThreshold(img,255,cv.ADAPTIVE_THRESH_MEAN_C,cv.THRESH_BINARY,37,2)#threshold(img, 127, 255, cv.THRESH_BINARY)
-        path_name_image = os.path.join(self.path_segmentation, name)
+        ret,img= cv.threshold(img,127,255,cv.THRESH_BINARY)
+        #thresh1 = cv.adaptiveThreshold(img,255,cv.ADAPTIVE_THRESH_MEAN_C,cv.THRESH_BINARY,37,2)#threshold(img, 127, 255, cv.THRESH_BINARY)
+        path_name_image = os.path.join(self.path_segmentation,name)
         if os.path.exists(path_name_image):
             pass
         else:
-            cv.imwrite(path_name_image, thresh1)
-            print('esxsda')
-        return thresh1
+            cv.imwrite(path_name_image, img)
+        return img

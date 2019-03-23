@@ -10,7 +10,7 @@ import errno
 import os
 
 import cv2 as cv
-#import easygui
+import easygui
 
 import PreProcessingData as pD
 import ReadImages as rI
