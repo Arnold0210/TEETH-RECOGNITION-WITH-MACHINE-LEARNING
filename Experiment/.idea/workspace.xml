@@ -2,92 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d9911fd-9f42-4f95-b49f-e1cb7fa86121" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../DATASET/101_0086.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DATASET/101_0087.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DATASET/101_0088.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DATASET/101_0089.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DATASET/101_0090.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DATASET/101_0091.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DATASET/101_0092.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DATASET/101_0093.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DATASET/101_0094.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DATASET/101_0095.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DATASET/101_0096.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DATASET/101_0097.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DATASET/101_0098.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DATASET/101_0099.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DATASET/101_0100.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DATASET/101_0101.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DATASET/101_0102.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DATASET/101_0103.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DATASET/101_0104.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DATASET/101_0105.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DATASET/101_0106.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DATASET/101_0120.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DATASET/101_0121.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DATASET/101_0122.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/000_0001.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0000.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/000_0002.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0107.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/000_0003.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0108.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/000_0004.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0109.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/000_0005.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0110.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/000_0006.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0111.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/000_0007.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0113.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/000_0008.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0114.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/000_0009.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0115.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/000_0010.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0116.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/000_0011.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0117.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/000_0012.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0118.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0013.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0119.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0014.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0123.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0015.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0124.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0016.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0125.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0017.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0126.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0018.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0127.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0019.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0128.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0020.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0129.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0021.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0130.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0022.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0131.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0023.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0132.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0024.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0133.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0025.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0134.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0026.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0135.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0027.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0136.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0028.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0137.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0029.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0138.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0030.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0139.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0031.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0140.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0032.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0141.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0033.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0142.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0034.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0143.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0035.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0144.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0036.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0145.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0037.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0146.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0038.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0147.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0039.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0148.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0040.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0149.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0041.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0150.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0042.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0151.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0043.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0152.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0044.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0153.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0045.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0154.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0046.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0155.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0047.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0156.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0048.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0157.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0049.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0158.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0050.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0159.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0051.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0160.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0052.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0161.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0053.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0162.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0054.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0163.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0055.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0164.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0056.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0165.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0057.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0166.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0058.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0167.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DATASET/100_0059.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../DATASET/101_0168.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Experiment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Experiment.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/PreProcessingData.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PreProcessingData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ReadImages.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ReadImages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-884">
-              <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+            <state relative-caret-position="-950">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -112,10 +30,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Source/PreProcessingData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+            <state relative-caret-position="138">
+              <caret line="150" column="75" lean-forward="true" selection-start-line="150" selection-start-column="75" selection-end-line="150" selection-end-column="75" />
               <folding>
                 <element signature="e#344#356#0" expanded="true" />
+                <element signature="e#690#3337#0" />
               </folding>
             </state>
           </provider>
@@ -130,6 +49,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Tonality/main.py" />
+        <option value="$PROJECT_DIR$/Source/main.py" />
         <option value="$PROJECT_DIR$/Source/PreProcessingData.py" />
       </list>
     </option>
@@ -145,7 +65,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -153,15 +72,21 @@
               <item name="Experiment" type="b2602c69:ProjectViewProjectNode" />
               <item name="Experiment" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Experiment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Experiment" type="462c0819:PsiDirectoryNode" />
+              <item name="PreProcessing" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -179,6 +104,28 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Experiment" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Experiment" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -220,16 +167,17 @@
       <workItem from="1549299681438" duration="302000" />
       <workItem from="1549893775379" duration="205000" />
       <workItem from="1550468445784" duration="356000" />
+      <workItem from="1560802982181" duration="2553000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="863000" />
+    <option name="totallyTimeSpent" value="3416000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.123298034" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12481089" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -245,6 +193,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3289689" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3289689" />
+      <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" side_tool="true" weight="0.32980332" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -259,19 +208,23 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Tonality/main.py" />
+    <entry file="file://$PROJECT_DIR$/Source/FeatureExtraction.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Source/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-884">
-          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        <state relative-caret-position="-950">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Source/PreProcessingData.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        <state relative-caret-position="138">
+          <caret line="150" column="75" lean-forward="true" selection-start-line="150" selection-start-column="75" selection-end-line="150" selection-end-column="75" />
           <folding>
             <element signature="e#344#356#0" expanded="true" />
+            <element signature="e#690#3337#0" />
           </folding>
         </state>
       </provider>

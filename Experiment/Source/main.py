@@ -10,10 +10,10 @@ import errno
 import os
 
 import cv2 as cv
-import easygui
+#import easygui
 
-import PreProcessingData as pD
-import ReadImages as rI
+import Source.PreProcessingData as pD
+import Source.ReadImages as rI
 
 
 def show(image):

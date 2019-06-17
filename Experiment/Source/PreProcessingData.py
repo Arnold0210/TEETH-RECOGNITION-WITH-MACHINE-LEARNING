@@ -158,6 +158,7 @@ class PreProcessingData:
         contours= sorted(contours, key = cv.contourArea, reverse = True)[:10]
         c=contours[0]
         final = cv.drawContours(img, [c], -1, (255,0, 0), 3)
+        img_rgb =  cv.imread(image)
         mask = np.zeros(img_rgb.shape,np.uint8)
         new_image = cv.drawContours(mask,[c],0,255,-1,)
         new_image = cv.bitwise_and(img_rgb,img_rgb,mask=mask)
