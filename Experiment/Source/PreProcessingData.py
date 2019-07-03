@@ -141,7 +141,7 @@ class PreProcessingData:
         if os.path.exists(path_name_image):
             pass
         else:
-            cv.imwrite(path_name_imageucatolica, img)
+            cv.imwrite(path_name_image, img)
         return img
 
     def segmentation(self, image, name):
