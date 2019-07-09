@@ -8,8 +8,9 @@
 
 import errno
 import os
-import numpy as np
+
 import cv2 as cv
+import numpy as np
 
 
 class PreProcessingData:
@@ -168,12 +169,3 @@ class PreProcessingData:
         else:
             cv.imwrite(path_name_image, new_image)
         return new_image
-
-    def haar_cascade(self, image, name):
-        cv.imshow('facesin ' + name, image)
-        gray = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
-        smile_cascade = cv.CascadeClassifier('haarcascade_smile.xml')
-        detect_smile = smile_cascade.detectMultiScale(gray)
-        for (sx, sy, sw, sh) in detect_smile:
-            cv.rectangle(image, (sx, sy), (sx + sw, sy + sh), (0, 255, 0), 2)
-        cv.imshow('faces ' + name, image)
