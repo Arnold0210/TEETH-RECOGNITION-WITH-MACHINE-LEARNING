@@ -146,13 +146,7 @@ class PreProcessingData:
         return img
 
     def segmentation(self, image, name):
-        circle_image = np.zeros((500, 500), np.uint8)
-        cv.circle(circle_image, (250, 250), 100, 255, -1)
-        rectanle_image = np.zeros((500, 500), np.uint8)
-        cv.rectangle(rectanle_image, (250, 250), (400, 250), 100, 255, -1)
-        circle_And_rectangle_image = circle_image & rectanle_image
-        circle_or_rect_image = circle_image | rectanle_image
-
+        cv.imshow(name+'segm', image)
         '''if os.path.exists(path_name_image):
             pass
         else:

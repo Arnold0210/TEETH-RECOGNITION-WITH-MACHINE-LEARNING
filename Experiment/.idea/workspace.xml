@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d9911fd-9f42-4f95-b49f-e1cb7fa86121" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/arnoldherrera.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/arnoldherrera.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/HaarCascade_/HaarCascade_MouthPhoto.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/HaarCascade_/MouthHaarCascadeVIdeo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/HaarCascade_/HaarCascade.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/HaarCascade_/HaarCascade_SmileVideo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/PreProcessingData.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PreProcessingData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ReadImages.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ReadImages.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TeethDetection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TeethDetection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,21 +22,50 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="85" column="44" lean-forward="true" selection-start-line="85" selection-start-column="44" selection-end-line="85" selection-end-column="44" />
+            <state relative-caret-position="68">
+              <caret line="77" column="31" lean-forward="true" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/HaarCascade_/MouthHaarCascadeVIdeo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
               <folding>
-                <element signature="e#344#356#0" expanded="true" />
-                <element signature="e#842#2499#0" />
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Source/HaarCascade_/HaarCascade_MouthPhoto.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="59" lean-forward="true" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/PreProcessingData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="153" column="60" selection-start-line="153" selection-start-column="60" selection-end-line="153" selection-end-column="60" />
+            <state relative-caret-position="73">
+              <caret line="91" column="8" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/HaarCascade_/HaarCascade_SmileVideo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -44,8 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/ReadImages.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="289">
+              <caret line="36" column="56" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="36" selection-end-column="56" />
               <folding>
                 <element signature="e#344#353#0" expanded="true" />
               </folding>
@@ -75,10 +104,12 @@
       <list>
         <option value="$PROJECT_DIR$/Tonality/main.py" />
         <option value="$PROJECT_DIR$/Source/HaarCascade.py" />
-        <option value="$PROJECT_DIR$/Source/ReadImages.py" />
         <option value="$PROJECT_DIR$/Source/TeethDetection.py" />
         <option value="$PROJECT_DIR$/Source/main.py" />
+        <option value="$PROJECT_DIR$/Source/ReadImages.py" />
         <option value="$PROJECT_DIR$/Source/PreProcessingData.py" />
+        <option value="$PROJECT_DIR$/Source/HaarCascade_/MouthHaarCascadeVIdeo.py" />
+        <option value="$PROJECT_DIR$/Source/HaarCascade_/HaarCascade_MouthPhoto.py" />
       </list>
     </option>
   </component>
@@ -93,7 +124,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -106,10 +136,17 @@
               <item name="Experiment" type="462c0819:PsiDirectoryNode" />
               <item name="Source" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Experiment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Experiment" type="462c0819:PsiDirectoryNode" />
+              <item name="Source" type="462c0819:PsiDirectoryNode" />
+              <item name="HaarCascade_" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -141,7 +178,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.HaarCascade_MouthPhoto">
     <configuration name="HaarCascade" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Experiment" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -155,7 +192,45 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Source/HaarCascade_/HaarCascade.py" />
+      <option name="SCRIPT_NAME" value="B:\TEETH-RECOGNITION-WITH-MACHINE-LEARNING\Experiment\Source\HaarCascade_\HaarCascade_SmileVideo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="HaarCascade_MouthPhoto" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Experiment" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Source/HaarCascade_" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Source/HaarCascade_/HaarCascade_MouthPhoto.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MouthHaarCascadeVIdeo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Experiment" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Source/HaarCascade_" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Source/HaarCascade_/MouthHaarCascadeVIdeo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -190,9 +265,6 @@
       <module name="Experiment" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Source" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -210,6 +282,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.HaarCascade_MouthPhoto" />
+        <item itemvalue="Python.MouthHaarCascadeVIdeo" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.HaarCascade" />
       </list>
@@ -232,6 +306,7 @@
       <workItem from="1562184871282" duration="4052000" />
       <workItem from="1562252446280" duration="828000" />
       <workItem from="1562699233139" duration="4938000" />
+      <workItem from="1562716906214" duration="5578000" />
     </task>
     <task id="LOCAL-00001" summary="Add code about haar cascade to detect face and smile, fix main code.">
       <created>1562701365308</created>
@@ -240,11 +315,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562701365308</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fix code.">
+      <created>1562716957257</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1562716957257</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16357000" />
+    <option name="totallyTimeSpent" value="21935000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -257,8 +339,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19591528" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19894099" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -277,9 +360,9 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="R Graphics" order="4" />
-      <window_info anchor="right" id="R Packages" order="5" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32980332" />
+      <window_info anchor="right" id="R Graphics" order="4" weight="0.32980332" />
+      <window_info anchor="right" id="R Packages" order="5" visible="true" weight="0.22012103" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" order="7" side_tool="true" weight="0.32980332" />
     </layout>
@@ -290,19 +373,13 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Add code about haar cascade to detect face and smile, fix main code." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add code about haar cascade to detect face and smile, fix main code." />
+    <MESSAGE value="Fix code." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix code." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Tonality/main.py" />
-    <entry file="file://$PROJECT_DIR$/Source/HaarCascade_/HaarCascade.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Source/FeatureExtraction.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -320,31 +397,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Source/HaarCascade_/HaarCascade_SmileVideo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="77" column="31" lean-forward="true" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/PreProcessingData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="91" column="8" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Source/ReadImages.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="289">
+          <caret line="36" column="56" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="36" selection-end-column="56" />
           <folding>
             <element signature="e#344#353#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/main.py">
+    <entry file="file://$PROJECT_DIR$/Source/HaarCascade_/MouthHaarCascadeVIdeo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="85" column="44" lean-forward="true" selection-start-line="85" selection-start-column="44" selection-end-line="85" selection-end-column="44" />
+        <state relative-caret-position="221">
+          <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
           <folding>
-            <element signature="e#344#356#0" expanded="true" />
-            <element signature="e#842#2499#0" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/PreProcessingData.py">
+    <entry file="file://$PROJECT_DIR$/Source/HaarCascade_/HaarCascade_MouthPhoto.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="153" column="60" selection-start-line="153" selection-start-column="60" selection-end-line="153" selection-end-column="60" />
+        <state relative-caret-position="221">
+          <caret line="13" column="59" lean-forward="true" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
