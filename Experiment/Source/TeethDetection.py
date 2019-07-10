@@ -1,4 +1,3 @@
-
 #  Copyright (c) 2019. Arnold Julian Herrera Quiñones
 #  All Rights Reserved
 #
@@ -7,13 +6,22 @@
 #  It is forbidden the use partial or global of this algorithm  unless authors written permission.
 #
 
-import os, cv2 as cv, numpy as np, matplotlib.pyplot as plt, glob, csv, pandas as pd, imageio, random
+import csv
+import cv2 as cv
+import glob
+import imageio
+import matplotlib.pyplot as plt
+import numpy as np
+import os
+import pandas as pd
+import random
 from time import time
-from tqdm import tqdm
+
+from matplotlib import colors
 from progress.bar import Bar
 from scipy import ndimage as ndi
-from matplotlib import colors
 from sklearn.tree import DecisionTreeClassifier
+from tqdm import tqdm
 
 PATH = os.path.abspath(os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "DATASET - copia"))
 print(PATH)

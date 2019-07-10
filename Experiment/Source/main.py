@@ -76,19 +76,23 @@ class MainClass:
         height_ori, width_ori, depth_ori = img.shape
         print("Image original shape: \n Height:", height_ori, ", Width:", width_ori)
         img_resize = pp.resize_Image(img, name)
+        height_res, width_res, depth_res = img_resize.shape
+        print("name", name)
+        print("Image Resize shape: \n Height:", height_res, ", Width:", width_res)
         img_rgb2ycbcr = pp.rgb_2_YCrCb(img_resize, name)
         img_rgb2hsv = pp.rgb_2_HSV(img_resize, name)
         img_rgb2hsv = pp.rgb_2_LAB(img_resize, name)
         img_rgb2hsv = pp.rgb_2_Lab(img_resize, name)
-        # img_segmentation = pp.segmentation(img_resize, name)
-        height_res, width_res, depth_res = img_rgb2hsv.shape
-        print("name", name)
-        print("Image Resize shape: \n Height:", height_res, ", Width:", width_res)
+        img_Segmentation = pp.segmentation(img_resize, name)
         easygui.msgbox("Image original shape: \n Height:" + str(height_ori) + "px, Width:" + str(width_ori) + "px" +
-                   "\n Image Resize shape: \n Height:" + str(height_res) + "px, Width:" + str(width_res) + "px",
+                       "\n Image Resize shape: \n Height:" + str(height_res) + "px, Width:" + str(width_res) + "px",
                        image=os.path.join(os.path.join(os.getcwd(), os.path.pardir),
-                                      'PreProcessing/HSV/' + name),
+                                          'PreProcessing/Segmentation/' + name),
                        title="Image Shape - PreProcessing ")
+
+
 if __name__ == '__main__':
     tesis = MainClass()
     tesis.main_run()
+    print('Se ha finalizado la ejecución del experimento')
+    exit(0)

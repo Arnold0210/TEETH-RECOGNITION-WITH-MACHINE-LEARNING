@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d9911fd-9f42-4f95-b49f-e1cb7fa86121" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Experiment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Experiment.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/arnoldherrera.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/arnoldherrera.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/PreProcessingData.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PreProcessingData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ReadImages.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ReadImages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TeethDetection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TeethDetection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,28 +19,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="89" column="56" selection-start-line="89" selection-start-column="56" selection-end-line="89" selection-end-column="56" />
+            <state relative-caret-position="220">
+              <caret line="85" column="44" lean-forward="true" selection-start-line="85" selection-start-column="44" selection-end-line="85" selection-end-column="44" />
               <folding>
-                <element signature="e#344#360#0" expanded="true" />
+                <element signature="e#344#356#0" expanded="true" />
+                <element signature="e#842#2499#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/FeatureExtraction.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Source/PreProcessingData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="158" column="23" selection-start-line="158" selection-start-column="23" selection-end-line="158" selection-end-column="23" />
+            <state relative-caret-position="255">
+              <caret line="153" column="60" selection-start-line="153" selection-start-column="60" selection-end-line="153" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -48,20 +44,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/ReadImages.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+            <state relative-caret-position="461">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="e#344#353#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/TeethDetection.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="91" selection-start-line="9" selection-start-column="91" selection-end-line="9" selection-end-column="91" />
             </state>
           </provider>
         </entry>
@@ -76,6 +63,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Arnold Herrera &lt;arnoldjulianherreraquiones@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
@@ -83,8 +75,10 @@
       <list>
         <option value="$PROJECT_DIR$/Tonality/main.py" />
         <option value="$PROJECT_DIR$/Source/HaarCascade.py" />
-        <option value="$PROJECT_DIR$/Source/PreProcessingData.py" />
+        <option value="$PROJECT_DIR$/Source/ReadImages.py" />
+        <option value="$PROJECT_DIR$/Source/TeethDetection.py" />
         <option value="$PROJECT_DIR$/Source/main.py" />
+        <option value="$PROJECT_DIR$/Source/PreProcessingData.py" />
       </list>
     </option>
   </component>
@@ -152,6 +146,9 @@
       <module name="Experiment" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Source/HaarCascade_" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -193,6 +190,9 @@
       <module name="Experiment" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Source" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -231,12 +231,20 @@
       <workItem from="1560802982181" duration="2553000" />
       <workItem from="1562184871282" duration="4052000" />
       <workItem from="1562252446280" duration="828000" />
-      <workItem from="1562699233139" duration="1962000" />
+      <workItem from="1562699233139" duration="4938000" />
     </task>
+    <task id="LOCAL-00001" summary="Add code about haar cascade to detect face and smile, fix main code.">
+      <created>1562701365308</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1562701365308</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13381000" />
+    <option name="totallyTimeSpent" value="16357000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -249,7 +257,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19591528" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -266,7 +273,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" weight="0.32405892" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3289689" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49848714" visible="true" weight="0.32405892" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="12" sideWeight="0.49848714" visible="true" weight="0.30932897" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -280,28 +287,15 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="Add code about haar cascade to detect face and smile, fix main code." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add code about haar cascade to detect face and smile, fix main code." />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Tonality/main.py" />
-    <entry file="file://$PROJECT_DIR$/Source/FeatureExtraction.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/ReadImages.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
-          <folding>
-            <element signature="e#344#353#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/TeethDetection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="91" selection-start-line="9" selection-start-column="91" selection-end-line="9" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Source/HaarCascade_/HaarCascade.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -309,20 +303,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/PreProcessingData.py">
+    <entry file="file://$PROJECT_DIR$/Source/FeatureExtraction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="158" column="23" selection-start-line="158" selection-start-column="23" selection-end-line="158" selection-end-column="23" />
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/TeethDetection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="229" column="34" lean-forward="true" selection-start-line="229" selection-start-column="34" selection-end-line="229" selection-end-column="34" />
+          <folding>
+            <element signature="e#312#413#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/ReadImages.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#344#353#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Source/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="89" column="56" selection-start-line="89" selection-start-column="56" selection-end-line="89" selection-end-column="56" />
+        <state relative-caret-position="220">
+          <caret line="85" column="44" lean-forward="true" selection-start-line="85" selection-start-column="44" selection-end-line="85" selection-end-column="44" />
           <folding>
-            <element signature="e#344#360#0" expanded="true" />
+            <element signature="e#344#356#0" expanded="true" />
+            <element signature="e#842#2499#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/PreProcessingData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="153" column="60" selection-start-line="153" selection-start-column="60" selection-end-line="153" selection-end-column="60" />
         </state>
       </provider>
     </entry>

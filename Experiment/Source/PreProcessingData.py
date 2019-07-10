@@ -146,26 +146,15 @@ class PreProcessingData:
         return img
 
     def segmentation(self, image, name):
-        img = cv.cvtColor(image, cv.COLOR_RGB2GRAY)
-        ret, img = cv.threshold(img, 127, 255, cv.THRESH_BINARY_INV)
-        thresh1 = cv.adaptiveThreshold(img, 255, cv.ADAPTIVE_THRESH_MEAN_C, cv.THRESH_BINARY, 37,
-                                       2)  # threshold(img, 127, 255, cv.THRESH_BINARY)
-        path_name_image = os.path.join(self.path_segmentation, "mask_" + name)
-        equalize = cv.equalizeHist(img)
-        canny_image = cv.Canny(equalize, 250, 255)
-        canny_image = cv.convertScaleAbs(canny_image)
-        kernel = np.ones((3, 3), np.uint8)
-        dilated_image = cv.dilate(canny_image, kernel, iterations=1)
-        new, contours = cv.findContours(dilated_image, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
-        contours = sorted(contours, key=cv.contourArea, reverse=True)[:10]
-        c = contours[0]
-        final = cv.drawContours(img, [c], -1, (255, 0, 0), 3)
-        img_rgb = cv.imread(image)
-        mask = np.zeros(img_rgb.shape, np.uint8)
-        new_image = cv.drawContours(mask, [c], 0, 255, -1, )
-        new_image = cv.bitwise_and(img_rgb, img_rgb, mask=mask)
-        if os.path.exists(path_name_image):
+        circle_image = np.zeros((500, 500), np.uint8)
+        cv.circle(circle_image, (250, 250), 100, 255, -1)
+        rectanle_image = np.zeros((500, 500), np.uint8)
+        cv.rectangle(rectanle_image, (250, 250), (400, 250), 100, 255, -1)
+        circle_And_rectangle_image = circle_image & rectanle_image
+        circle_or_rect_image = circle_image | rectanle_image
+
+        '''if os.path.exists(path_name_image):
             pass
         else:
             cv.imwrite(path_name_image, new_image)
-        return new_image
+        return new_image'''
