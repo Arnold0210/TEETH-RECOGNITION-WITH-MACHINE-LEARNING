@@ -7,16 +7,16 @@
 #
 
 import csv
-import cv2 as cv
 import glob
-import imageio
-import matplotlib.pyplot as plt
-import numpy as np
 import os
-import pandas as pd
 import random
 from time import time
 
+import cv2 as cv
+import imageio
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
 from matplotlib import colors
 from progress.bar import Bar
 from scipy import ndimage as ndi
