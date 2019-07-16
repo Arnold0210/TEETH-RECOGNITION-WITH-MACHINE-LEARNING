@@ -34,5 +34,5 @@ class LoadData:
         cristhian_mouth = "101_0000.JPG"
         name = cristhian_mouth
         image_string = os.path.join(PATH, "101_0000.JPG")
-        image = cv.imread(image_string, cv.IMREAD_COLOR)
+        image = cv.imread(image_string, 1)
         return image, name

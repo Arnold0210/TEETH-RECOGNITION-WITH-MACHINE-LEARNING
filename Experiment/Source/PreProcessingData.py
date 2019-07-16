@@ -10,7 +10,6 @@ import errno
 import os
 
 import cv2 as cv
-import numpy as np
 
 
 class PreProcessingData:
@@ -90,7 +89,7 @@ class PreProcessingData:
                 raise
 
     def resize_Image(self, image, name):
-        img = cv.resize(image, (600, 400))
+        img = cv.resize(image, (600, 400), interpolation=cv.INTER_AREA)
         path_name_image = os.path.join(self.path_resize, name)
         if os.path.exists(path_name_image):
             pass
@@ -116,39 +115,54 @@ class PreProcessingData:
             cv.imwrite(path_name_image, img)
         return img
 
-    def rgb_2_HSI(self, image, name):
-        img = cv.cvtColor(image, cv.COLOR_HS)
-        path_name_image = os.path.join(self.path_RGB2HSI, name)
-        if os.path.exists(path_name_image):
-            pass
-        else:
-            cv.imwrite(path_name_image, img)
-        return img
 
-    def rgb_2_LAB(self, image, name):
-        img = cv.cvtColor(image, cv.COLOR_RGB2LAB)
-        path_name_image = os.path.join(self.path_RGB2LAB, name)
-        if os.path.exists(path_name_image):
-            pass
-        else:
+''' def rgb_2_HSI(self, image, name):
+     img = cv.cvtColor(image, cv.COLOR_HS)
+     path_name_image = os.path.join(self.path_RGB2HSI, name)
+     if os.path.exists(path_name_image):
+         pass
+     else:
+         cv.imwrite(path_name_image, img)
+     return img'''
 
-            cv.imwrite(path_name_image, img)
-        return img
 
-    def rgb_2_Lab(self, image, name):
-        img = cv.cvtColor(image, cv.COLOR_RGB2Lab)
-        path_name_image = os.path.join(self.path_RGB2Lab, name)
-        print('Exitoso RGB2_LAB')
-        if os.path.exists(path_name_image):
-            pass
-        else:
-            cv.imwrite(path_name_image, img)
-        return img
+def rgb_2_LAB(self, image, name):
+    img = cv.cvtColor(image, cv.COLOR_RGB2LAB)
+    path_name_image = os.path.join(self.path_RGB2LAB, name)
+    if os.path.exists(path_name_image):
+        pass
+    else:
 
-    def segmentation(self, image, name):
-        cv.imshow(name+'segm', image)
-        '''if os.path.exists(path_name_image):
-            pass
-        else:
-            cv.imwrite(path_name_image, new_image)
-        return new_image'''
+        cv.imwrite(path_name_image, img)
+    return img
+
+
+def rgb_2_Lab(self, image, name):
+    img = cv.cvtColor(image, cv.COLOR_RGB2Lab)
+    path_name_image = os.path.join(self.path_RGB2Lab, name)
+    print('Exitoso RGB2_LAB')
+    if os.path.exists(path_name_image):
+        pass
+    else:
+        cv.imwrite(path_name_image, img)
+    return img
+
+
+def bgr_2_Lab(self, image, name):
+    img = cv.cvtColor(image, cv.COLOR_RGB2Lab)
+    path_name_image = os.path.join(self.path_RGB2Lab, name)
+    print('Exitoso RGB2_LAB')
+    if os.path.exists(path_name_image):
+        pass
+    else:
+        cv.imwrite(path_name_image, img)
+    return img
+
+
+'''def segmentation(self, image, name):
+    cv.imshow(name + 'segm', image)
+    if os.path.exists(path_name_image):
+        pass
+    else:
+        cv.imwrite(path_name_image, new_image)
+    return new_image'''
