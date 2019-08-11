@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d9911fd-9f42-4f95-b49f-e1cb7fa86121" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FeatureExtraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FeatureExtraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/PreProcessingData.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PreProcessingData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ReadImages.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ReadImages.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="1d9911fd-9f42-4f95-b49f-e1cb7fa86121" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Source/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="89" column="59" selection-start-line="89" selection-start-column="57" selection-end-line="89" selection-end-column="59" />
+            <state relative-caret-position="809">
+              <caret line="99" column="49" selection-start-line="99" selection-start-column="49" selection-end-line="99" selection-end-column="49" />
               <folding>
                 <element signature="e#344#356#0" expanded="true" />
               </folding>
@@ -240,7 +234,7 @@
       <workItem from="1563291798551" duration="1300000" />
       <workItem from="1563307740512" duration="395000" />
       <workItem from="1563310059361" duration="174000" />
-      <workItem from="1563310259094" duration="6321000" />
+      <workItem from="1563310259094" duration="6924000" />
     </task>
     <task id="LOCAL-00001" summary="Add code about haar cascade to detect face and smile, fix main code.">
       <created>1562701365308</created>
@@ -260,7 +254,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37265000" />
+    <option name="totallyTimeSpent" value="37868000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -280,7 +274,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32569557" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32569557" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -393,8 +387,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Source/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="89" column="59" selection-start-line="89" selection-start-column="57" selection-end-line="89" selection-end-column="59" />
+        <state relative-caret-position="809">
+          <caret line="99" column="49" selection-start-line="99" selection-start-column="49" selection-end-line="99" selection-end-column="49" />
           <folding>
             <element signature="e#344#356#0" expanded="true" />
           </folding>
