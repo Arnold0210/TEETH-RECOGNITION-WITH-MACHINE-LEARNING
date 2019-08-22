@@ -1,0 +1,2 @@
+This dataset is authored by Arnold Herrera and Cristhian Arce, both students of the Catholic University of Colombia.
+This dataset was constructed taking 3 imagenes per people from the mouth of the people to complete the amount of 300 images that will be used as data to develo a tooth tone recognition experiment.
