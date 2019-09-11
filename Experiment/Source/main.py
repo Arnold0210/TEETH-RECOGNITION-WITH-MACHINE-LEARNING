@@ -1,4 +1,4 @@
-#  Copyright (c) 2019. Arnold Julian Herrera Quinones -  Cristhian Camilo Arce Garcia.
+#  Copyright (c) 2019. Arnold Julian Herrera Quiñones -  Cristhian Camilo Arce Garcia.
 #  All Rights Reserved
 #
 #  This product is protected by copyright and distributed under
@@ -9,7 +9,6 @@
 import errno
 import os
 import sys
-
 import cv2 as cv
 
 import Source.FeatureExtraction as fE
@@ -143,6 +142,10 @@ class MainClass:
 
             # Blur image slightly
             name_point, blurimage = pp.blurImage(img_resize, name_point)
+            file_ = open(os.path.join(self.PROJECT_PATH,'Pruebas')+name_point+'.txt',"w")
+            for i in blurimage:
+                file_.write(str(i))
+            file_.close()
             pp.show_mask(blurimage, name_point)
             pp.overlay_mask(blurimage, img_resize, name_point)
 

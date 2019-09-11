@@ -22,6 +22,12 @@ class PreProcessingData:
     path_RGB2LAB = None
     path_segmentation = None
     path_BarPlot = None
+    path_BarPlotCh1 = None
+    path_BarPlotCh2 = None
+    path_BarPlotCh3 = None
+    path_Mask = None
+    path_Mask_Overlay = None
+    path_Inverse = None
     path_project = None
     path_dataset = None
 
@@ -29,6 +35,16 @@ class PreProcessingData:
 
         self.path_project = os.path.join(PATH_PROJECT, 'PreProcessing')
         self.path_dataset = PATH_DATASET
+        try:
+            if not os.path.exists(self.path_project + 'Segmentation'):
+                self.path_segmentation = os.path.join(self.path_project, 'Segmentation')
+                os.mkdir(self.path_segmentation)
+                print('Segmentation Directory Created')
+        except OSError as e:
+            if e.errno == errno.EEXIST:
+                print('Segmentation Directory Already Exists.')
+            else:
+                raise
         try:
             if not os.path.exists(os.path.join(self.path_project, 'Segmentation')+ 'BarPlot'):
                 self.path_BarPlot = os.path.join(os.path.join(self.path_project, 'Segmentation'), 'BarPlot')
@@ -39,6 +55,78 @@ class PreProcessingData:
             if e.errno == errno.EEXIST:
 
                 print('BarPlot Directory Already Exists.')
+            else:
+                raise
+        try:
+            if not os.path.exists(os.path.join(self.path_project, 'Segmentation')+ 'BarPlotCh1'):
+                self.path_BarPlotCh1 = os.path.join(os.path.join(self.path_project, 'Segmentation'), 'BarPlotCh1')
+
+                os.mkdir(self.path_BarPlotCh1)
+                print('BarPlotCh1 Directory Created')
+        except OSError as e:
+            if e.errno == errno.EEXIST:
+
+                print('BarPlotCh1 Directory Already Exists.')
+            else:
+                raise
+        try:
+            if not os.path.exists(os.path.join(self.path_project, 'Segmentation')+ 'BarPlotCh2'):
+                self.path_BarPlotCh2 = os.path.join(os.path.join(self.path_project, 'Segmentation'), 'BarPlotCh2')
+
+                os.mkdir(self.path_BarPlotCh2)
+                print('BarPlotCh2 Directory Created')
+        except OSError as e:
+            if e.errno == errno.EEXIST:
+
+                print('BarPlotCh2 Directory Already Exists.')
+            else:
+                raise
+        try:
+            if not os.path.exists(os.path.join(self.path_project, 'Segmentation')+ 'BarPlotCh3'):
+                self.path_BarPlotCh3 = os.path.join(os.path.join(self.path_project, 'Segmentation'), 'BarPlotCh3')
+
+                os.mkdir(self.path_BarPlotCh3)
+                print('BarPlotCh3 Directory Created')
+        except OSError as e:
+            if e.errno == errno.EEXIST:
+
+                print('BarPlotCh3 Directory Already Exists.')
+            else:
+                raise
+        try:
+            if not os.path.exists(os.path.join(self.path_project, 'Segmentation')+ 'Mask'):
+                self.path_Mask = os.path.join(os.path.join(self.path_project, 'Segmentation'), 'Mask')
+
+                os.mkdir(self.path_Mask)
+                print('Mask Directory Created')
+        except OSError as e:
+            if e.errno == errno.EEXIST:
+
+                print('Mask Directory Already Exists.')
+            else:
+                raise
+        try:
+            if not os.path.exists(os.path.join(self.path_project, 'Segmentation')+ 'MaskOverlay'):
+                self.path_Mask_Overlay = os.path.join(os.path.join(self.path_project, 'Segmentation'), 'MaskOverlay')
+
+                os.mkdir(self.path_Mask_Overlay)
+                print('MaskOverlay Directory Created')
+        except OSError as e:
+            if e.errno == errno.EEXIST:
+
+                print('MaskOverlay Directory Already Exists.')
+            else:
+                raise
+        try:
+            if not os.path.exists(os.path.join(self.path_project, 'Segmentation')+ 'Inverse'):
+                self.path_Inverse = os.path.join(os.path.join(self.path_project, 'Segmentation'), 'Inverse')
+
+                os.mkdir(self.path_Inverse)
+                print('Inverse Directory Created')
+        except OSError as e:
+            if e.errno == errno.EEXIST:
+
+                print('Inverse Directory Already Exists.')
             else:
                 raise
         try:
@@ -97,16 +185,7 @@ class PreProcessingData:
                 print('Lab_ Directory Already Exists.')
             else:
                 raise
-        try:
-            if not os.path.exists(self.path_project + 'Segmentation'):
-                self.path_segmentation = os.path.join(self.path_project, 'Segmentation')
-                os.mkdir(self.path_segmentation)
-                print('Segmentation Directory Created')
-        except OSError as e:
-            if e.errno == errno.EEXIST:
-                print('Segmentation Directory Already Exists.')
-            else:
-                raise
+
 
     def resize_Image(self, image, name):
         img = cv.resize(image, (600, 400), interpolation=cv.INTER_AREA)
@@ -210,13 +289,13 @@ class PreProcessingData:
         histr = np.array(histr)
         # print(range(0,180))
         x = list(range(0, 180))
-        print(histr.shape)
-        print(len(x))
-        print(colours.shape)
+        #print(histr.shape)
+        #print(len(x))
+        #print(colours.shape)
         for i in (x):
             plt.bar(x[i], histr[i], color=colours[i], edgecolor=colours[i], width=1)
             plt.title('Hue')
-        plt.savefig(self.path_BarPlot + '\\BAR_CHART_HUE_' + name)
+        plt.savefig(self.path_BarPlotCh1 + '\\BAR_CHART_HUE_' + name)
 
         # Saturation
         plt.figure(figsize=(20, 3))
@@ -228,7 +307,7 @@ class PreProcessingData:
             plt.bar(x[i], histr[i], color=colours[i], edgecolor=colours[i], width=1)
             # plt.bar(range(0, 256), histr, color=colours, edgecolor=colours, width=1)
             plt.title('Saturation')
-        plt.savefig(self.path_BarPlot + '\\BAR_CHART_SATURATION_' + name)
+        plt.savefig(self.path_BarPlotCh2 + '\\BAR_CHART_SATURATION_' + name)
         # Value
         plt.figure(figsize=(20, 3))
         histr = cv.calcHist([image], [2], None, [256], [0, 256])
@@ -239,14 +318,14 @@ class PreProcessingData:
             plt.bar(x[i], histr[i], color=colours[i], edgecolor=colours[i], width=1)
             # plt.bar(range(0, 256), histr, color=colours, edgecolor=colours, width=1)
             plt.title('Value')
-        plt.savefig(self.path_BarPlot + '\\BAR_CHART_VALUE_' + name)
+        plt.savefig(self.path_BarPlotCh3 + '\\BAR_CHART_VALUE_' + name)
 
     def show_mask(self, mask, name):
         namefoldersplit = str.split(name, '.')
         namefolder = namefoldersplit[0]
         plt.figure(figsize=(10, 10))
         plt.imshow(mask, cmap='gray')
-        plt.savefig(self.path_BarPlot + '\\MASK_' + name)
+        plt.savefig(self.path_Mask + '\\MASK_' + name)
 
     def overlay_mask(self, mask, image, name):
         namefoldersplit = str.split(name, '.')
@@ -254,7 +333,7 @@ class PreProcessingData:
         rgb_mask = cv.cvtColor(mask, cv.COLOR_GRAY2RGB)
         img = cv.addWeighted(rgb_mask, 0.5, image, 0.5, 0)
         plt.imshow(img)
-        plt.savefig(self.path_BarPlot + '\\MASKOVERLAY_' + name)
+        plt.savefig(self.path_Mask_Overlay + '\\MASKOVERLAY_' + name)
 
 
     def blurImage(self, image, name):
