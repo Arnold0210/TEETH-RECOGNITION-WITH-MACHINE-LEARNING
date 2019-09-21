@@ -1,4 +1,4 @@
-#  Copyright (c) 2019. Arnold Julian Herrera Quinones -  Cristhian Camilo Arce Garcia.
+#  Copyright (c) 2019. Arnold Julian Herrera Quiñones -  Cristhian Camilo Arce Garcia.
 #  All Rights Reserved
 #
 #  This product is protected by copyright and distributed under
@@ -9,15 +9,13 @@
 import errno
 import os
 import sys
-
 import cv2 as cv
-import easygui
 
 import Source.FeatureExtraction as fE
 import Source.PreProcessingData as pD
 import Source.ReadImages as rI
 
-import matplotlib.pyplot as plt
+
 def show(image):
     cv.imshow('Imagen ', image)
     cv.waitKey(0)
@@ -28,6 +26,8 @@ class MainClass:
     PROJECT_PATH = os.path.join(os.getcwd(), os.path.pardir)
     PATH_IMAGES = os.path.abspath(
         os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "DATASET"))
+    PATH_IMAGES_SNIPPING = os.path.abspath(
+        os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "DATASET - Recortado"))
     readimages = None
     preprocessing = None
     featureExtraction = None
@@ -70,39 +70,89 @@ class MainClass:
             else:
                 raise
         self.readimages = rI.LoadData(self.PATH_IMAGES)
-        self.preprocessing = pD.PreProcessingData(self.PROJECT_PATH, self.PATH_IMAGES)
+        self.preProcessing = pD.PreProcessingData(self.PROJECT_PATH, self.PATH_IMAGES)
         self.featureExtraction = fE.FeatureExtraction(self.PROJECT_PATH, self.PATH_IMAGES)
 
     def main_run(self):
+        # Se declaran las clases para poder utilizar los elementos
         read = self.readimages
-        pp = self.preprocessing
+        pp = self.preProcessing
         fe = self.featureExtraction
-        img, name = read.read_One_Image(self.PATH_IMAGES)
+
+        # Se lee el nombre y la imagen que se encuentre en el PATH del dataset ORIGINAL
+        # img, name = read.read_One_Image(self.PATH_IMAGES)
+        # Se lee el nombre y la imagen que se encuentre en el PATH del dataset RECORTADO
+        img, name = read.read_One_Image(self.PATH_IMAGES_SNIPPING)
+
+        # Se obtiene las dimensiones de la imagen original
         height_ori, width_ori, depth_ori = img.shape
-        print("Image original shape: \n Height:", height_ori, ", Width:", width_ori)
+        # print("Image original shape: \n Height:", height_ori, ", Width:", width_ori)
+
+        # Se realiza un ajuste de tamaño para reducir la imagen a unas dimensiones de 600x400
         img_resize = pp.resize_Image(img, name)
-        img_resize = cv.cvtColor(img_resize,cv.COLOR_BGR2RGB)
-        plt.imshow(img_resize)
-        plt.savefig(os.path.join(os.path.join(os.getcwd(), os.path.pardir),'FeatureExtraction/GetColors/Original' + name))
-        height_res, width_res, depth_res = img_resize.shape
-        print("name", name)
-        print("Image Resize shape: \n Height:", height_res, ", Width:", width_res)
-        rgbcolors, hexcolors = fe.get_colors(img_resize, 15, True, 'plot_' + name)
-        print("RGB:\n", rgbcolors, "\n", "hexcolors:\n", hexcolors)
+
+        # La imagen reajustada se convierte de BGR a RGB
+        img_resize = cv.cvtColor(img_resize, cv.COLOR_BGR2RGB)
+        # Se convierte la imagen de RGB a HSV
+        hsv_image = pp.rgb_2_HSV(img_resize, name)
+        # Se saca la imagen en pila de tono de rojos
+        stack, name = pp.stackColors(hsv_image, name)
+        # Se saca los histogramas por imagen para determinar el rango de color de los dientes
+        pp.hsv_hist(hsv_image, name)
+        #
+        # plt.imshow(img_resize)
+        # Blur image slightly
+        name, blurimage = pp.blurImage(img_resize, name)
+        pp.show_mask(blurimage, name)
+        pp.overlay_mask(blurimage, img_resize, name)
+
+        # Se obtiene la rueda cromatica de la imágen
+        # pp.getChromatiColor(img_resize,name,fe)
+
         # img_rgb2ycbcr = pp.rgb_2_YCrCb(img_resize, name)
-        # img_rgb2hsv = pp.rgb_2_HSV(img_resize, name)
-        # img_rgb2hsv = pp.rgb_2_LAB(img_resize, name)
-        # img_rgb2hsv = pp.rgb_2_Lab(img_resize, name)
-        # img_Segmentation = pp.segmentation(img_resize, name)
-        easygui.msgbox("Image original shape: \n Height:" + str(height_ori) + "px, Width:" + str(width_ori) + "px" +
-                       "\n Image Resize shape: \n Height:" + str(height_res) + "px, Width:" + str(width_res) + "px",
-                       image=os.path.join(os.path.join(os.getcwd(), os.path.pardir),
-                                          'PreProcessing/ResizeImages/' + name),
-                       title="Image Shape - PreProcessing ")
+        img_rgb2hsv = pp.rgb_2_HSV(img_resize, name)
+
+    '''easygui.msgbox("Image original shape: \n Height:" + str(height_ori) + "px, Width:" + str(width_ori) + "px" +
+                   "\n Image Resize shape: \n Height:" + str(height_res) + "px, Width:" + str(width_res) + "px",
+                   image=os.path.join(os.path.join(os.getcwd(), os.path.pardir),
+                                      'PreProcessing/ResizeImages/' + name),
+                   title="Image Shape - PreProcessing ")'''
+
+    def main_alldataset(self):
+        # Se declaran las clases para poder utilizar los elementos
+        read = self.readimages
+        pp = self.preProcessing
+        fe = self.featureExtraction
+        images, names = read.read_Images(self.PATH_IMAGES_SNIPPING)
+
+        for image_point, name_point in zip(images, names):
+            img_resize = pp.resize_Image(image_point, name_point)
+
+            # La imagen reajustada se convierte de BGR a RGB
+            img_resize = cv.cvtColor(img_resize, cv.COLOR_BGR2RGB)
+
+            # Se convierte la imagen de RGB a HSV
+            hsv_image = pp.rgb_2_HSV(img_resize, name_point)
+
+            # Se saca la imagen en pila de tono de rojos
+            stack, name_point = pp.stackColors(hsv_image, name_point)
+
+            # Se saca los histogramas por imagen para determinar el rango de color de los dientes
+            pp.hsv_hist(hsv_image, name_point)
+
+            # Blur image slightly
+            name_point, blurimage = pp.blurImage(img_resize, name_point)
+            file_ = open(os.path.join(self.PROJECT_PATH,'Pruebas')+name_point+'.txt',"w")
+            for i in blurimage:
+                file_.write(str(i))
+            file_.close()
+            pp.show_mask(blurimage, name_point)
+            pp.overlay_mask(blurimage, img_resize, name_point)
 
 
 if __name__ == '__main__':
     tesis = MainClass()
-    tesis.main_run()
+    # tesis.main_run()
+    tesis.main_alldataset()
     print('Se ha finalizado la ejecución del experimento')
     sys.exit(0)
