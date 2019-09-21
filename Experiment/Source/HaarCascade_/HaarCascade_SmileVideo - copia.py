@@ -17,7 +17,7 @@ def detect(gray, frame):
 
 
 #video_capture = cv.VideoCapture(0)
-frame = cv.imread('E.JPG')
+frame = cv.imread('C:\\Users\\Cristhian\\TEETH-RECOGNITION-WITH-MACHINE-LEARNING\\DATASET-Recortado\\101_0001.JPG')
 frame=cv.resize(frame,(400,400))
 #while True:
     # Captures video_capture frame by frame
