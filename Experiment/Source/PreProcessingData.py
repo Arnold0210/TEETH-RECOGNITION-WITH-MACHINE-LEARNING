@@ -273,7 +273,7 @@ class PreProcessingData:
         hsv_stack = np.vstack(images)
         rgb_stack = cv.cvtColor(hsv_stack, cv.COLOR_HSV2RGB)
         plt.imshow(rgb_stack)
-        plt.savefig(self.path_BarPlot + '\\BAR_StackColor_' + name, rgb_stack)
+        plt.savefig(self.path_BarPlot + '\\BAR_StackColor_' + name)
         return rgb_stack, name
 
     def hsv_hist(self, image, name):

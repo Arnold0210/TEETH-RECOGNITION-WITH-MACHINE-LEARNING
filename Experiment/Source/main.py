@@ -147,6 +147,7 @@ class MainClass:
             for i in blurimage:
                 file_.write(str(i))
             file_.close()'''
+            # A partir del rango de color, se saca una máscara donde se ubican los dientes y se procede a
             mask = pp.findBiggestContour(blurimage, name_point)
             channelR, channelG, channelB = cv.split(img_resize)
             red = fe.getFeaturesVector(channelR, mask)
@@ -154,19 +155,29 @@ class MainClass:
             blue = fe.getFeaturesVector(channelB, mask)
             colores = ["RED", "GREEN", "BLUE"]
             imagen = [red, green, blue]
+            filefeaturespath = os.path.join(os.path.join(self.PROJECT_PATH, 'FeatureExtraction'), 'features.csv')
+            print(str(filefeaturespath))
 
+            if not (os.path.exists(filefeaturespath) or os.path.isfile(filefeaturespath)):
+                filefeatures = open(filefeaturespath, "w")
+            else:
+                filefeatures = open(filefeaturespath, "a")
             features = name_point + ":"
-            for j in range(0, len(img_resize)):
+            for j in range(0, len(imagen)):
                 features += str(fe.meanVector(imagen[j])) + "," + str(fe.varVector(imagen[j])) + "," + str(
-                    fe.skewVector(imagen[j]))
+                    fe.skewVector(imagen[j])) + ";"
             print(features)
+            filefeatures.write(features)
+            filefeatures.write('\n')
+            filefeatures.close()
             features = ""
             pp.show_mask(blurimage, name_point)
             pp.overlay_mask(blurimage, img_resize, name_point)
 
-            if __name__ == '__main__':
-                tesis = MainClass()
-            # tesis.main_run()
-            tesis.main_alldataset()
-            print('Se ha finalizado la ejecución del experimento')
-            sys.exit(0)
+
+if __name__ == '__main__':
+    tesis: MainClass = MainClass()
+    # tesis.main_run()
+    tesis.main_alldataset()
+    print('Se ha finalizado la ejecución del experimento')
+    sys.exit(0)

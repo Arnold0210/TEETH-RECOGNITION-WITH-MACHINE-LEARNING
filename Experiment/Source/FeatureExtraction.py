@@ -72,11 +72,11 @@ class FeatureExtraction:
                     features.append(imagecpy[i][j])
         return features
 
-    def meanVector(vector_caracteristicas):
+    def meanVector(self,vector_caracteristicas):
         return np.mean(vector_caracteristicas)
 
-    def varVector(vector_caracteristicas):
+    def varVector(self,vector_caracteristicas):
         return np.var(vector_caracteristicas)
 
-    def skewVector(vector_caracteristicas):
+    def skewVector(self,vector_caracteristicas):
         return stats.skew(vector_caracteristicas)
