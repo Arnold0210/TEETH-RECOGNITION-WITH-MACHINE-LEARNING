@@ -46,7 +46,7 @@ class PreProcessingData:
             else:
                 raise
         try:
-            if not os.path.exists(os.path.join(self.path_project, 'Segmentation')+ 'BarPlot'):
+            if not os.path.exists(os.path.join(self.path_project, 'Segmentation') + 'BarPlot'):
                 self.path_BarPlot = os.path.join(os.path.join(self.path_project, 'Segmentation'), 'BarPlot')
 
                 os.mkdir(self.path_BarPlot)
@@ -58,7 +58,7 @@ class PreProcessingData:
             else:
                 raise
         try:
-            if not os.path.exists(os.path.join(self.path_project, 'Segmentation')+ 'BarPlotCh1'):
+            if not os.path.exists(os.path.join(self.path_project, 'Segmentation') + 'BarPlotCh1'):
                 self.path_BarPlotCh1 = os.path.join(os.path.join(self.path_project, 'Segmentation'), 'BarPlotCh1')
 
                 os.mkdir(self.path_BarPlotCh1)
@@ -70,7 +70,7 @@ class PreProcessingData:
             else:
                 raise
         try:
-            if not os.path.exists(os.path.join(self.path_project, 'Segmentation')+ 'BarPlotCh2'):
+            if not os.path.exists(os.path.join(self.path_project, 'Segmentation') + 'BarPlotCh2'):
                 self.path_BarPlotCh2 = os.path.join(os.path.join(self.path_project, 'Segmentation'), 'BarPlotCh2')
 
                 os.mkdir(self.path_BarPlotCh2)
@@ -82,7 +82,7 @@ class PreProcessingData:
             else:
                 raise
         try:
-            if not os.path.exists(os.path.join(self.path_project, 'Segmentation')+ 'BarPlotCh3'):
+            if not os.path.exists(os.path.join(self.path_project, 'Segmentation') + 'BarPlotCh3'):
                 self.path_BarPlotCh3 = os.path.join(os.path.join(self.path_project, 'Segmentation'), 'BarPlotCh3')
 
                 os.mkdir(self.path_BarPlotCh3)
@@ -94,7 +94,7 @@ class PreProcessingData:
             else:
                 raise
         try:
-            if not os.path.exists(os.path.join(self.path_project, 'Segmentation')+ 'Mask'):
+            if not os.path.exists(os.path.join(self.path_project, 'Segmentation') + 'Mask'):
                 self.path_Mask = os.path.join(os.path.join(self.path_project, 'Segmentation'), 'Mask')
 
                 os.mkdir(self.path_Mask)
@@ -106,7 +106,7 @@ class PreProcessingData:
             else:
                 raise
         try:
-            if not os.path.exists(os.path.join(self.path_project, 'Segmentation')+ 'MaskOverlay'):
+            if not os.path.exists(os.path.join(self.path_project, 'Segmentation') + 'MaskOverlay'):
                 self.path_Mask_Overlay = os.path.join(os.path.join(self.path_project, 'Segmentation'), 'MaskOverlay')
 
                 os.mkdir(self.path_Mask_Overlay)
@@ -118,7 +118,7 @@ class PreProcessingData:
             else:
                 raise
         try:
-            if not os.path.exists(os.path.join(self.path_project, 'Segmentation')+ 'Inverse'):
+            if not os.path.exists(os.path.join(self.path_project, 'Segmentation') + 'Inverse'):
                 self.path_Inverse = os.path.join(os.path.join(self.path_project, 'Segmentation'), 'Inverse')
 
                 os.mkdir(self.path_Inverse)
@@ -185,7 +185,6 @@ class PreProcessingData:
                 print('Lab_ Directory Already Exists.')
             else:
                 raise
-
 
     def resize_Image(self, image, name):
         img = cv.resize(image, (600, 400), interpolation=cv.INTER_AREA)
@@ -274,7 +273,7 @@ class PreProcessingData:
         hsv_stack = np.vstack(images)
         rgb_stack = cv.cvtColor(hsv_stack, cv.COLOR_HSV2RGB)
         plt.imshow(rgb_stack)
-        plt.savefig(self.path_BarPlot + '\\BAR_StackColor_' + name)
+        plt.savefig(self.path_BarPlot + '\\BAR_StackColor_' + name, rgb_stack)
         return rgb_stack, name
 
     def hsv_hist(self, image, name):
@@ -289,9 +288,9 @@ class PreProcessingData:
         histr = np.array(histr)
         # print(range(0,180))
         x = list(range(0, 180))
-        #print(histr.shape)
-        #print(len(x))
-        #print(colours.shape)
+        # print(histr.shape)
+        # print(len(x))
+        # print(colours.shape)
         for i in (x):
             plt.bar(x[i], histr[i], color=colours[i], edgecolor=colours[i], width=1)
             plt.title('Hue')
@@ -335,11 +334,25 @@ class PreProcessingData:
         plt.imshow(img)
         plt.savefig(self.path_Mask_Overlay + '\\MASKOVERLAY_' + name)
 
-
     def blurImage(self, image, name):
         image_blur = cv.GaussianBlur(image, (7, 7), 0)
         image_blur_hsv = cv.cvtColor(image_blur, cv.COLOR_RGB2HSV)
         min_red = np.array([10, 0, 0])
         max_red = np.array([40, 255, 255])
         image_red1 = cv.inRange(image_blur_hsv, min_red, max_red)
-        return name, image_red1
+        kernel = cv.getStructuringElement(cv.MORPH_ELLIPSE, (15, 15))
+        image_red_closed = cv.morphologyEx(image_red1, cv.MORPH_CLOSE, kernel)
+        # Remove specks
+        image_red_closed_then_opened = cv.morphologyEx(image_red_closed, cv.MORPH_OPEN, kernel)
+        return name, image_red_closed_then_opened
+
+    def findBiggestContour(self, image, name):
+        # Copy to prevent modification
+        image = image.copy()
+        contours, hierarchy = cv.findContours(image, cv.RETR_LIST, cv.CHAIN_APPROX_SIMPLE)
+        # Isolate largest contour
+        biggest_contour = max(contours, key=cv.contourArea)
+        # Draw just largest contour
+        mask = np.zeros(image.shape, np.uint8)
+        cv.drawContours(mask, [biggest_contour], -1, 255, -1)
+        return mask

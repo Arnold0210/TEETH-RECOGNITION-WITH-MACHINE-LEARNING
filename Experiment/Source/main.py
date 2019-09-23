@@ -9,6 +9,7 @@
 import errno
 import os
 import sys
+
 import cv2 as cv
 
 import Source.FeatureExtraction as fE
@@ -142,17 +143,30 @@ class MainClass:
 
             # Blur image slightly
             name_point, blurimage = pp.blurImage(img_resize, name_point)
-            file_ = open(os.path.join(self.PROJECT_PATH,'Pruebas')+name_point+'.txt',"w")
+            '''file_ = open(os.path.join(self.PROJECT_PATH, 'Pruebas') + name_point + '.txt', "w")
             for i in blurimage:
                 file_.write(str(i))
-            file_.close()
+            file_.close()'''
+            mask = pp.findBiggestContour(blurimage, name_point)
+            channelR, channelG, channelB = cv.split(img_resize)
+            red = fe.getFeaturesVector(channelR, mask)
+            green = fe.getFeaturesVector(channelG, mask)
+            blue = fe.getFeaturesVector(channelB, mask)
+            colores = ["RED", "GREEN", "BLUE"]
+            imagen = [red, green, blue]
+
+            features = name_point + ":"
+            for j in range(0, len(img_resize)):
+                features += str(fe.meanVector(imagen[j])) + "," + str(fe.varVector(imagen[j])) + "," + str(
+                    fe.skewVector(imagen[j]))
+            print(features)
+            features = ""
             pp.show_mask(blurimage, name_point)
             pp.overlay_mask(blurimage, img_resize, name_point)
 
-
-if __name__ == '__main__':
-    tesis = MainClass()
-    # tesis.main_run()
-    tesis.main_alldataset()
-    print('Se ha finalizado la ejecución del experimento')
-    sys.exit(0)
+            if __name__ == '__main__':
+                tesis = MainClass()
+            # tesis.main_run()
+            tesis.main_alldataset()
+            print('Se ha finalizado la ejecución del experimento')
+            sys.exit(0)

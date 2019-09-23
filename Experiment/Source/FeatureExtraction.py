@@ -10,6 +10,8 @@ import os
 from collections import Counter
 
 import matplotlib.pyplot as plt
+import numpy as np
+from scipy import stats
 from sklearn.cluster import KMeans
 
 import Source.PreProcessingData as pD
@@ -59,3 +61,22 @@ class FeatureExtraction:
             plt.show()
 
         return rgb_colors, hex_colors
+
+    def getFeaturesVector(self, image, mask):
+        features = []
+        imagecpy = image.copy()
+        for i in range(len(mask)):
+            for j in range(len(mask[i])):
+                if (j == 255):
+                    # print(image[i][j])
+                    features.append(imagecpy[i][j])
+        return features
+
+    def meanVector(vector_caracteristicas):
+        return np.mean(vector_caracteristicas)
+
+    def varVector(vector_caracteristicas):
+        return np.var(vector_caracteristicas)
+
+    def skewVector(vector_caracteristicas):
+        return stats.skew(vector_caracteristicas)
