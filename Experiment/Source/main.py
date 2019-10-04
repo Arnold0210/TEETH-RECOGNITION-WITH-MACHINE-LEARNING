@@ -147,13 +147,14 @@ class MainClass:
             for i in blurimage:
                 file_.write(str(i))
             file_.close()'''
+
             # A partir del rango de color, se saca una máscara donde se ubican los dientes y se procede a
             mask = pp.findBiggestContour(blurimage, name_point)
             channelR, channelG, channelB = cv.split(img_resize)
             red = fe.getFeaturesVector(channelR, mask)
             green = fe.getFeaturesVector(channelG, mask)
             blue = fe.getFeaturesVector(channelB, mask)
-            colores = ["RED", "GREEN", "BLUE"]
+            # colores = ["RED", "GREEN", "BLUE"]
             imagen = [red, green, blue]
             filefeaturespath = os.path.join(os.path.join(self.PROJECT_PATH, 'FeatureExtraction'), 'features.csv')
             print(str(filefeaturespath))
@@ -162,13 +163,18 @@ class MainClass:
                 filefeatures = open(filefeaturespath, "w")
             else:
                 filefeatures = open(filefeaturespath, "a")
-            features = name_point + ":"
+            features = []
+            # features.append(name_point + ":")
             for j in range(0, len(imagen)):
-                features += str(fe.meanVector(imagen[j])) + "," + str(fe.varVector(imagen[j])) + "," + str(
-                    fe.skewVector(imagen[j])) + ";"
-            print(features)
-            filefeatures.write(features)
-            filefeatures.write('\n')
+                features.append(fe.meanVector(imagen[j]))
+                features.append(fe.varVector(imagen[j]))
+                features.append(fe.skewVector(imagen[j]))
+            filefeatures.write(name_point)
+            for item in range(len(features)):
+                filefeatures.write(",%.4f" % features[item])
+            # filefeatures.write(str(features))
+            filefeatures.write("\n")
+            # filefeatures.write('\n')
             filefeatures.close()
             features = ""
             pp.show_mask(blurimage, name_point)
