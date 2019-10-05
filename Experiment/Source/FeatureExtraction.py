@@ -72,11 +72,27 @@ class FeatureExtraction:
                     features.append(imagecpy[i][j])
         return features
 
-    def meanVector(self,vector_caracteristicas):
+    def meanVector(self, vector_caracteristicas):
         return np.mean(vector_caracteristicas)
 
-    def varVector(self,vector_caracteristicas):
+    def varVector(self, vector_caracteristicas):
         return np.var(vector_caracteristicas)
 
-    def skewVector(self,vector_caracteristicas):
+    def skewVector(self, vector_caracteristicas):
         return stats.skew(vector_caracteristicas)
+
+    def getFeatures(self, imagen, filefeaturespath, name_point):
+        if not (os.path.exists(filefeaturespath) or os.path.isfile(filefeaturespath)):
+            filefeatures = open(filefeaturespath, "w")
+        else:
+            filefeatures = open(filefeaturespath, "a")
+        features = []
+        for j in range(0, len(imagen)):
+            features.append(self.meanVector(imagen[j]))
+            features.append(self.varVector(imagen[j]))
+            features.append(self.skewVector(imagen[j]))
+        filefeatures.write(name_point)
+        for item in range(len(features)):
+            filefeatures.write(",%.6f" % features[item])
+        filefeatures.write("\n")
+        filefeatures.close()

@@ -5,9 +5,9 @@
 #  licenses restricting copying, distribution, and decompilation.
 #  It is forbidden the use partial or global of this algorithm  unless authors written permission.
 #
-import csv
 import os
 
+import pandas as pd
 from sklearn import svm
 
 
@@ -26,15 +26,28 @@ class Classification:
                 raise'''
 
     def readfeatures(self, features_Path):
-        featuresFile = open(
-            os.path.join(os.path.join(os.path.join(self.path_project, os.path.pardir), 'FeatureExtraction'),
-                         'features.csv'), "r")
-        featuresData = csv.reader(featuresFile)
-        featuresFile.close()
+        # featuresFile = open(features_Path, "r")
+        # featuresData = csv.reader(featuresFile)
+        featuresFile = pd.read_csv(features_Path, sep=',', header=None)
+        names = featuresFile.iloc[:, 0]
+        features = featuresFile.iloc[:, 1:]
+        return names, features
 
     def classificator(self, features):
         clf = svm.SVC(gamma='scale', decision_function_shape='ovo')
 
 
-cc = Classification(os.path.join(os.getcwd(), os.path.pardir))
-cc.readfeatures(os.path.join(os.path.join(os.getcwd(), os.path.pardir), 'Classification'))
+PROJECT_PATH = os.path.join(os.getcwd(), os.path.pardir)
+PATH_IMAGES = os.path.abspath(
+    os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "DATASET"))
+PATH_Labels = os.path.abspath(
+    os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "Labels"))
+PATH_LabelsXML = os.path.abspath(os.path.join(
+    os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "Labels"), "LabelsXML"))
+PATH_IMAGES_SNIPPING = os.path.abspath(
+    os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "DATASET - Recortado"))
+
+filefeaturespath = os.path.join(os.path.join(PROJECT_PATH, 'FeatureExtraction'), 'features.csv')
+cc = Classification(PROJECT_PATH)
+names, feattures = cc.readfeatures(filefeaturespath)
+print(feattures)

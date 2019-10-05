@@ -27,6 +27,10 @@ class MainClass:
     PROJECT_PATH = os.path.join(os.getcwd(), os.path.pardir)
     PATH_IMAGES = os.path.abspath(
         os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "DATASET"))
+    PATH_Labels = os.path.abspath(
+        os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "Labels"))
+    PATH_LabelsXML = os.path.abspath(os.path.join(
+        os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "Labels"), "LabelsXML"))
     PATH_IMAGES_SNIPPING = os.path.abspath(
         os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "DATASET - Recortado"))
     readimages = None
@@ -150,33 +154,20 @@ class MainClass:
 
             # A partir del rango de color, se saca una máscara donde se ubican los dientes y se procede a
             mask = pp.findBiggestContour(blurimage, name_point)
+
             channelR, channelG, channelB = cv.split(img_resize)
             red = fe.getFeaturesVector(channelR, mask)
             green = fe.getFeaturesVector(channelG, mask)
             blue = fe.getFeaturesVector(channelB, mask)
             # colores = ["RED", "GREEN", "BLUE"]
-            imagen = [red, green, blue]
-            filefeaturespath = os.path.join(os.path.join(self.PROJECT_PATH, 'FeatureExtraction'), 'features.csv')
-            print(str(filefeaturespath))
 
-            if not (os.path.exists(filefeaturespath) or os.path.isfile(filefeaturespath)):
-                filefeatures = open(filefeaturespath, "w")
-            else:
-                filefeatures = open(filefeaturespath, "a")
-            features = []
-            # features.append(name_point + ":")
-            for j in range(0, len(imagen)):
-                features.append(fe.meanVector(imagen[j]))
-                features.append(fe.varVector(imagen[j]))
-                features.append(fe.skewVector(imagen[j]))
-            filefeatures.write(name_point)
-            for item in range(len(features)):
-                filefeatures.write(",%.4f" % features[item])
-            # filefeatures.write(str(features))
-            filefeatures.write("\n")
-            # filefeatures.write('\n')
-            filefeatures.close()
-            features = ""
+            # Se obtiene una mascara de la imágen compuesta por los valores de los canales donde se encontraron los datos de interes.
+            imagen = [red, green, blue]
+            # Se coloca la ruta del archivo de caracteristicas
+            filefeaturespath = os.path.join(os.path.join(self.PROJECT_PATH, 'FeatureExtraction'), 'features.csv')
+            # Se escribe en un archivo las caracteristicas del dataset
+            fe.getFeatures(imagen, filefeaturespath, name_point)
+            fileLabels = open(self.PATH_Labels)
             pp.show_mask(blurimage, name_point)
             pp.overlay_mask(blurimage, img_resize, name_point)
 
