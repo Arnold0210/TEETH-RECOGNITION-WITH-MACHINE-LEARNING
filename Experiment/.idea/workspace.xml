@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1773c20-0506-4546-b630-28e8ecb39128" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Experiment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Experiment.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Classification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FeatureExtraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FeatureExtraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/Source/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="291">
-              <caret line="166" column="113" lean-forward="true" selection-start-line="166" selection-start-column="12" selection-end-line="166" selection-end-column="113" />
+              <caret line="166" column="113" selection-start-line="166" selection-start-column="12" selection-end-line="166" selection-end-column="113" />
               <folding>
                 <element signature="e#344#356#0" expanded="true" />
                 <element signature="e#1072#2820#0" />
@@ -31,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/FeatureExtraction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="85" column="54" lean-forward="true" selection-start-line="85" selection-start-column="12" selection-end-line="85" selection-end-column="54" />
+            <state relative-caret-position="1445">
+              <caret line="85" column="54" selection-start-line="85" selection-start-column="12" selection-end-line="85" selection-end-column="54" />
               <folding>
                 <element signature="e#343#355#0" expanded="true" />
               </folding>
@@ -43,10 +42,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Source/Classification.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+            <state relative-caret-position="500">
+              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
               <folding>
-                <element signature="e#343#352#0" expanded="true" />
+                <element signature="e#343#355#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -61,6 +60,7 @@
         <option value="Python Script" />
       </list>
     </option>
+    <option name="SCHEME" value="Project" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -115,7 +115,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -182,7 +182,7 @@
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\arnoldherrera\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -198,23 +198,22 @@
       <workItem from="1570251989305" duration="591000" />
       <workItem from="1570252732003" duration="19000" />
       <workItem from="1570252784582" duration="1000" />
-      <workItem from="1570252804181" duration="1686000" />
+      <workItem from="1570252804181" duration="6257000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40640000" />
+    <option name="totallyTimeSpent" value="45211000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14447807" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26350245" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38134205" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -235,8 +234,15 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Experiment$Classification.coverage" NAME="Classification Coverage Results" MODIFIED="1570254698997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Source" />
+    <SUITE FILE_PATH="coverage/Experiment$Classification.coverage" NAME="Classification Coverage Results" MODIFIED="1570321389224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Source" />
     <SUITE FILE_PATH="coverage/Experiment$main.coverage" NAME="main Coverage Results" MODIFIED="1570162813099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Source" />
   </component>
   <component name="editorHistoryManager">
@@ -272,7 +278,7 @@
     <entry file="file://$PROJECT_DIR$/Source/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
-          <caret line="166" column="113" lean-forward="true" selection-start-line="166" selection-start-column="12" selection-end-line="166" selection-end-column="113" />
+          <caret line="166" column="113" selection-start-line="166" selection-start-column="12" selection-end-line="166" selection-end-column="113" />
           <folding>
             <element signature="e#344#356#0" expanded="true" />
             <element signature="e#1072#2820#0" />
@@ -282,8 +288,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Source/FeatureExtraction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="85" column="54" lean-forward="true" selection-start-line="85" selection-start-column="12" selection-end-line="85" selection-end-column="54" />
+        <state relative-caret-position="1445">
+          <caret line="85" column="54" selection-start-line="85" selection-start-column="12" selection-end-line="85" selection-end-column="54" />
           <folding>
             <element signature="e#343#355#0" expanded="true" />
           </folding>
@@ -292,13 +298,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Source/Classification.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+        <state relative-caret-position="500">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
           <folding>
-            <element signature="e#343#352#0" expanded="true" />
+            <element signature="e#343#355#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="Copyright.UI">
+        <settings>
+          <last-edited>Tesis</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
