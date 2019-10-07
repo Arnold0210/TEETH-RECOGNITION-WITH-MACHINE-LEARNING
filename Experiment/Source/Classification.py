@@ -39,7 +39,8 @@ class Classification:
                 col.append("NAME")
             else:
                 col.append("VALOR-" + str(x))
-        print(col)
+        featuresFile.columns = col
+        print(featuresFile)
         return names, features
 
     def classificator(self, features):
@@ -59,5 +60,3 @@ PATH_IMAGES_SNIPPING = os.path.abspath(
 filefeaturespath = os.path.join(os.path.join(PROJECT_PATH, 'FeatureExtraction'), 'features.csv')
 cc = Classification(PROJECT_PATH)
 names, feattures = cc.readfeatures(filefeaturespath)
-for i in feattures:
-    print(i)

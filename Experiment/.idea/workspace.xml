@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1773c20-0506-4546-b630-28e8ecb39128" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Experiment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Experiment.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Classification.py" afterDir="false" />
     </list>
@@ -42,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Source/Classification.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="177">
+              <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
               <folding>
                 <element signature="e#343#355#0" expanded="true" />
               </folding>
@@ -198,12 +197,12 @@
       <workItem from="1570251989305" duration="591000" />
       <workItem from="1570252732003" duration="19000" />
       <workItem from="1570252784582" duration="1000" />
-      <workItem from="1570252804181" duration="6257000" />
+      <workItem from="1570252804181" duration="11309000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45211000" />
+    <option name="totallyTimeSpent" value="50263000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -242,7 +241,7 @@
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Experiment$Classification.coverage" NAME="Classification Coverage Results" MODIFIED="1570321389224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Source" />
+    <SUITE FILE_PATH="coverage/Experiment$Classification.coverage" NAME="Classification Coverage Results" MODIFIED="1570393229409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Source" />
     <SUITE FILE_PATH="coverage/Experiment$main.coverage" NAME="main Coverage Results" MODIFIED="1570162813099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Source" />
   </component>
   <component name="editorHistoryManager">
@@ -298,8 +297,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Source/Classification.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="177">
+          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
           <folding>
             <element signature="e#343#355#0" expanded="true" />
           </folding>
