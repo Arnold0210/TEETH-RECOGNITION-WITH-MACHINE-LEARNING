@@ -1,0 +1,26 @@
+<annotation verified="yes">
+	<folder>DATASET</folder>
+	<filename>101_0245.JPG</filename>
+	<path>E:\TEETH-RECOGNITION-WITH-MACHINE-LEARNING\DATASET\101_0245.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4288</width>
+		<height>3216</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>boca</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1591</xmin>
+			<ymin>1013</ymin>
+			<xmax>3331</xmax>
+			<ymax>1943</ymax>
+		</bndbox>
+	</object>
+</annotation>
