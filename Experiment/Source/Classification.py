@@ -40,8 +40,13 @@ class Classification:
             else:
                 col.append("VALOR-" + str(x))
         featuresFile.columns = col
-        print(featuresFile)
+        # print(featuresFile)
         return names, features
+
+    def readLabels(self, labels_path):
+        labels_path = os.path.join(labels_path, 'Labels.csv')
+        labels = pd.read_csv(labels_path, sep=',', header=[0])
+        return labels
 
     def classificator(self, features):
         clf = svm.SVC(gamma='scale', decision_function_shape='ovo')
@@ -57,6 +62,24 @@ PATH_LabelsXML = os.path.abspath(os.path.join(
 PATH_IMAGES_SNIPPING = os.path.abspath(
     os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "DATASET - Recortado"))
 
-filefeaturespath = os.path.join(os.path.join(PROJECT_PATH, 'FeatureExtraction'), 'features.csv')
+filefeaturespath = os.path.join(os.path.join(PROJECT_PATH, 'FeatureExtraction'), 'features3.csv')
+
 cc = Classification(PROJECT_PATH)
 names, feattures = cc.readfeatures(filefeaturespath)
+labels = cc.readLabels(PATH_Labels)
+# print(feattures)
+features1 = feattures.values
+X = []
+for f in features1:
+    X.append(f)
+vals_to_replace = {'a1': '0', 'a2': '1', 'a3': '2', 'a35': '3', 'a4': '4'}
+labels['Color'] = labels['Color'].map(vals_to_replace)
+# labels['Color'] = labels['Color'].map(vals_to_replace)
+labelss = labels.values
+tags = []
+for tagss in labelss:
+    tags.append(tagss[1])
+y = tags
+clf = svm.SVC(gamma='scale')
+clf.fit(X, y)
+print(clf.score(X, y))

@@ -254,6 +254,7 @@ class PreProcessingData:
     def getChromatiColor(self, image, name, fe):
         plt.savefig(
             os.path.join(os.path.join(os.getcwd(), os.path.pardir), 'FeatureExtraction/GetColors/Original' + name))
+        plt.close('all')
         height_res, width_res, depth_res = image.shape
         print("name", name)
         print("Image Resize shape: \n Height:", height_res, ", Width:", width_res)
@@ -274,6 +275,7 @@ class PreProcessingData:
         rgb_stack = cv.cvtColor(hsv_stack, cv.COLOR_HSV2RGB)
         plt.imshow(rgb_stack)
         plt.savefig(self.path_BarPlot + '\\BAR_StackColor_' + name)
+        plt.close('all')
         return rgb_stack, name
 
     def hsv_hist(self, image, name):
@@ -302,6 +304,7 @@ class PreProcessingData:
         plt.xlim([0, 256])
         x = list(range(0, 256))
         colours = [colors.hsv_to_rgb((0, i / 256, 1)) for i in range(0, 256)]
+
         for i in (x):
             plt.bar(x[i], histr[i], color=colours[i], edgecolor=colours[i], width=1)
             # plt.bar(range(0, 256), histr, color=colours, edgecolor=colours, width=1)
@@ -318,6 +321,7 @@ class PreProcessingData:
             # plt.bar(range(0, 256), histr, color=colours, edgecolor=colours, width=1)
             plt.title('Value')
         plt.savefig(self.path_BarPlotCh3 + '\\BAR_CHART_VALUE_' + name)
+        plt.close('all')
 
     def show_mask(self, mask, name):
         namefoldersplit = str.split(name, '.')
@@ -325,6 +329,7 @@ class PreProcessingData:
         plt.figure(figsize=(10, 10))
         plt.imshow(mask, cmap='gray')
         plt.savefig(self.path_Mask + '\\MASK_' + name)
+        plt.close('all')
 
     def overlay_mask(self, mask, image, name):
         namefoldersplit = str.split(name, '.')
@@ -333,6 +338,7 @@ class PreProcessingData:
         img = cv.addWeighted(rgb_mask, 0.5, image, 0.5, 0)
         plt.imshow(img)
         plt.savefig(self.path_Mask_Overlay + '\\MASKOVERLAY_' + name)
+        plt.close('all')
 
     def blurImage(self, image, name):
         image_blur = cv.GaussianBlur(image, (7, 7), 0)
@@ -351,6 +357,7 @@ class PreProcessingData:
         image = image.copy()
         contours, hierarchy = cv.findContours(image, cv.RETR_LIST, cv.CHAIN_APPROX_SIMPLE)
         # Isolate largest contour
+        print(name + ":" + str(max(contours, key=cv.contourArea)))
         biggest_contour = max(contours, key=cv.contourArea)
         # Draw just largest contour
         mask = np.zeros(image.shape, np.uint8)

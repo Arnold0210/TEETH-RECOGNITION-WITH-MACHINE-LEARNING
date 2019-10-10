@@ -33,6 +33,8 @@ class MainClass:
         os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "Labels"), "LabelsXML"))
     PATH_IMAGES_SNIPPING = os.path.abspath(
         os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "DATASET - Recortado"))
+    PATH_IMAGES_P = os.path.abspath(
+        os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "DATASET - P"))
     readimages = None
     preprocessing = None
     featureExtraction = None
@@ -128,7 +130,7 @@ class MainClass:
         read = self.readimages
         pp = self.preProcessing
         fe = self.featureExtraction
-        images, names = read.read_Images(self.PATH_IMAGES_SNIPPING)
+        images, names = read.read_Images(self.PATH_IMAGES_P)
 
         for image_point, name_point in zip(images, names):
             img_resize = pp.resize_Image(image_point, name_point)
@@ -167,7 +169,7 @@ class MainClass:
             filefeaturespath = os.path.join(os.path.join(self.PROJECT_PATH, 'FeatureExtraction'), 'features.csv')
             # Se escribe en un archivo las caracteristicas del dataset
             fe.getFeatures(imagen, filefeaturespath, name_point)
-            fileLabels = open(self.PATH_Labels)
+            fileLabels = open(os.path.join(self.PATH_Labels, 'Labels.csv'))
             pp.show_mask(blurimage, name_point)
             pp.overlay_mask(blurimage, img_resize, name_point)
 

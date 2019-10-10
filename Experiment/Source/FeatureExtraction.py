@@ -94,5 +94,5 @@ class FeatureExtraction:
         filefeatures.write(name_point)
         for item in range(len(features)):
             filefeatures.write(",%.6f" % features[item])
-        filefeatures.write("\n")
+        filefeatures.write("\n")#"," + label +'''
         filefeatures.close()
