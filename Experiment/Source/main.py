@@ -125,6 +125,17 @@ class MainClass:
                                       'PreProcessing/ResizeImages/' + name),
                    title="Image Shape - PreProcessing ")'''
 
+    def savebin(self):
+        read = self.readimages
+        pp = self.preProcessing
+        fe = self.featureExtraction
+        images, names = read.read_Images(self.PATH_IMAGES_P)
+        for image_point, name_point in zip(images, names):
+            img_resize = pp.resize_Image(image_point, name_point)
+            img_resize = cv.cvtColor(img_resize, cv.COLOR_BGR2RGB)
+            img_resize = cv.cvtColor(img_resize, cv.COLOR_RGB2GRAY)
+            pp.bin(img_resize, name_point)
+
     def main_alldataset(self):
         # Se declaran las clases para poder utilizar los elementos
         read = self.readimages
@@ -177,6 +188,7 @@ class MainClass:
 if __name__ == '__main__':
     tesis: MainClass = MainClass()
     # tesis.main_run()
-    tesis.main_alldataset()
+    #tesis.main_alldataset()
+    tesis.savebin()
     print('Se ha finalizado la ejecución del experimento')
     sys.exit(0)
