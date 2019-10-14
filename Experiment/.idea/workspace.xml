@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1773c20-0506-4546-b630-28e8ecb39128" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Classification.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/PreProcessingData.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PreProcessingData.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/main.py" afterDir="false" />
     </list>
@@ -16,44 +18,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="135" column="67" selection-start-line="135" selection-start-column="67" selection-end-line="135" selection-end-column="67" />
+            <state relative-caret-position="291">
+              <caret line="197" column="45" lean-forward="true" selection-start-line="197" selection-start-column="45" selection-end-line="197" selection-end-column="45" />
               <folding>
                 <element signature="e#344#356#0" expanded="true" />
                 <element signature="e#3281#4980#0" />
+                <element signature="e#5461#5915#0" />
+                <element signature="e#6362#8362#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Source/PreProcessingData.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="200" column="8" selection-start-line="200" selection-start-column="8" selection-end-line="200" selection-end-column="8" />
-              <folding>
-                <element signature="e#344#356#0" expanded="true" />
-                <element signature="e#7376#7626#0" />
-                <element signature="e#7674#7924#0" />
-                <element signature="e#7930#8218#1" />
-                <element signature="e#8266#8511#0" />
-                <element signature="e#8559#8838#0" />
-                <element signature="e#8886#9165#0" />
-                <element signature="e#9224#9689#0" />
-                <element signature="e#10366#12230#0" />
-                <element signature="e#12277#12510#0" />
-                <element signature="e#12567#12879#0" />
-                <element signature="e#12927#13507#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/Classification.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2">
-              <caret line="58" column="55" selection-start-line="58" selection-start-column="55" selection-end-line="58" selection-end-column="55" />
+            <state relative-caret-position="444">
+              <caret line="62" column="17" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="17" />
               <folding>
                 <element signature="e#343#355#0" expanded="true" />
               </folding>
@@ -81,9 +62,9 @@
         <option value="$PROJECT_DIR$/Source/test.ipynb" />
         <option value="$PROJECT_DIR$/Source/FeatureExtraction.py" />
         <option value="$PROJECT_DIR$/FeatureExtraction/features.csv" />
-        <option value="$PROJECT_DIR$/Source/Classification.py" />
-        <option value="$PROJECT_DIR$/Source/main.py" />
         <option value="$PROJECT_DIR$/Source/PreProcessingData.py" />
+        <option value="$PROJECT_DIR$/Source/main.py" />
+        <option value="$PROJECT_DIR$/Source/Classification.py" />
       </list>
     </option>
   </component>
@@ -97,6 +78,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -113,7 +95,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -234,11 +215,12 @@
       <workItem from="1570252804181" duration="17065000" />
       <workItem from="1570653501472" duration="8915000" />
       <workItem from="1570936598735" duration="4469000" />
+      <workItem from="1570974491471" duration="3803000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69403000" />
+    <option name="totallyTimeSpent" value="73206000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -251,9 +233,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20196672" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20499243" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -269,12 +250,12 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.18740399" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.21440262" />
-      <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" side_tool="true" weight="0.32980332" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" order="5" side_tool="true" weight="0.28290468" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,25 +317,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Classification.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="58" column="55" selection-start-line="58" selection-start-column="55" selection-end-line="58" selection-end-column="55" />
-          <folding>
-            <element signature="e#343#355#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FeatureExtraction/features.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="314">
-          <caret line="374" selection-start-line="374" selection-end-line="374" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="-1872">
           <caret line="247" column="109" selection-start-line="247" selection-start-column="109" selection-end-line="247" selection-end-column="109" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="314">
+          <caret line="374" selection-start-line="374" selection-end-line="374" />
         </state>
       </provider>
       <provider editor-type-id="csv-table-editor">
@@ -367,34 +338,35 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/main.py">
+    <entry file="file://$PROJECT_DIR$/Source/PreProcessingData.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="135" column="67" selection-start-line="135" selection-start-column="67" selection-end-line="135" selection-end-column="67" />
+        <state relative-caret-position="-2334">
+          <caret line="217" column="38" lean-forward="true" selection-start-line="217" selection-start-column="38" selection-end-line="217" selection-end-column="38" />
           <folding>
             <element signature="e#344#356#0" expanded="true" />
-            <element signature="e#3281#4980#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/PreProcessingData.py">
+    <entry file="file://$PROJECT_DIR$/Source/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="200" column="8" selection-start-line="200" selection-start-column="8" selection-end-line="200" selection-end-column="8" />
+        <state relative-caret-position="291">
+          <caret line="197" column="45" lean-forward="true" selection-start-line="197" selection-start-column="45" selection-end-line="197" selection-end-column="45" />
           <folding>
             <element signature="e#344#356#0" expanded="true" />
-            <element signature="e#7376#7626#0" />
-            <element signature="e#7674#7924#0" />
-            <element signature="e#7930#8218#1" />
-            <element signature="e#8266#8511#0" />
-            <element signature="e#8559#8838#0" />
-            <element signature="e#8886#9165#0" />
-            <element signature="e#9224#9689#0" />
-            <element signature="e#10366#12230#0" />
-            <element signature="e#12277#12510#0" />
-            <element signature="e#12567#12879#0" />
-            <element signature="e#12927#13507#0" />
+            <element signature="e#3281#4980#0" />
+            <element signature="e#5461#5915#0" />
+            <element signature="e#6362#8362#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Classification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="62" column="17" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="17" />
+          <folding>
+            <element signature="e#343#355#0" expanded="true" />
           </folding>
         </state>
       </provider>

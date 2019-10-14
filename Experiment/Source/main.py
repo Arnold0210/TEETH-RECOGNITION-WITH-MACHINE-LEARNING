@@ -12,6 +12,7 @@ import sys
 
 import cv2 as cv
 
+import Source.Classification as Cl
 import Source.FeatureExtraction as fE
 import Source.PreProcessingData as pD
 import Source.ReadImages as rI
@@ -38,6 +39,7 @@ class MainClass:
     readimages = None
     preprocessing = None
     featureExtraction = None
+    clasification = None
 
     def __init__(self):
         try:
@@ -79,6 +81,7 @@ class MainClass:
         self.readimages = rI.LoadData(self.PATH_IMAGES)
         self.preProcessing = pD.PreProcessingData(self.PROJECT_PATH, self.PATH_IMAGES)
         self.featureExtraction = fE.FeatureExtraction(self.PROJECT_PATH, self.PATH_IMAGES)
+        self.clasification = Cl.Classification(self.PROJECT_PATH)
 
     def main_run(self):
         # Se declaran las clases para poder utilizar los elementos
@@ -141,54 +144,65 @@ class MainClass:
         read = self.readimages
         pp = self.preProcessing
         fe = self.featureExtraction
+        cc = self.clasification
         images, names = read.read_Images(self.PATH_IMAGES_P)
+        doption = input(
+            'Que deesea hacer? \n1. Leer imagenes y obtener caracteristicas\n2. Leer archivo de caracteristicas y entrenar algoritmo')
+        option = int(doption)
+        if option == 1:
+            for image_point, name_point in zip(images, names):
+                img_resize = pp.resize_Image(image_point, name_point)
 
-        for image_point, name_point in zip(images, names):
-            img_resize = pp.resize_Image(image_point, name_point)
+                # La imagen reajustada se convierte de BGR a RGB
+                img_resize = cv.cvtColor(img_resize, cv.COLOR_BGR2RGB)
 
-            # La imagen reajustada se convierte de BGR a RGB
-            img_resize = cv.cvtColor(img_resize, cv.COLOR_BGR2RGB)
+                # Se convierte la imagen de RGB a HSV
+                hsv_image = pp.rgb_2_HSV(img_resize, name_point)
 
-            # Se convierte la imagen de RGB a HSV
-            hsv_image = pp.rgb_2_HSV(img_resize, name_point)
+                # Se saca la imagen en pila de tono de rojos
+                stack, name_point = pp.stackColors(hsv_image, name_point)
 
-            # Se saca la imagen en pila de tono de rojos
-            stack, name_point = pp.stackColors(hsv_image, name_point)
+                # Se saca los histogramas por imagen para determinar el rango de color de los dientes
+                pp.hsv_hist(hsv_image, name_point)
 
-            # Se saca los histogramas por imagen para determinar el rango de color de los dientes
-            pp.hsv_hist(hsv_image, name_point)
+                # Blur image slightly
+                name_point, blurimage = pp.blurImage(img_resize, name_point)
+                '''file_ = open(os.path.join(self.PROJECT_PATH, 'Pruebas') + name_point + '.txt', "w")
+                for i in blurimage:
+                    file_.write(str(i))
+                file_.close()'''
 
-            # Blur image slightly
-            name_point, blurimage = pp.blurImage(img_resize, name_point)
-            '''file_ = open(os.path.join(self.PROJECT_PATH, 'Pruebas') + name_point + '.txt', "w")
-            for i in blurimage:
-                file_.write(str(i))
-            file_.close()'''
+                # A partir del rango de color, se saca una máscara donde se ubican los dientes y se procede a
+                mask = pp.findBiggestContour(blurimage, name_point)
 
-            # A partir del rango de color, se saca una máscara donde se ubican los dientes y se procede a
-            mask = pp.findBiggestContour(blurimage, name_point)
+                channelR, channelG, channelB = cv.split(img_resize)
+                red = fe.getFeaturesVector(channelR, mask)
+                green = fe.getFeaturesVector(channelG, mask)
+                blue = fe.getFeaturesVector(channelB, mask)
+                # colores = ["RED", "GREEN", "BLUE"]
 
-            channelR, channelG, channelB = cv.split(img_resize)
-            red = fe.getFeaturesVector(channelR, mask)
-            green = fe.getFeaturesVector(channelG, mask)
-            blue = fe.getFeaturesVector(channelB, mask)
-            # colores = ["RED", "GREEN", "BLUE"]
-
-            # Se obtiene una mascara de la imágen compuesta por los valores de los canales donde se encontraron los datos de interes.
-            imagen = [red, green, blue]
-            # Se coloca la ruta del archivo de caracteristicas
-            filefeaturespath = os.path.join(os.path.join(self.PROJECT_PATH, 'FeatureExtraction'), 'features.csv')
-            # Se escribe en un archivo las caracteristicas del dataset
-            fe.getFeatures(imagen, filefeaturespath, name_point)
-            fileLabels = open(os.path.join(self.PATH_Labels, 'Labels.csv'))
-            pp.show_mask(blurimage, name_point)
-            pp.overlay_mask(blurimage, img_resize, name_point)
+                # Se obtiene una mascara de la imágen compuesta por los valores de los canales donde se encontraron los datos de interes.
+                imagen = [red, green, blue]
+                # Se coloca la ruta del archivo de caracteristicas
+                filefeaturespath = os.path.join(os.path.join(self.PROJECT_PATH, 'FeatureExtraction'), 'features.csv')
+                # Se escribe en un archivo las caracteristicas del dataset
+                fe.getFeatures(imagen, filefeaturespath, name_point)
+                fileLabels = open(os.path.join(self.PATH_Labels, 'Labels.csv'))
+                pp.show_mask(blurimage, name_point)
+                pp.overlay_mask(blurimage, img_resize, name_point)
+        elif option == 2:
+            filefeaturespath = os.path.join(os.path.join(self.PROJECT_PATH, 'FeatureExtraction'), 'features3.csv')
+            names, features = cc.readfeatures(filefeaturespath)
+            labels = cc.readLabels(self.PATH_Labels)
+            # print(feattures)
+            features_images = features.values
+            cc.classificator(features_images, labels)
 
 
 if __name__ == '__main__':
     tesis: MainClass = MainClass()
     # tesis.main_run()
-    #tesis.main_alldataset()
+    # tesis.main_alldataset()
     tesis.savebin()
     print('Se ha finalizado la ejecución del experimento')
     sys.exit(0)

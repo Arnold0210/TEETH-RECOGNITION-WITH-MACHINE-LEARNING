@@ -48,38 +48,20 @@ class Classification:
         labels = pd.read_csv(labels_path, sep=',', header=[0])
         return labels
 
-    def classificator(self, features):
-        clf = svm.SVC(gamma='scale', decision_function_shape='ovo')
+    def classificator(self, features, labels):
+        X = []
+        for f in features:
+            X.append(f)
+        vals_to_replace = {'a1': '0', 'a2': '1', 'a3': '2', 'a35': '3', 'a4': '4'}
+        labels['Color'] = labels['Color'].map(vals_to_replace)
+        # labels['Color'] = labels['Color'].map(vals_to_replace)
+        label = labels.values
+        tags = []
+        for tag in label:
+            tags.append(tag[1])
+        clf = svm.SVC(gamma='scale')
+        clf.fit(X, tags)
+        print(clf.score(X, y))
 
 
-PROJECT_PATH = os.path.join(os.getcwd(), os.path.pardir)
-PATH_IMAGES = os.path.abspath(
-    os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "DATASET"))
-PATH_Labels = os.path.abspath(
-    os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "Labels"))
-PATH_LabelsXML = os.path.abspath(os.path.join(
-    os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "Labels"), "LabelsXML"))
-PATH_IMAGES_SNIPPING = os.path.abspath(
-    os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "DATASET - Recortado"))
 
-filefeaturespath = os.path.join(os.path.join(PROJECT_PATH, 'FeatureExtraction'), 'features3.csv')
-
-cc = Classification(PROJECT_PATH)
-names, feattures = cc.readfeatures(filefeaturespath)
-labels = cc.readLabels(PATH_Labels)
-# print(feattures)
-features1 = feattures.values
-X = []
-for f in features1:
-    X.append(f)
-vals_to_replace = {'a1': '0', 'a2': '1', 'a3': '2', 'a35': '3', 'a4': '4'}
-labels['Color'] = labels['Color'].map(vals_to_replace)
-# labels['Color'] = labels['Color'].map(vals_to_replace)
-labelss = labels.values
-tags = []
-for tagss in labelss:
-    tags.append(tagss[1])
-y = tags
-clf = svm.SVC(gamma='scale')
-clf.fit(X, y)
-print(clf.score(X, y))

@@ -195,9 +195,9 @@ class PreProcessingData:
         ret, thresh4 = cv.threshold(img, 127, 255, cv.THRESH_TOZERO)
         ret, thresh5 = cv.threshold(img, 127, 255, cv.THRESH_TOZERO_INV)
         thresh6 = cv.adaptiveThreshold(img, 255, cv.ADAPTIVE_THRESH_MEAN_C, cv.THRESH_BINARY, 37, 2)
-        #titles = ['Original Image', 'BINARY', 'BINARY_INV', 'TRUNC', 'TOZERO', 'TOZERO_INV']
+        # titles = ['Original Image', 'BINARY', 'BINARY_INV', 'TRUNC', 'TOZERO', 'TOZERO_INV']
         titles = ['Original Image', 'BINARY', 'BINARY_INV', 'TRUNC', 'TOZERO', 'ADAPTATIVE']
-        #images = [img, thresh1, thresh2, thresh3, thresh4, thresh5]
+        # images = [img, thresh1, thresh2, thresh3, thresh4, thresh5]
         images = [img, thresh1, thresh2, thresh3, thresh4, thresh6]
         for i in xrange(6):
             plt.subplot(2, 3, i + 1), plt.imshow(images[i], 'gray')
