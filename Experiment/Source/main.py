@@ -196,7 +196,8 @@ class MainClass:
             labels = cc.readLabels(self.PATH_Labels)
             # print(feattures)
             features_images = features.values
-            cc.classificator(features_images, labels)
+            vals_to_replace = {'a1': '0', 'a2': '1', 'a3': '2', 'a35': '3', 'a4': '4'}
+            cc.classificatorSVM(features_images, labels, vals_to_replace)
 
 
 if __name__ == '__main__':

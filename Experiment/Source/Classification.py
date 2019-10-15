@@ -51,31 +51,60 @@ class Classification:
         labels = pd.read_csv(labels_path, sep=',', header=[0])
         return labels
 
-    def classificatorSVM(self, features, labels):
+    def classificatorSVM(self, features, labels, vals_to_replace):
         X = []
         for f in features:
             X.append(f)
-        vals_to_replace = {'a1': '0', 'a2': '1', 'a3': '2', 'a35': '3', 'a4': '4'}
-        labels['Color'] = labels['Color'].map(vals_to_replace)
         # labels['Color'] = labels['Color'].map(vals_to_replace)
-        label = labels.values
+        # labels['Color'] = labels['Color'].map(vals_to_replace)
+        # label = labels.values
         tags = []
-        for tag in label:
-            tags.append(tag[1])
+        for tag in labels:
+            tags.append(tag)
         clf = svm.SVC(gamma='scale')
         clf.fit(X, tags)
-        print(clf.score(X, tags))
+        return clf.score(X, tags)
 
-    def validacionCruzada(self, path_dataset):
+    def validacionCruzada(self, path_dataset, features, labels, vals_to_replace):
+
         onlyfiles = [f for f in listdir(path_dataset) if
                      isfile(join(path_dataset, f))]
-        kf = KFold(n_splits=5.)
+        kf = KFold(n_splits=5)
         kf.get_n_splits(onlyfiles)
-        print(kf)
+
+        images_name = labels['Nombre de la imagen'].to_numpy().tolist()
+        labels['Color'] = labels['Color'].map(vals_to_replace)
+        labels_name = labels['Color'].to_numpy().tolist()
+        result_training = []
         for train_index, test_index in kf.split(onlyfiles):
+            training_label = []
+            test_label = []
+            training_features = []
+            test_features = []
+
             for i in train_index:
-                pass
-            # aqui se manda cada archivo de train a la SVM y se puede hacer otro for al mismo nivel para el testing
+                training_features.append(features.to_numpy()[images_name.index(str(onlyfiles[i].split('.')[0]))])
+                training_label.append(labels_name[images_name.index(str(onlyfiles[i].split('.')[0]))])
+                # print(onlyfiles[i])
+                # print(labels_name[images_name.index(str(onlyfiles[i].split('.')[0]))])
+            result_training.append(self.classificatorSVM(training_features, training_label, vals_to_replace))
             for i in test_index:
-                # la misma vaina xd y se saca la métrica
-                print(str(i) + " " + onlyfiles[i])
+                test_features.append(features.to_numpy()[images_name.index(str(onlyfiles[i].split('.')[0]))])
+                test_label.append(labels_name[images_name.index(str(onlyfiles[i].split('.')[0]))])
+        print(result_training)
+
+
+PATH_IMAGES_P = os.path.abspath(
+    os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "DATASET - P"))
+PROJECT_PATH = os.path.join(os.getcwd(), os.path.pardir)
+PATH_Labels = os.path.abspath(
+    os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "Labels"))
+cc = Classification(PROJECT_PATH)
+
+filefeaturespath = os.path.join(os.path.join(PROJECT_PATH, 'FeatureExtraction'), 'features3.csv')
+names, features = cc.readfeatures(filefeaturespath)
+labels = cc.readLabels(PATH_Labels)
+vals_to_replace = {'a1': '0', 'a2': '1', 'a3': '2', 'a35': '3', 'a4': '4'}
+
+# cc.classificatorSVM(features, labels, vals_to_replace)
+cc.validacionCruzada(PATH_IMAGES_P, features, labels, vals_to_replace)
