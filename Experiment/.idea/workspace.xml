@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1773c20-0506-4546-b630-28e8ecb39128" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Classification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/PreProcessingData.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PreProcessingData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,10 +30,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Source/Classification.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="62" column="17" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="17" />
+            <state relative-caret-position="221">
+              <caret line="65" column="39" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
               <folding>
                 <element signature="e#343#355#0" expanded="true" />
+                <element signature="e#481#952#0" />
+                <element signature="e#1005#1567#0" />
+                <element signature="e#1616#1754#0" />
               </folding>
             </state>
           </provider>
@@ -215,12 +215,12 @@
       <workItem from="1570252804181" duration="17065000" />
       <workItem from="1570653501472" duration="8915000" />
       <workItem from="1570936598735" duration="4469000" />
-      <workItem from="1570974491471" duration="3803000" />
+      <workItem from="1570974491471" duration="5516000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73206000" />
+    <option name="totallyTimeSpent" value="74919000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -233,8 +233,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20499243" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20499243" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -247,7 +248,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="10" side_tool="true" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.18740399" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.21440262" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -363,10 +364,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Source/Classification.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="62" column="17" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="17" />
+        <state relative-caret-position="221">
+          <caret line="65" column="39" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
           <folding>
             <element signature="e#343#355#0" expanded="true" />
+            <element signature="e#481#952#0" />
+            <element signature="e#1005#1567#0" />
+            <element signature="e#1616#1754#0" />
           </folding>
         </state>
       </provider>

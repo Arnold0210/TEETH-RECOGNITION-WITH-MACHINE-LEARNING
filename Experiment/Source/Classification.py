@@ -7,9 +7,12 @@
 #
 import errno
 import os
+from os import listdir
+from os.path import isfile, join
 
 import pandas as pd
 from sklearn import svm
+from sklearn.model_selection import KFold
 
 
 class Classification:
@@ -48,7 +51,7 @@ class Classification:
         labels = pd.read_csv(labels_path, sep=',', header=[0])
         return labels
 
-    def classificator(self, features, labels):
+    def classificatorSVM(self, features, labels):
         X = []
         for f in features:
             X.append(f)
@@ -61,7 +64,18 @@ class Classification:
             tags.append(tag[1])
         clf = svm.SVC(gamma='scale')
         clf.fit(X, tags)
-        print(clf.score(X, y))
+        print(clf.score(X, tags))
 
-
-
+    def validacionCruzada(self, path_dataset):
+        onlyfiles = [f for f in listdir(path_dataset) if
+                     isfile(join(path_dataset, f))]
+        kf = KFold(n_splits=5.)
+        kf.get_n_splits(onlyfiles)
+        print(kf)
+        for train_index, test_index in kf.split(onlyfiles):
+            for i in train_index:
+                pass
+            # aqui se manda cada archivo de train a la SVM y se puede hacer otro for al mismo nivel para el testing
+            for i in test_index:
+                # la misma vaina xd y se saca la métrica
+                print(str(i) + " " + onlyfiles[i])
