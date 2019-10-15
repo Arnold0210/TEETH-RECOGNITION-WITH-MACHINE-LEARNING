@@ -10,9 +10,13 @@ import os
 from os import listdir
 from os.path import isfile, join
 
+import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 from sklearn import svm
+from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.model_selection import KFold
+from sklearn.utils.multiclass import unique_labels
 
 
 class Classification:
@@ -63,7 +67,7 @@ class Classification:
             tags.append(tag)
         clf = svm.SVC(gamma='scale')
         clf.fit(X, tags)
-        return clf.score(X, tags)
+        return clf
 
     def validacionCruzada(self, path_dataset, features, labels, vals_to_replace):
 
@@ -71,11 +75,14 @@ class Classification:
                      isfile(join(path_dataset, f))]
         kf = KFold(n_splits=5)
         kf.get_n_splits(onlyfiles)
-
+        target_names = ["a1", "a2", "a3", "a35", "a4"]
         images_name = labels['Nombre de la imagen'].to_numpy().tolist()
         labels['Color'] = labels['Color'].map(vals_to_replace)
         labels_name = labels['Color'].to_numpy().tolist()
-        result_training = []
+        svm_training_Score = []
+        confusion_matrix_svm = []
+        labels_test = []
+        classification_report_svm = []
         for train_index, test_index in kf.split(onlyfiles):
             training_label = []
             test_label = []
@@ -87,14 +94,72 @@ class Classification:
                 training_label.append(labels_name[images_name.index(str(onlyfiles[i].split('.')[0]))])
                 # print(onlyfiles[i])
                 # print(labels_name[images_name.index(str(onlyfiles[i].split('.')[0]))])
-            result_training.append(self.classificatorSVM(training_features, training_label, vals_to_replace))
+            SVM = self.classificatorSVM(training_features, training_label, vals_to_replace)
+            svm_training_Score.append(SVM.score(training_features, training_label))
+
             for i in test_index:
                 test_features.append(features.to_numpy()[images_name.index(str(onlyfiles[i].split('.')[0]))])
                 test_label.append(labels_name[images_name.index(str(onlyfiles[i].split('.')[0]))])
-        print(result_training)
+            predict_label = SVM.predict(test_features)
+            confusionMatrixSVM = confusion_matrix(test_label, predict_label)
+            classification_report_svm.append(classification_report(test_label, predict_label))
+
+            confusion_matrix_svm.append(
+                self.plot_confusion_matrix(test_label, predict_label, target_names,
+                                           title='Confusión Matrix'))
+        return confusion_matrix_svm, classification_report_svm
+
+    def plot_confusion_matrix(self, y_true, y_pred, classes,
+                              normalize=False,
+                              title=None,
+                              cmap=plt.cm.Blues):
+        if not title:
+            if normalize:
+                title = 'Normalized confusion matrix'
+            else:
+                title = 'Confusion matrix, without normalization'
+
+        # Compute confusion matrix
+        cm = confusion_matrix(y_true, y_pred)
+        # Only use the labels that appear in the data
+        classes = classes[unique_labels(y_true, y_pred)]
+        if normalize:
+            cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
+            print("Normalized confusion matrix")
+        else:
+            print('Confusion matrix, without normalization')
+
+        print(cm)
+
+        fig, ax = plt.subplots()
+        im = ax.imshow(cm, interpolation='nearest', cmap=cmap)
+        ax.figure.colorbar(im, ax=ax)
+        # We want to show all ticks...
+        ax.set(xticks=np.arange(cm.shape[1]),
+               yticks=np.arange(cm.shape[0]),
+               # ... and label them with the respective list entries
+               xticklabels=classes, yticklabels=classes,
+               title=title,
+               ylabel='True label',
+               xlabel='Predicted label')
+
+        # Rotate the tick labels and set their alignment.
+        plt.setp(ax.get_xticklabels(), rotation=45, ha="right",
+                 rotation_mode="anchor")
+
+        # Loop over data dimensions and create text annotations.
+        fmt = '.2f' if normalize else 'd'
+        thresh = cm.max() / 2.
+        for i in range(cm.shape[0]):
+            for j in range(cm.shape[1]):
+                ax.text(j, i, format(cm[i, j], fmt),
+                        ha="center", va="center",
+                        color="white" if cm[i, j] > thresh else "black")
+        fig.tight_layout()
+        return ax
 
 
-PATH_IMAGES_P = os.path.abspath(
+'''PATH_IMAGES_P = os.path.abspath(
     os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "DATASET - P"))
 PROJECT_PATH = os.path.join(os.getcwd(), os.path.pardir)
 PATH_Labels = os.path.abspath(
@@ -105,6 +170,5 @@ filefeaturespath = os.path.join(os.path.join(PROJECT_PATH, 'FeatureExtraction'),
 names, features = cc.readfeatures(filefeaturespath)
 labels = cc.readLabels(PATH_Labels)
 vals_to_replace = {'a1': '0', 'a2': '1', 'a3': '2', 'a35': '3', 'a4': '4'}
-
-# cc.classificatorSVM(features, labels, vals_to_replace)
-cc.validacionCruzada(PATH_IMAGES_P, features, labels, vals_to_replace)
+target_names = '
+cc.validacionCruzada(PATH_IMAGES_P, features, labels, vals_to_replace)'''

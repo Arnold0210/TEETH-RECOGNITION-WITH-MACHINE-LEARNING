@@ -145,10 +145,12 @@ class MainClass:
         pp = self.preProcessing
         fe = self.featureExtraction
         cc = self.clasification
-        images, names = read.read_Images(self.PATH_IMAGES_P)
         doption = input(
-            'Que deesea hacer? \n1. Leer imagenes y obtener caracteristicas\n2. Leer archivo de caracteristicas y entrenar algoritmo')
+            'Que desea hacer? \n1. Leer imagenes y obtener caracteristicas'
+            '\n2. Leer archivo de caracteristicas y entrenar algoritmo\n')
         option = int(doption)
+        print(option)
+        images, names = read.read_Images(self.PATH_IMAGES_P)
         if option == 1:
             for image_point, name_point in zip(images, names):
                 img_resize = pp.resize_Image(image_point, name_point)
@@ -197,13 +199,17 @@ class MainClass:
             # print(feattures)
             features_images = features.values
             vals_to_replace = {'a1': '0', 'a2': '1', 'a3': '2', 'a35': '3', 'a4': '4'}
-            cc.classificatorSVM(features_images, labels, vals_to_replace)
+            matrix_confusion, report_clasification = cc.validacionCruzada(self.PATH_IMAGES_P, features, labels,
+                                                                          vals_to_replace)
+            import numpy, matplotlib
+            numpy.set_printoptions(precision=2)
+            matplotlib.pyplot.show()
 
 
 if __name__ == '__main__':
     tesis: MainClass = MainClass()
     # tesis.main_run()
-    # tesis.main_alldataset()
-    tesis.savebin()
+    tesis.main_alldataset()
+    # tesis.savebin()
     print('Se ha finalizado la ejecución del experimento')
     sys.exit(0)
