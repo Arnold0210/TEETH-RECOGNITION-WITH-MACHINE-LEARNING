@@ -102,11 +102,10 @@ class Classification:
                 test_label.append(labels_name[images_name.index(str(onlyfiles[i].split('.')[0]))])
             predict_label = SVM.predict(test_features)
             confusionMatrixSVM = confusion_matrix(test_label, predict_label)
+
             classification_report_svm.append(classification_report(test_label, predict_label))
 
-            confusion_matrix_svm.append(
-                self.plot_confusion_matrix(test_label, predict_label, target_names,
-                                           title='Confusión Matrix'))
+            confusion_matrix_svm.append(confusionMatrixSVM)
         return confusion_matrix_svm, classification_report_svm
 
     def plot_confusion_matrix(self, y_true, y_pred, classes,
@@ -159,7 +158,7 @@ class Classification:
         return ax
 
 
-'''PATH_IMAGES_P = os.path.abspath(
+PATH_IMAGES_P = os.path.abspath(
     os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "DATASET - P"))
 PROJECT_PATH = os.path.join(os.getcwd(), os.path.pardir)
 PATH_Labels = os.path.abspath(
@@ -170,5 +169,8 @@ filefeaturespath = os.path.join(os.path.join(PROJECT_PATH, 'FeatureExtraction'),
 names, features = cc.readfeatures(filefeaturespath)
 labels = cc.readLabels(PATH_Labels)
 vals_to_replace = {'a1': '0', 'a2': '1', 'a3': '2', 'a35': '3', 'a4': '4'}
-target_names = '
-cc.validacionCruzada(PATH_IMAGES_P, features, labels, vals_to_replace)'''
+a, b = cc.validacionCruzada(PATH_IMAGES_P, features, labels, vals_to_replace)
+
+print('\n')
+for j in b:
+    print(j)
