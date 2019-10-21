@@ -1,7 +1,7 @@
 <annotation verified="yes">
 	<folder>DATASET</folder>
 	<filename>101_0002.JPG</filename>
-	<path>E:/TEETH-RECOGNITION-WITH-MACHINE-LEARNING/DATASET/101_0002.JPG</path>
+	<path>E:\TEETH-RECOGNITION-WITH-MACHINE-LEARNING\DATASET\101_0002.JPG</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -12,15 +12,15 @@
 	</size>
 	<segmented>0</segmented>
 	<object>
-		<name>boca</name>
+		<name>dientes</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
-		<difficult>1</difficult>
+		<difficult>0</difficult>
 		<bndbox>
-			<xmin>1221</xmin>
-			<ymin>1068</ymin>
-			<xmax>2871</xmax>
-			<ymax>1973</ymax>
+			<xmin>1388</xmin>
+			<ymin>1230</ymin>
+			<xmax>2665</xmax>
+			<ymax>1669</ymax>
 		</bndbox>
 	</object>
 </annotation>

@@ -12,15 +12,15 @@
 	</size>
 	<segmented>0</segmented>
 	<object>
-		<name>boca</name>
+		<name>dientes</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>1366</xmin>
-			<ymin>1053</ymin>
-			<xmax>3306</xmax>
-			<ymax>2453</ymax>
+			<xmin>1499</xmin>
+			<ymin>1236</ymin>
+			<xmax>2815</xmax>
+			<ymax>1875</ymax>
 		</bndbox>
 	</object>
 </annotation>

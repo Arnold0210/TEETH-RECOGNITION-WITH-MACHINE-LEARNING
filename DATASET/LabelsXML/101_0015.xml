@@ -1,4 +1,4 @@
-<annotation>
+<annotation verified="yes">
 	<folder>DATASET</folder>
 	<filename>101_0015.JPG</filename>
 	<path>E:\TEETH-RECOGNITION-WITH-MACHINE-LEARNING\DATASET\101_0015.JPG</path>
@@ -12,15 +12,15 @@
 	</size>
 	<segmented>0</segmented>
 	<object>
-		<name>boca</name>
+		<name>dientes</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>1306</xmin>
-			<ymin>1093</ymin>
-			<xmax>2966</xmax>
-			<ymax>2218</ymax>
+			<xmin>1554</xmin>
+			<ymin>1463</ymin>
+			<xmax>2838</xmax>
+			<ymax>1902</ymax>
 		</bndbox>
 	</object>
 </annotation>
