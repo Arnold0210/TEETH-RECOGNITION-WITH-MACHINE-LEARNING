@@ -14,6 +14,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from sklearn import svm
+from sklearn.metrics import accuracy_score
 from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.model_selection import KFold
 from sklearn.utils.multiclass import unique_labels
@@ -83,6 +84,7 @@ class Classification:
         confusion_matrix_svm = []
         labels_test = []
         classification_report_svm = []
+        score_accuracy = []
         for train_index, test_index in kf.split(onlyfiles):
             training_label = []
             test_label = []
@@ -106,7 +108,10 @@ class Classification:
             classification_report_svm.append(classification_report(test_label, predict_label))
 
             confusion_matrix_svm.append(confusionMatrixSVM)
-        return confusion_matrix_svm, classification_report_svm
+
+            score_accuracy.append(accuracy_score(test_label, predict_label))
+
+        return confusion_matrix_svm, classification_report_svm, score_accuracy
 
     def plot_confusion_matrix(self, y_true, y_pred, classes,
                               normalize=False,
@@ -165,12 +170,15 @@ PATH_Labels = os.path.abspath(
     os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "Labels"))
 cc = Classification(PROJECT_PATH)
 
-filefeaturespath = os.path.join(os.path.join(PROJECT_PATH, 'FeatureExtraction'), 'features3.csv')
+filefeaturespath = os.path.join(os.path.join(PROJECT_PATH, 'FeatureExtraction'), 'features.csv')
 names, features = cc.readfeatures(filefeaturespath)
 labels = cc.readLabels(PATH_Labels)
 vals_to_replace = {'a1': '0', 'a2': '1', 'a3': '2', 'a35': '3', 'a4': '4'}
-a, b = cc.validacionCruzada(PATH_IMAGES_P, features, labels, vals_to_replace)
+a, b, c = cc.validacionCruzada(PATH_IMAGES_P, features, labels, vals_to_replace)
 
 print('\n')
 for j in b:
     print(j)
+print('--------------')
+print(c)
+print(np.mean(c))

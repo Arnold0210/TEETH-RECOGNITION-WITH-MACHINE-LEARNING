@@ -377,7 +377,7 @@ class PreProcessingData:
         image = image.copy()
         contours, hierarchy = cv.findContours(image, cv.RETR_LIST, cv.CHAIN_APPROX_SIMPLE)
         # Isolate largest contour
-        print(name + ":" + str(max(contours, key=cv.contourArea)))
+        #print(name + ":" + str(max(contours, key=cv.contourArea)))
         biggest_contour = max(contours, key=cv.contourArea)
         # Draw just largest contour
         mask = np.zeros(image.shape, np.uint8)

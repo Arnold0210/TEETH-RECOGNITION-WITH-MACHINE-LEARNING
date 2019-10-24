@@ -11,6 +11,7 @@ import os
 import sys
 
 import cv2 as cv
+from tqdm import tqdm
 
 import Source.Classification as Cl
 import Source.FeatureExtraction as fE
@@ -152,6 +153,7 @@ class MainClass:
         print(option)
         images, names = read.read_Images(self.PATH_IMAGES_P)
         if option == 1:
+            bar = tqdm(os.listdir(PATH), ncols=amount, unit=' image')
             for image_point, name_point in zip(images, names):
                 img_resize = pp.resize_Image(image_point, name_point)
 
