@@ -11,6 +11,7 @@ import os
 import sys
 
 import cv2 as cv
+import numpy as np
 from tqdm import tqdm
 
 import Source.Classification as Cl
@@ -151,10 +152,13 @@ class MainClass:
             '\n2. Leer archivo de caracteristicas y entrenar algoritmo\n')
         option = int(doption)
         print(option)
-        images, names = read.read_Images(self.PATH_IMAGES_P)
+
         if option == 1:
-            bar = tqdm(os.listdir(PATH), ncols=amount, unit=' image')
-            for image_point, name_point in zip(images, names):
+            images, names = read.read_Images(self.PATH_IMAGES_P)
+            bar = tqdm(images, ncols=len(images), unit=' image')
+            for image_point, name_point in zip(bar, names):
+                bar.set_description("Procesando imagen %s" % name_point)
+                # Se reajusta la imagen a un tamaño de 600x400px
                 img_resize = pp.resize_Image(image_point, name_point)
 
                 # La imagen reajustada se convierte de BGR a RGB
@@ -176,10 +180,11 @@ class MainClass:
                     file_.write(str(i))
                 file_.close()'''
 
-                # A partir del rango de color, se saca una máscara donde se ubican los dientes y se procede a
+                # A partir del rango de color, se saca una máscara donde se ubican los dientes y se procede a buscar el contorno más grande dentro del área objetivo.
                 mask = pp.findBiggestContour(blurimage, name_point)
-
+                # Se separan los canales de la imágen en RGB
                 channelR, channelG, channelB = cv.split(img_resize)
+                # Se obtienen los momentos de color de cada espacio de color
                 red = fe.getFeaturesVector(channelR, mask)
                 green = fe.getFeaturesVector(channelG, mask)
                 blue = fe.getFeaturesVector(channelB, mask)
@@ -195,17 +200,22 @@ class MainClass:
                 pp.show_mask(blurimage, name_point)
                 pp.overlay_mask(blurimage, img_resize, name_point)
         elif option == 2:
-            filefeaturespath = os.path.join(os.path.join(self.PROJECT_PATH, 'FeatureExtraction'), 'features3.csv')
+            # Se lee el archivo de caracteristicas donde se encuentran los momentos de color
+            filefeaturespath = os.path.join(os.path.join(self.PROJECT_PATH, 'FeatureExtraction'), 'features.csv')
             names, features = cc.readfeatures(filefeaturespath)
             labels = cc.readLabels(self.PATH_Labels)
-            # print(feattures)
             features_images = features.values
             vals_to_replace = {'a1': '0', 'a2': '1', 'a3': '2', 'a35': '3', 'a4': '4'}
-            matrix_confusion, report_clasification = cc.validacionCruzada(self.PATH_IMAGES_P, features, labels,
-                                                                          vals_to_replace)
-            import numpy, matplotlib
-            numpy.set_printoptions(precision=2)
-            matplotlib.pyplot.show()
+            matrix_confusion, report_clasification, report_scores = cc.validacionCruzada(self.PATH_IMAGES_P, features,
+                                                                                         labels,
+                                                                                         vals_to_replace)
+            print('\n')
+            for report in report_clasification:
+                #print(report)
+                for item in report:
+                    print(report[item])
+            print('--------------')
+            print(np.mean(report_scores))
 
 
 if __name__ == '__main__':

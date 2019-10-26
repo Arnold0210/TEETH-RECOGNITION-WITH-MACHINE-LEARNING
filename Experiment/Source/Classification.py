@@ -105,11 +105,15 @@ class Classification:
             predict_label = SVM.predict(test_features)
             confusionMatrixSVM = confusion_matrix(test_label, predict_label)
 
-            classification_report_svm.append(classification_report(test_label, predict_label))
+            classification_report_svm.append(
+                classification_report(test_label, predict_label, labels=['0', '1', '2', '3', '4'],
+                                      target_names=['a1', 'a2', 'a3', 'a35', 'a4'], sample_weight=None, digits=5,
+                                      output_dict=True))
 
             confusion_matrix_svm.append(confusionMatrixSVM)
 
-            score_accuracy.append(accuracy_score(test_label, predict_label))
+            score_accuracy.append(
+                accuracy_score(test_label, predict_label))
 
         return confusion_matrix_svm, classification_report_svm, score_accuracy
 
@@ -162,7 +166,7 @@ class Classification:
         fig.tight_layout()
         return ax
 
-
+'''
 PATH_IMAGES_P = os.path.abspath(
     os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "DATASET - P"))
 PROJECT_PATH = os.path.join(os.getcwd(), os.path.pardir)
@@ -174,11 +178,12 @@ filefeaturespath = os.path.join(os.path.join(PROJECT_PATH, 'FeatureExtraction'),
 names, features = cc.readfeatures(filefeaturespath)
 labels = cc.readLabels(PATH_Labels)
 vals_to_replace = {'a1': '0', 'a2': '1', 'a3': '2', 'a35': '3', 'a4': '4'}
-a, b, c = cc.validacionCruzada(PATH_IMAGES_P, features, labels, vals_to_replace)
+matrix, reports, scores = cc.validacionCruzada(PATH_IMAGES_P, features, labels, vals_to_replace)
 
 print('\n')
-for j in b:
-    print(j)
+for report in reports:
+    print(report)
+
 print('--------------')
-print(c)
-print(np.mean(c))
+print(scores)
+print(np.mean(scores))'''
