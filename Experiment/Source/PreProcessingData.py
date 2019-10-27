@@ -207,7 +207,7 @@ class PreProcessingData:
         plt.close('all')
 
     def resize_Image(self, image, name):
-        img = cv.resize(image, (600, 400), interpolation=cv.INTER_AREA)
+        img = cv.resize(image, None, fx=1 / 3, fy=1 / 3, interpolation=cv.INTER_AREA)
         path_name_image = os.path.join(self.path_resize, name)
         if os.path.exists(path_name_image):
             pass
@@ -377,7 +377,7 @@ class PreProcessingData:
         image = image.copy()
         contours, hierarchy = cv.findContours(image, cv.RETR_LIST, cv.CHAIN_APPROX_SIMPLE)
         # Isolate largest contour
-        #print(name + ":" + str(max(contours, key=cv.contourArea)))
+        # print(name + ":" + str(max(contours, key=cv.contourArea)))
         biggest_contour = max(contours, key=cv.contourArea)
         # Draw just largest contour
         mask = np.zeros(image.shape, np.uint8)
