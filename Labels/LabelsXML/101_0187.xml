@@ -1,13 +1,13 @@
-<annotation verified="yes">
-	<folder>DATASET</folder>
+<annotation>
+	<folder>DATASET - Recortado</folder>
 	<filename>101_0187.JPG</filename>
-	<path>E:\TEETH-RECOGNITION-WITH-MACHINE-LEARNING\DATASET\101_0187.JPG</path>
+	<path>E:\TEETH-RECOGNITION-WITH-MACHINE-LEARNING\DATASET - Recortado\101_0187.JPG</path>
 	<source>
 		<database>Unknown</database>
 	</source>
 	<size>
-		<width>4288</width>
-		<height>3216</height>
+		<width>2153</width>
+		<height>1237</height>
 		<depth>3</depth>
 	</size>
 	<segmented>0</segmented>
@@ -17,10 +17,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>1061</xmin>
-			<ymin>708</ymin>
-			<xmax>3186</xmax>
-			<ymax>1978</ymax>
+			<xmin>193</xmin>
+			<ymin>324</ymin>
+			<xmax>1887</xmax>
+			<ymax>918</ymax>
 		</bndbox>
 	</object>
 </annotation>

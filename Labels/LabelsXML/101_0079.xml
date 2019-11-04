@@ -1,7 +1,7 @@
 <annotation verified="yes">
-	<folder>DATASET</folder>
+	<folder>DATASET - Recortado</folder>
 	<filename>101_0079.JPG</filename>
-	<path>E:\TEETH-RECOGNITION-WITH-MACHINE-LEARNING\DATASET\101_0079.JPG</path>
+	<path>E:\TEETH-RECOGNITION-WITH-MACHINE-LEARNING\DATASET - Recortado\101_0079.JPG</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -14,13 +14,13 @@
 	<object>
 		<name>boca</name>
 		<pose>Unspecified</pose>
-		<truncated>1</truncated>
+		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>1</xmin>
-			<ymin>6</ymin>
-			<xmax>2832</xmax>
-			<ymax>2091</ymax>
+			<xmin>245</xmin>
+			<ymin>757</ymin>
+			<xmax>2571</xmax>
+			<ymax>1675</ymax>
 		</bndbox>
 	</object>
 </annotation>
