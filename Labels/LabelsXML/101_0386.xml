@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Fotos con errores</folder>
+	<filename>101_0386.JPG</filename>
+	<path>D:\DATASET - Recortado\Fotos con errores\101_0386.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2281</width>
+		<height>1513</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>boca</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>252</xmin>
+			<ymin>450</ymin>
+			<xmax>2025</xmax>
+			<ymax>1038</ymax>
+		</bndbox>
+	</object>
+</annotation>
