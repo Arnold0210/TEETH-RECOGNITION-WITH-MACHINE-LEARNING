@@ -1,0 +1,26 @@
+<annotation>
+	<folder>DATASET - Recortado</folder>
+	<filename>101_1112.JPG</filename>
+	<path>E:\TEETH-RECOGNITION-WITH-MACHINE-LEARNING\DATASET - Recortado\101_1112.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2017</width>
+		<height>777</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>boca</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>42</xmin>
+			<ymin>70</ymin>
+			<xmax>1984</xmax>
+			<ymax>541</ymax>
+		</bndbox>
+	</object>
+</annotation>
