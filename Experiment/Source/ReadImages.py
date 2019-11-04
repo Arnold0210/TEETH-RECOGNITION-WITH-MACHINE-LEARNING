@@ -25,11 +25,14 @@ class LoadData:
         bar = tqdm(os.listdir(PATH), ncols=amount, unit=' image')
         for i in bar:
             if ('JPG' in i) or ('jpg' in i):
-                img = cv.imread(os.path.join(PATH, i))
-                images.append(img)
-                names.append(i)
+                try:
+                    img = cv.imread(os.path.join(PATH, i))
+                    images.append(img)
+                    names.append(i)
+                except IOError:
+                    print('Image cannot read corrctly: ' + i)
             bar.set_description("Leyendo archivo %s" % i)
-        return images,names
+        return images, names
 
     def read_One_Image(self, PATH):
         test_image = "101_0092.JPG"  # "100_0055.JPG"

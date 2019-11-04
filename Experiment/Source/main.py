@@ -182,7 +182,8 @@ class MainClass:
 
                 # A partir del rango de color, se saca una máscara donde se ubican los dientes y se procede a buscar el contorno más grande dentro del área objetivo.
                 mask = pp.findBiggestContour(blurimage, name_point)
-                # Se separan los canales de la imágen en RGB
+                # Se separan los canales de la
+                # imágen en RGB
                 channelR, channelG, channelB = cv.split(img_resize)
                 # Se obtienen los momentos de color de cada espacio de color
                 red = fe.getFeaturesVector(channelR, mask)
@@ -200,41 +201,46 @@ class MainClass:
                 pp.show_mask(blurimage, name_point)
                 pp.overlay_mask(blurimage, img_resize, name_point)
         elif option == 2:
+            times_execution = -1
+            while times_execution <= 0:
+                times_execution = int(input('\nIndique la cantidad de veces de ejecución:'))
+            bar = tqdm(range(times_execution), unit=' times')
+            for i in bar:
+                # Se lee el archivo de caracteristicas donde se encuentran los momentos de color
+                filefeaturespath = os.path.join(os.path.join(self.PROJECT_PATH, 'FeatureExtraction'), 'features.csv')
+                names, features = cc.readfeatures(filefeaturespath)
+                labels = cc.readLabels(self.PATH_Labels)
+                features_images = features.values
+                vals_to_replace = {'a1': '0', 'a2': '1', 'a3': '2', 'a35': '3'}
+                folios = int(input('\nCantidad de folios a seperarar el conjunto de datos:'))
+                matrix_confusion_SVM, report_clasification_SVM, report_scores_SVM, matrix_confusion_DT, report_clasification_DT, report_scores_DT, matrix_confusion_KNN, report_clasification_KNN, report_scores_KNN = cc.validacionCruzada(
+                    self.PATH_IMAGES_SNIPPING,
+                    features,
+                    labels,
+                    vals_to_replace, folios)
+                print('\n')
+                print('-------SVM------')
+                '''for report in report_clasification_SVM:
+                    print(report)
+                    for item in report:
+                        print(report[item])'''
+                print('--------MEAN SVM--------')
+                print(np.mean(report_scores_SVM))
+                print('-------DT------')
+                '''for report in report_clasification_DT:
+                    print(report)
+                    for item in report:
+                        print(report[item])'''
+                print('--------MEAN DT--------')
+                print(np.mean(report_scores_DT))
 
-            # Se lee el archivo de caracteristicas donde se encuentran los momentos de color
-            filefeaturespath = os.path.join(os.path.join(self.PROJECT_PATH, 'FeatureExtraction'), 'features.csv')
-            names, features = cc.readfeatures(filefeaturespath)
-            labels = cc.readLabels(self.PATH_Labels)
-            features_images = features.values
-            vals_to_replace = {'a1': '0', 'a2': '1', 'a3': '2', 'a35': '3'}
-            matrix_confusion_SVM, report_clasification_SVM, report_scores_SVM, matrix_confusion_DT, report_clasification_DT, report_scores_DT, matrix_confusion_KNN, report_clasification_KNN, report_scores_KNN = cc.validacionCruzada(
-                self.PATH_IMAGES_SNIPPING,
-                features,
-                labels,
-                vals_to_replace, 5)
-            print('\n')
-            print('-------SVM------')
-            for report in report_clasification_SVM:
-                print(report)
-                '''for item in report:
-                    print(report[item])'''
-            print('--------MEAN SVM--------')
-            print(np.mean(report_scores_SVM))
-            print('-------DT------')
-            for report in report_clasification_DT:
-                print(report)
-                '''for item in report:
-                    print(report[item])'''
-            print('--------MEAN DT--------')
-            print(np.mean(report_scores_DT))
-
-            print('-------KNN------')
-            for report in report_clasification_KNN:
-                print(report)
-                '''for item in report:
-                    print(report[item])'''
-            print('--------MEAN KNN--------')
-            print(np.mean(report_scores_KNN))
+                print('-------KNN------')
+                '''for report in report_clasification_KNN:
+                    print(report)
+                    for item in report:
+                        print(report[item])'''
+                print('--------MEAN KNN--------')
+                print(np.mean(report_scores_KNN))
 
 
 if __name__ == '__main__':

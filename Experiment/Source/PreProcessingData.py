@@ -207,7 +207,8 @@ class PreProcessingData:
         plt.close('all')
 
     def resize_Image(self, image, name):
-        img = cv.resize(image, None, fx=1 / 3, fy=1 / 3, interpolation=cv.INTER_AREA)
+        img = cv.resize(image, dsize=None, fx=1 / 3, fy=1 / 3, interpolation=cv.INTER_LINEAR)
+        # img = cv.resize(src=image,None, fx=1 / 3, fy=1 / 3)
         path_name_image = os.path.join(self.path_resize, name)
         if os.path.exists(path_name_image):
             pass

@@ -14,8 +14,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from sklearn import svm
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 from sklearn.model_selection import KFold
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
