@@ -28,16 +28,14 @@ def show(image):
 
 class MainClass:
     PROJECT_PATH = os.path.join(os.getcwd(), os.path.pardir)
-    PATH_IMAGES = os.path.abspath(
-        os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "DATASET"))
+    PATH_IMAGES_ORIGINAL = os.path.abspath(
+        os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "DATASET - Original"))
     PATH_Labels = os.path.abspath(
         os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "Labels"))
     PATH_LabelsXML = os.path.abspath(os.path.join(
         os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "Labels"), "LabelsXML"))
-    PATH_IMAGES_SNIPPING = os.path.abspath(
-        os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "DATASET - Recortado"))
-    PATH_IMAGES_P = os.path.abspath(
-        os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "DATASET - P"))
+    PATH_IMAGES = os.path.abspath(
+        os.path.join(os.path.join(os.path.join(os.getcwd(), os.pardir), os.pardir), "DATASET"))
     readimages = None
     preprocessing = None
     featureExtraction = None
@@ -80,9 +78,9 @@ class MainClass:
                 print('Classification Directory Already Exists.')
             else:
                 raise
-        self.readimages = rI.LoadData(self.PATH_IMAGES)
-        self.preProcessing = pD.PreProcessingData(self.PROJECT_PATH, self.PATH_IMAGES)
-        self.featureExtraction = fE.FeatureExtraction(self.PROJECT_PATH, self.PATH_IMAGES)
+        self.readimages = rI.LoadData(self.PATH_IMAGES_ORIGINAL)
+        self.preProcessing = pD.PreProcessingData(self.PROJECT_PATH, self.PATH_IMAGES_ORIGINAL)
+        self.featureExtraction = fE.FeatureExtraction(self.PROJECT_PATH, self.PATH_IMAGES_ORIGINAL)
         self.clasification = Cl.Classification(self.PROJECT_PATH)
 
     def main_run(self):
@@ -94,7 +92,7 @@ class MainClass:
         # Se lee el nombre y la imagen que se encuentre en el PATH del dataset ORIGINAL
         # img, name = read.read_One_Image(self.PATH_IMAGES)
         # Se lee el nombre y la imagen que se encuentre en el PATH del dataset RECORTADO
-        img, name = read.read_One_Image(self.PATH_IMAGES_SNIPPING)
+        img, name = read.read_One_Image(self.PATH_IMAGES)
 
         # Se obtiene las dimensiones de la imagen original
         height_ori, width_ori, depth_ori = img.shape
@@ -154,7 +152,7 @@ class MainClass:
         print(option)
 
         if option == 1:
-            images, names = read.read_Images(self.PATH_IMAGES_SNIPPING)
+            images, names = read.read_Images(self.PATH_IMAGES)
             bar = tqdm(images, ncols=len(images), unit=' image')
             for image_point, name_point in zip(bar, names):
                 bar.set_description("Procesando imagen %s" % name_point)
@@ -212,12 +210,14 @@ class MainClass:
                 labels = cc.readLabels(self.PATH_Labels)
                 features_images = features.values
                 vals_to_replace = {'a1': '0', 'a2': '1', 'a3': '2', 'a35': '3'}
+                tags = ['0', '1', '2', '3']
                 folios = int(input('\nCantidad de folios a seperarar el conjunto de datos:'))
-                matrix_confusion_SVM, report_clasification_SVM, report_scores_SVM, matrix_confusion_DT, report_clasification_DT, report_scores_DT, matrix_confusion_KNN, report_clasification_KNN, report_scores_KNN = cc.validacionCruzada(
-                    self.PATH_IMAGES_SNIPPING,
-                    features,
-                    labels,
-                    vals_to_replace, folios)
+                SVM, DT, KNN = cc.CrossValidation(self.PATH_IMAGES, features, labels, vals_to_replace, folios,
+                                                  tags)
+                matrix_confusion_SVM, report_clasification_SVM, report_scores_SVM = SVM.split()
+                matrix_confusion_DT, report_clasification_DT, report_scores_DT = DT.split()
+                matrix_confusion_KNN, report_clasification_KNN, report_scores_KNN = KNN.split()
+
                 print('\n')
                 print('-------SVM------')
                 '''for report in report_clasification_SVM:

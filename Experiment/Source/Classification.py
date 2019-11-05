@@ -11,14 +11,13 @@ from os import listdir
 from os.path import isfile, join
 
 import matplotlib.pyplot as plt
-import numpy as np
 import pandas as pd
 from sklearn import svm
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+from sklearn.metrics import roc_curve, auc
 from sklearn.model_selection import KFold
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.utils.multiclass import unique_labels
 
 
 class Classification:
@@ -91,7 +90,7 @@ class Classification:
         knn.fit(X, tags)
         return knn
 
-    def validacionCruzada(self, path_dataset, features, labels, vals_to_replace, n_splits):
+    def CrossValidation(self, path_dataset, features, labels, vals_to_replace, n_splits, tags):
 
         onlyfiles = [f for f in listdir(path_dataset) if
                      isfile(join(path_dataset, f))]
@@ -105,7 +104,6 @@ class Classification:
         confusion_matrix_svm = []
         confusion_matrix_dt = []
         confusion_matrix_knn = []
-        labels_test = []
         classification_report_svm = []
         classification_report_dt = []
         classification_report_knn = []
@@ -142,15 +140,15 @@ class Classification:
             confusionMatrixKNN = confusion_matrix(test_label, predict_label_KNN)
 
             classification_report_svm.append(
-                classification_report(test_label, predict_label_SVM, labels=['0', '1', '2', '3'],
+                classification_report(test_label, predict_label_SVM, labels=tags,
                                       target_names=target_names, sample_weight=None, digits=5,
                                       output_dict=False))
             classification_report_dt.append(
-                classification_report(test_label, predict_label_DT, labels=['0', '1', '2', '3'],
+                classification_report(test_label, predict_label_DT, labels=tags,
                                       target_names=target_names, sample_weight=None, digits=5,
                                       output_dict=False))
             classification_report_knn.append(
-                classification_report(test_label, predict_label_KNN, labels=['0', '1', '2', '3'],
+                classification_report(test_label, predict_label_KNN, labels=tags,
                                       target_names=target_names, sample_weight=None, digits=5,
                                       output_dict=False))
 
@@ -161,54 +159,49 @@ class Classification:
             score_accuracy_SVM.append(accuracy_score(test_label, predict_label_SVM))
             score_accuracy_DT.append(accuracy_score(test_label, predict_label_DT))
             score_accuracy_KNN.append(accuracy_score(test_label, predict_label_KNN))
+        SVM_RESULTS = [confusion_matrix_svm, classification_report_svm, score_accuracy_SVM]
+        DT_RESULTS = [confusion_matrix_dt, classification_report_dt, score_accuracy_DT]
+        KNN_RESULTS = [confusion_matrix_knn, classification_report_knn, score_accuracy_KNN]
+        return SVM_RESULTS, DT_RESULTS, KNN_RESULTS
 
-        return confusion_matrix_svm, classification_report_svm, score_accuracy_SVM, confusion_matrix_dt, classification_report_dt, score_accuracy_DT, confusion_matrix_knn, classification_report_knn, score_accuracy_KNN
+    def ROC_CURVE(self, label_test, label_score):
+        n_classes = label_test.shape
+        fpr = dict()
+        tpr = dict()
+        roc_auc = dict()
+        for i in range(n_classes):
+            fpr[i], tpr[i], _ = roc_curve(label_test[:, i], label_score[:, i])
+            roc_auc[i] = auc(fpr[i], tpr[i])
+        # Compute micro-average ROC curve and ROC area
+        fpr["micro"], tpr["micro"], _ = roc_curve(label_test.ravel(), label_score.ravel())
+        roc_auc["micro"] = auc(fpr["micro"], tpr["micro"])
 
-    def plot_confusion_matrix(self, y_true, y_pred, classes,
-                              normalize=False,
-                              title=None,
-                              cmap=plt.cm.Blues):
-        if not title:
-            if normalize:
-                title = 'Normalized confusion matrix'
-            else:
-                title = 'Confusion matrix, without normalization'
+        # Plot of a ROC curve for a specific class
+        plt.figure()
+        plt.plot(fpr[2], tpr[2], label='ROC curve (area = %0.2f)' % roc_auc[2])
+        plt.plot([0, 1], [0, 1], 'k--')
+        plt.xlim([0.0, 1.0])
+        plt.ylim([0.0, 1.05])
+        plt.xlabel('False Positive Rate')
+        plt.ylabel('True Positive Rate')
+        plt.title('Receiver operating characteristic example')
+        plt.legend(loc="lower right")
+        plt.show()
 
-        # Compute confusion matrix
-        cm = confusion_matrix(y_true, y_pred)
-        # Only use the labels that appear in the data
-        classes = classes[unique_labels(y_true, y_pred)]
-        if normalize:
-            cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
-            print("Normalized confusion matrix")
-        else:
-            print('Confusion matrix, without normalization')
+        # Plot ROC curve
+        plt.figure()
+        plt.plot(fpr["micro"], tpr["micro"],
+                 label='micro-average ROC curve (area = {0:0.2f})'
+                       ''.format(roc_auc["micro"]))
+        for i in range(n_classes):
+            plt.plot(fpr[i], tpr[i], label='ROC curve of class {0} (area = {1:0.2f})'
+                                           ''.format(i, roc_auc[i]))
 
-        print(cm)
-
-        fig, ax = plt.subplots()
-        im = ax.imshow(cm, interpolation='nearest', cmap=cmap)
-        ax.figure.colorbar(im, ax=ax)
-        # We want to show all ticks...
-        ax.set(xticks=np.arange(cm.shape[1]),
-               yticks=np.arange(cm.shape[0]),
-               # ... and label them with the respective list entries
-               xticklabels=classes, yticklabels=classes,
-               title=title,
-               ylabel='True label',
-               xlabel='Predicted label')
-
-        # Rotate the tick labels and set their alignment.
-        plt.setp(ax.get_xticklabels(), rotation=45, ha="right",
-                 rotation_mode="anchor")
-
-        # Loop over data dimensions and create text annotations.
-        fmt = '.2f' if normalize else 'd'
-        thresh = cm.max() / 2.
-        for i in range(cm.shape[0]):
-            for j in range(cm.shape[1]):
-                ax.text(j, i, format(cm[i, j], fmt),
-                        ha="center", va="center",
-                        color="white" if cm[i, j] > thresh else "black")
-        fig.tight_layout()
-        return ax
+        plt.plot([0, 1], [0, 1], 'k--')
+        plt.xlim([0.0, 1.0])
+        plt.ylim([0.0, 1.05])
+        plt.xlabel('False Positive Rate')
+        plt.ylabel('True Positive Rate')
+        plt.title('Some extension of Receiver operating characteristic to multi-class')
+        plt.legend(loc="lower right")
+        plt.show()
