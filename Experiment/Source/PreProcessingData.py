@@ -314,7 +314,7 @@ class PreProcessingData:
         # print(histr.shape)
         # print(len(x))
         # print(colours.shape)
-        for i in (x):
+        for i in x:
             plt.bar(x[i], histr[i], color=colours[i], edgecolor=colours[i], width=1)
             plt.title('Hue')
         plt.savefig(self.path_BarPlotCh1 + '\\BAR_CHART_HUE_' + name)
@@ -326,7 +326,7 @@ class PreProcessingData:
         x = list(range(0, 256))
         colours = [colors.hsv_to_rgb((0, i / 256, 1)) for i in range(0, 256)]
 
-        for i in (x):
+        for i in x:
             plt.bar(x[i], histr[i], color=colours[i], edgecolor=colours[i], width=1)
             # plt.bar(range(0, 256), histr, color=colours, edgecolor=colours, width=1)
             plt.title('Saturation')

@@ -76,7 +76,7 @@ class FeatureExtraction:
         return np.mean(vector_caracteristicas)
 
     def varVector(self, vector_caracteristicas):
-        return np.var(vector_caracteristicas)
+        return stats.moment(vector_caracteristicas)
 
     def skewVector(self, vector_caracteristicas):
         return stats.skew(vector_caracteristicas)
