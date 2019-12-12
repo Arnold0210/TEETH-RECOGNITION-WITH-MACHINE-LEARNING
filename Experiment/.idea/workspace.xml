@@ -1,234 +1,403 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ChangeListManager">
-    <list default="true" id="e1773c20-0506-4546-b630-28e8ecb39128" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Classification.py" afterDir="false" />
-    </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Jupyter Notebook" />
-        <option value="Python Script" />
-      </list>
-    </option>
-    <option name="SCHEME" value="Project" />
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="ProjectId" id="1T25Uc26LTGcAfh1vtFw3eXE2e9" />
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Nuevo Experimento.ipynb" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="copyright.filetypes.Python" />
-  </component>
-  <component name="PyConsoleOptionsProvider">
-    <option name="myPythonConsoleState">
-      <console-settings module-name="Experiment" is-module-sdk="true">
-        <option name="myUseModuleSdk" value="true" />
-        <option name="myModuleName" value="Experiment" />
-      </console-settings>
-    </option>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="Classification" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Experiment" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Source" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Source/Classification.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="Experiment" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Experiment" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Source" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Source/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.Classification" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SvnConfiguration">
-    <configuration>C:\Users\arnoldherrera\AppData\Roaming\Subversion</configuration>
-  </component>
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="e1773c20-0506-4546-b630-28e8ecb39128" name="Default Changelist" comment="" />
-      <created>1568157930791</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1568157930791</updated>
-      <workItem from="1568157932084" duration="907000" />
-      <workItem from="1568158869217" duration="6124000" />
-      <workItem from="1569250296122" duration="14742000" />
-      <workItem from="1570059499932" duration="16570000" />
-      <workItem from="1570251989305" duration="591000" />
-      <workItem from="1570252732003" duration="19000" />
-      <workItem from="1570252784582" duration="1000" />
-      <workItem from="1570252804181" duration="17065000" />
-      <workItem from="1570653501472" duration="8915000" />
-      <workItem from="1570936598735" duration="4469000" />
-      <workItem from="1570974491471" duration="20069000" />
-      <workItem from="1571268448912" duration="928000" />
-      <workItem from="1571810798911" duration="34380000" />
-      <workItem from="1572151484062" duration="13902000" />
-      <workItem from="1572644700485" duration="266000" />
-      <workItem from="1572645377815" duration="124000" />
-      <workItem from="1572645540273" duration="7093000" />
-      <workItem from="1573669610841" duration="5933000" />
-      <workItem from="1574309065336" duration="1378000" />
-      <workItem from="1574560533415" duration="2465000" />
-      <workItem from="1574910550910" duration="598000" />
-      <workItem from="1575093981120" duration="1439000" />
-      <workItem from="1575812335925" duration="21910000" />
-    </task>
-    <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="UpdateCopyrightCheckinHandler">
-    <option name="UPDATE_COPYRIGHT" value="true" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <default-breakpoints>
-        <breakpoint type="python-exception">
-          <properties notifyOnTerminate="true" exception="BaseException">
-            <option name="notifyOnTerminate" value="true" />
-          </properties>
-        </breakpoint>
-      </default-breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Experiment$main.coverage" NAME="main Coverage Results" MODIFIED="1576117094830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Source" />
-    <SUITE FILE_PATH="coverage/Experiment$Classification.coverage" NAME="Classification Coverage Results" MODIFIED="1571937128292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Source" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="Copyright.UI">
-        <settings>
-          <last-edited>Tesis</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
-  </component>
+	<component name="ChangeListManager">
+		<list default="true" id="e1773c20-0506-4546-b630-28e8ecb39128" name="Default Changelist" comment="">
+			<change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+			<change beforePath="$PROJECT_DIR$/Source/Classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Classification.py" afterDir="false" />
+			<change beforePath="$PROJECT_DIR$/../DATASET/101_0375.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/../DATASET/101_1045.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/../DATASET/101_1046.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/../DATASET/101_1047.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/../DATASET/101_1048.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/../DATASET/101_1049.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/../DATASET/101_1050.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/../DATASET/101_1051.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/../DATASET/101_1052.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/../DATASET/101_1053.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/../DATASET/101_1054.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/../DATASET/101_1055.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/../DATASET/101_1056.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/../DATASET/101_1057.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/../DATASET/101_1058.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/../DATASET/101_1059.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/../DATASET/101_1060.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/../DATASET/101_1061.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/../DATASET/101_1063.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/../DATASET/101_1064.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/../DATASET/101_1065.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/../DATASET/101_1066.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/../DATASET/101_1067.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/../DATASET/101_1068.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/../DATASET/101_1069.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/../DATASET/101_1070.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/../DATASET/101_1071.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/../DATASET/101_1072.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+			<change beforePath="$PROJECT_DIR$/FeatureExtraction/features.csv" beforeDir="false" afterPath="$PROJECT_DIR$/FeatureExtraction/features.csv" afterDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/HSV/101_0377.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/HSV/101_0378.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/HSV/101_0534.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/HSV/101_0536.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/HSV/101_0540.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/HSV/101_0662.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/HSV/101_0671.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/HSV/101_0680.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/HSV/101_0737.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/HSV/101_0738.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/HSV/101_0746.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/HSV/101_0822.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/HSV/101_0825.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/HSV/101_0837.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/HSV/101_0839.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/HSV/101_0868.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/HSV/101_0869.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/HSV/101_0870.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlot/BAR_StackColor_101_0377.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlot/BAR_StackColor_101_0378.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlot/BAR_StackColor_101_0534.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlot/BAR_StackColor_101_0536.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlot/BAR_StackColor_101_0540.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlot/BAR_StackColor_101_0662.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlot/BAR_StackColor_101_0671.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlot/BAR_StackColor_101_0680.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlot/BAR_StackColor_101_0737.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlot/BAR_StackColor_101_0738.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlot/BAR_StackColor_101_0746.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlot/BAR_StackColor_101_0822.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlot/BAR_StackColor_101_0825.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlot/BAR_StackColor_101_0837.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlot/BAR_StackColor_101_0839.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlot/BAR_StackColor_101_0868.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlot/BAR_StackColor_101_0869.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlot/BAR_StackColor_101_0870.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh1/BAR_CHART_HUE_101_0377.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh1/BAR_CHART_HUE_101_0378.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh1/BAR_CHART_HUE_101_0534.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh1/BAR_CHART_HUE_101_0536.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh1/BAR_CHART_HUE_101_0540.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh1/BAR_CHART_HUE_101_0662.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh1/BAR_CHART_HUE_101_0671.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh1/BAR_CHART_HUE_101_0680.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh1/BAR_CHART_HUE_101_0737.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh1/BAR_CHART_HUE_101_0738.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh1/BAR_CHART_HUE_101_0746.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh1/BAR_CHART_HUE_101_0822.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh1/BAR_CHART_HUE_101_0825.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh1/BAR_CHART_HUE_101_0837.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh1/BAR_CHART_HUE_101_0839.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh1/BAR_CHART_HUE_101_0868.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh1/BAR_CHART_HUE_101_0869.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh1/BAR_CHART_HUE_101_0870.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh2/BAR_CHART_SATURATION_101_0377.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh2/BAR_CHART_SATURATION_101_0378.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh2/BAR_CHART_SATURATION_101_0534.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh2/BAR_CHART_SATURATION_101_0536.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh2/BAR_CHART_SATURATION_101_0540.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh2/BAR_CHART_SATURATION_101_0662.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh2/BAR_CHART_SATURATION_101_0671.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh2/BAR_CHART_SATURATION_101_0680.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh2/BAR_CHART_SATURATION_101_0737.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh2/BAR_CHART_SATURATION_101_0738.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh2/BAR_CHART_SATURATION_101_0746.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh2/BAR_CHART_SATURATION_101_0822.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh2/BAR_CHART_SATURATION_101_0825.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh2/BAR_CHART_SATURATION_101_0837.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh2/BAR_CHART_SATURATION_101_0839.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh2/BAR_CHART_SATURATION_101_0868.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh2/BAR_CHART_SATURATION_101_0869.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh2/BAR_CHART_SATURATION_101_0870.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh3/BAR_CHART_VALUE_101_0377.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh3/BAR_CHART_VALUE_101_0378.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh3/BAR_CHART_VALUE_101_0534.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh3/BAR_CHART_VALUE_101_0536.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh3/BAR_CHART_VALUE_101_0540.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh3/BAR_CHART_VALUE_101_0662.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh3/BAR_CHART_VALUE_101_0671.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh3/BAR_CHART_VALUE_101_0680.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh3/BAR_CHART_VALUE_101_0737.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh3/BAR_CHART_VALUE_101_0738.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh3/BAR_CHART_VALUE_101_0746.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh3/BAR_CHART_VALUE_101_0822.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh3/BAR_CHART_VALUE_101_0825.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh3/BAR_CHART_VALUE_101_0837.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh3/BAR_CHART_VALUE_101_0839.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh3/BAR_CHART_VALUE_101_0868.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh3/BAR_CHART_VALUE_101_0869.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/BarPlotCh3/BAR_CHART_VALUE_101_0870.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/Mask/MASK_101_0377.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/Mask/MASK_101_0378.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/Mask/MASK_101_0534.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/Mask/MASK_101_0536.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/Mask/MASK_101_0540.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/Mask/MASK_101_0662.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/Mask/MASK_101_0671.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/Mask/MASK_101_0680.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/Mask/MASK_101_0737.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/Mask/MASK_101_0738.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/Mask/MASK_101_0746.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/Mask/MASK_101_0822.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/Mask/MASK_101_0825.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/Mask/MASK_101_0837.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/Mask/MASK_101_0839.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/Mask/MASK_101_0868.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/Mask/MASK_101_0869.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/Mask/MASK_101_0870.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/MaskOverlay/MASKOVERLAY_101_0377.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/MaskOverlay/MASKOVERLAY_101_0378.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/MaskOverlay/MASKOVERLAY_101_0534.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/MaskOverlay/MASKOVERLAY_101_0536.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/MaskOverlay/MASKOVERLAY_101_0540.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/MaskOverlay/MASKOVERLAY_101_0662.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/MaskOverlay/MASKOVERLAY_101_0671.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/MaskOverlay/MASKOVERLAY_101_0680.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/MaskOverlay/MASKOVERLAY_101_0737.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/MaskOverlay/MASKOVERLAY_101_0738.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/MaskOverlay/MASKOVERLAY_101_0746.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/MaskOverlay/MASKOVERLAY_101_0822.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/MaskOverlay/MASKOVERLAY_101_0825.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/MaskOverlay/MASKOVERLAY_101_0837.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/MaskOverlay/MASKOVERLAY_101_0839.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/MaskOverlay/MASKOVERLAY_101_0868.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/MaskOverlay/MASKOVERLAY_101_0869.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/PreProcessing/Segmentation/MaskOverlay/MASKOVERLAY_101_0870.JPG" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/Source/Classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Classification.py" afterDir="false" />
+			<change beforePath="$PROJECT_DIR$/Source/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/main.py" afterDir="false" />
+			<change beforePath="$PROJECT_DIR$/../Labels/Labels - Copy (2).csv" beforeDir="false" />
+			<change beforePath="$PROJECT_DIR$/../Labels/Labels - Copy.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Labels/Labels - Copy.csv" afterDir="false" />
+			<change beforePath="$PROJECT_DIR$/../Labels/Labels.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Labels/Labels.csv" afterDir="false" />
+>>>>>>> c7505617581ec633b03da0cd3dfcf3e11a0b7c7e
+		</list>
+		<option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+		<option name="SHOW_DIALOG" value="false" />
+		<option name="HIGHLIGHT_CONFLICTS" value="true" />
+		<option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+		<option name="LAST_RESOLUTION" value="IGNORE" />
+	</component>
+	<component name="FileTemplateManagerImpl">
+		<option name="RECENT_TEMPLATES">
+			<list>
+				<option value="Jupyter Notebook" />
+				<option value="Python Script" />
+			</list>
+		</option>
+		<option name="SCHEME" value="Project" />
+	</component>
+	<component name="Git.Settings">
+		<option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+	</component>
+	<component name="ProjectId" id="1T25Uc26LTGcAfh1vtFw3eXE2e9" />
+	<component name="PropertiesComponent">
+		<property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+		<property name="WebServerToolWindowFactoryState" value="false" />
+		<property name="last_opened_file_path" value="$PROJECT_DIR$/../Nuevo Experimento.ipynb" />
+		<property name="node.js.detected.package.eslint" value="true" />
+		<property name="node.js.detected.package.tslint" value="true" />
+		<property name="node.js.path.for.package.eslint" value="project" />
+		<property name="node.js.path.for.package.tslint" value="project" />
+		<property name="node.js.selected.package.eslint" value="(autodetect)" />
+		<property name="node.js.selected.package.tslint" value="(autodetect)" />
+		<property name="settings.editor.selected.configurable" value="copyright.filetypes.Python" />
+	</component>
+	<component name="PyConsoleOptionsProvider">
+		<option name="myPythonConsoleState">
+			<console-settings module-name="Experiment" is-module-sdk="true">
+				<option name="myUseModuleSdk" value="true" />
+				<option name="myModuleName" value="Experiment" />
+			</console-settings>
+		</option>
+	</component>
+	<component name="RunDashboard">
+		<option name="ruleStates">
+			<list>
+				<RuleState>
+					<option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+				</RuleState>
+				<RuleState>
+					<option name="name" value="StatusDashboardGroupingRule" />
+				</RuleState>
+			</list>
+		</option>
+	</component>
+	<component name="RunManager" selected="Python.main">
+		<configuration name="Classification" type="PythonConfigurationType" factoryName="Python" temporary="true">
+			<module name="Experiment" />
+			<option name="INTERPRETER_OPTIONS" value="" />
+			<option name="PARENT_ENVS" value="true" />
+			<envs>
+				<env name="PYTHONUNBUFFERED" value="1" />
+			</envs>
+			<option name="SDK_HOME" value="" />
+			<option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Source" />
+			<option name="IS_MODULE_SDK" value="true" />
+			<option name="ADD_CONTENT_ROOTS" value="true" />
+			<option name="ADD_SOURCE_ROOTS" value="true" />
+			<EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+			<option name="SCRIPT_NAME" value="$PROJECT_DIR$/Source/Classification.py" />
+			<option name="PARAMETERS" value="" />
+			<option name="SHOW_COMMAND_LINE" value="false" />
+			<option name="EMULATE_TERMINAL" value="false" />
+			<option name="MODULE_MODE" value="false" />
+			<option name="REDIRECT_INPUT" value="false" />
+			<option name="INPUT_FILE" value="" />
+			<method v="2" />
+		</configuration>
+		<configuration default="true" type="PythonConfigurationType" factoryName="Python">
+			<module name="Experiment" />
+			<option name="INTERPRETER_OPTIONS" value="" />
+			<option name="PARENT_ENVS" value="true" />
+			<envs>
+				<env name="PYTHONUNBUFFERED" value="1" />
+			</envs>
+			<option name="SDK_HOME" value="" />
+			<option name="WORKING_DIRECTORY" value="" />
+			<option name="IS_MODULE_SDK" value="false" />
+			<option name="ADD_CONTENT_ROOTS" value="true" />
+			<option name="ADD_SOURCE_ROOTS" value="true" />
+			<EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+			<option name="SCRIPT_NAME" value="" />
+			<option name="PARAMETERS" value="" />
+			<option name="SHOW_COMMAND_LINE" value="true" />
+			<option name="EMULATE_TERMINAL" value="false" />
+			<option name="MODULE_MODE" value="false" />
+			<option name="REDIRECT_INPUT" value="false" />
+			<option name="INPUT_FILE" value="" />
+			<method v="2" />
+		</configuration>
+		<configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+			<module name="Experiment" />
+			<option name="INTERPRETER_OPTIONS" value="" />
+			<option name="PARENT_ENVS" value="true" />
+			<envs>
+				<env name="PYTHONUNBUFFERED" value="1" />
+			</envs>
+			<option name="SDK_HOME" value="" />
+			<option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Source" />
+			<option name="IS_MODULE_SDK" value="true" />
+			<option name="ADD_CONTENT_ROOTS" value="true" />
+			<option name="ADD_SOURCE_ROOTS" value="true" />
+			<EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+			<option name="SCRIPT_NAME" value="$PROJECT_DIR$/Source/main.py" />
+			<option name="PARAMETERS" value="" />
+			<option name="SHOW_COMMAND_LINE" value="false" />
+			<option name="EMULATE_TERMINAL" value="false" />
+			<option name="MODULE_MODE" value="false" />
+			<option name="REDIRECT_INPUT" value="false" />
+			<option name="INPUT_FILE" value="" />
+			<method v="2" />
+		</configuration>
+		<recent_temporary>
+			<list>
+				<item itemvalue="Python.main" />
+				<item itemvalue="Python.Classification" />
+			</list>
+		</recent_temporary>
+	</component>
+	<component name="SvnConfiguration">
+		<configuration>C:\Users\arnoldherrera\AppData\Roaming\Subversion</configuration>
+	</component>
+	<component name="TaskManager">
+		<task active="true" id="Default" summary="Default task">
+			<changelist id="e1773c20-0506-4546-b630-28e8ecb39128" name="Default Changelist" comment="" />
+			<created>1568157930791</created>
+			<option name="number" value="Default" />
+			<option name="presentableId" value="Default" />
+			<updated>1568157930791</updated>
+			<workItem from="1568157932084" duration="907000" />
+			<workItem from="1568158869217" duration="6124000" />
+			<workItem from="1569250296122" duration="14742000" />
+			<workItem from="1570059499932" duration="16570000" />
+			<workItem from="1570251989305" duration="591000" />
+			<workItem from="1570252732003" duration="19000" />
+			<workItem from="1570252784582" duration="1000" />
+			<workItem from="1570252804181" duration="17065000" />
+			<workItem from="1570653501472" duration="8915000" />
+			<workItem from="1570936598735" duration="4469000" />
+			<workItem from="1570974491471" duration="20069000" />
+			<workItem from="1571268448912" duration="928000" />
+			<workItem from="1571810798911" duration="34380000" />
+			<workItem from="1572151484062" duration="13902000" />
+			<workItem from="1572644700485" duration="266000" />
+			<workItem from="1572645377815" duration="124000" />
+			<workItem from="1572645540273" duration="7093000" />
+			<workItem from="1573669610841" duration="5933000" />
+			<workItem from="1574309065336" duration="1378000" />
+			<workItem from="1574560533415" duration="2465000" />
+			<workItem from="1574910550910" duration="598000" />
+			<workItem from="1575093981120" duration="1439000" />
+			<workItem from="1575812335925" duration="21910000" />
+
+			<workItem from="1575812335925" duration="19219000" />
+
+		</task>
+		<servers />
+	</component>
+	<component name="TypeScriptGeneratedFilesManager">
+		<option name="version" value="1" />
+	</component>
+	<component name="UpdateCopyrightCheckinHandler">
+		<option name="UPDATE_COPYRIGHT" value="true" />
+	</component>
+	<component name="Vcs.Log.Tabs.Properties">
+		<option name="TAB_STATES">
+			<map>
+				<entry key="MAIN">
+					<value>
+						<State>
+							<option name="COLUMN_ORDER" />
+						</State>
+					</value>
+				</entry>
+			</map>
+		</option>
+	</component>
+	<component name="VcsManagerConfiguration">
+		<option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+		<option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+	</component>
+	<component name="XDebuggerManager">
+		<breakpoint-manager>
+			<default-breakpoints>
+				<breakpoint type="python-exception">
+					<properties notifyOnTerminate="true" exception="BaseException">
+						<option name="notifyOnTerminate" value="true" />
+					</properties>
+				</breakpoint>
+			</default-breakpoints>
+		</breakpoint-manager>
+	</component>
+	<component name="com.intellij.coverage.CoverageDataManagerImpl">
+
+		<SUITE FILE_PATH="coverage/Experiment$main.coverage" NAME="main Coverage Results" MODIFIED="1576117094830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Source" />
+
+		<SUITE FILE_PATH="coverage/Experiment$main.coverage" NAME="main Coverage Results" MODIFIED="1575965533476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Source" />
+
+		<SUITE FILE_PATH="coverage/Experiment$Classification.coverage" NAME="Classification Coverage Results" MODIFIED="1571937128292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Source" />
+	</component>
+	<component name="masterDetails">
+		<states>
+			<state key="Copyright.UI">
+				<settings>
+					<last-edited>Tesis</last-edited>
+					<splitter-proportions>
+						<option name="proportions">
+							<list>
+								<option value="0.2" />
+							</list>
+						</option>
+					</splitter-proportions>
+				</settings>
+			</state>
+			<state key="ScopeChooserConfigurable.UI">
+				<settings>
+					<splitter-proportions>
+						<option name="proportions">
+							<list>
+								<option value="0.2" />
+							</list>
+						</option>
+					</splitter-proportions>
+				</settings>
+			</state>
+		</states>
+	</component>
 </project>

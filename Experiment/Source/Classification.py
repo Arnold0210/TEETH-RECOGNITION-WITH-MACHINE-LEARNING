@@ -118,8 +118,13 @@ class Classification:
                 train_features = []
                 test_features = []
                 for i in train_index:
+
                     print(str(images_name))
                     train_features.append(feature.to_numpy()[str(images_name.str(onlyfiles[i].split('.')[0]))])
+
+                    #print(images_name.str.)
+                    train_features.append(feature.to_numpy()[images_name.str(onlyfiles[i].split('.')[0])])
+
                     train_label.append(labels_color[images_name.index(str(onlyfiles[i].split('.')[0]))])
                 SVM_Classifier = self.classificatorSVM(train_features, train_label)
                 DT_Classifier = self.DecisionTree(train_features, train_label)
