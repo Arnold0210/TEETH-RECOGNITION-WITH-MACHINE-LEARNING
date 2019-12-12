@@ -13,9 +13,8 @@ from os.path import isfile, join
 import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn import svm
-from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
-from sklearn.metrics import roc_curve, auc
-from sklearn.model_selection import KFold
+from sklearn.metrics import roc_curve, auc, accuracy_score, classification_report, confusion_matrix
+from sklearn.model_selection import train_test_split, KFold
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
 
@@ -90,79 +89,91 @@ class Classification:
         knn.fit(X, tags)
         return knn
 
-    def CrossValidation(self, path_dataset, features, labels, vals_to_replace, n_splits, tags):
-
+    def classification(self, path_dataset, features, labels, n_splits, tags, target_names, vals_to_replace):
+        pd.options.mode.chained_assignment = None
         onlyfiles = [f for f in listdir(path_dataset) if
                      isfile(join(path_dataset, f))]
-        kf = KFold(n_splits=n_splits)
-        kf.get_n_splits(onlyfiles)
-        target_names = ['a1', 'a2', 'a3', 'a35']
-        images_name = labels['Nombre de la imagen'].to_numpy().tolist()
-        labels['Color'] = labels['Color'].map(vals_to_replace)
-        labels_name = labels['Color'].to_numpy().tolist()
-        svm_training_Score = []
-        confusion_matrix_svm = []
-        confusion_matrix_dt = []
-        confusion_matrix_knn = []
-        classification_report_svm = []
-        classification_report_dt = []
-        classification_report_knn = []
-        score_accuracy_SVM = []
-        score_accuracy_DT = []
-        score_accuracy_KNN = []
-        for train_index, test_index in kf.split(onlyfiles):
+        k_folds = KFold(n_splits=n_splits)
+        k_folds.get_n_splits(onlyfiles)
+        SVM = []
+        KNN = []
+        DT = []
+        for stage, feature in zip(labels, features):
+            stage['Color'] = stage['Color'].map(vals_to_replace)
+            labels_color = stage['Color'].to_numpy().tolist()
+            images_name = stage['Nombre de la imagen']#.to_numpy().tolist()
+            svm_training_Score = []
+            confusion_matrix_svm = []
+            confusion_matrix_dt = []
+            confusion_matrix_knn = []
+            classification_report_svm = []
+            classification_report_dt = []
+            classification_report_knn = []
+            score_accuracy_SVM = []
+            score_accuracy_DT = []
+            score_accuracy_KNN = []
+            for train_index, test_index in k_folds.split(onlyfiles):
+                train_label = []
+                test_label = []
+                train_features = []
+                test_features = []
+                for i in train_index:
+                    #print(images_name.str.)
+                    train_features.append(feature.to_numpy()[images_name.str(onlyfiles[i].split('.')[0])])
+                    train_label.append(labels_color[images_name.index(str(onlyfiles[i].split('.')[0]))])
+                SVM_Classifier = self.classificatorSVM(train_features, train_label)
+                DT_Classifier = self.DecisionTree(train_features, train_label)
+                KNN_Classifier = self.KNN(train_features, train_label)
 
-            training_label = []
-            test_label = []
-            training_features = []
-            test_features = []
+                for i in test_index:
+                    test_features.append(feature.to_numpy()[images_name.index(str(onlyfiles[i].split('.')[0]))])
+                    test_label.append(labels_color[images_name.index(str(onlyfiles[i].split('.')[0]))])
+                predict_label_SVM = SVM_Classifier.predict(test_features)
+                predict_label_DT = DT_Classifier.predict(test_features)
+                predict_label_KNN = KNN_Classifier.predict(test_features)
 
-            for i in train_index:
-                training_features.append(features.to_numpy()[images_name.index(str(onlyfiles[i].split('.')[0]))])
-                training_label.append(labels_name[images_name.index(str(onlyfiles[i].split('.')[0]))])
+                confusionMatrixSVM = confusion_matrix(test_label, predict_label_SVM)
+                confusionMatrixDT = confusion_matrix(test_label, predict_label_DT)
+                confusionMatrixKNN = confusion_matrix(test_label, predict_label_KNN)
 
-            SVM = self.classificatorSVM(training_features, training_label)
-            DT = self.DecisionTree(training_features, training_label)
-            KNN = self.KNN(training_features, training_label)
+                classification_report_svm.append(
+                    classification_report(test_label, predict_label_SVM, labels=tags,
+                                          target_names=target_names, sample_weight=None, digits=5,
+                                          output_dict=False))
+                classification_report_dt.append(
+                    classification_report(test_label, predict_label_DT, labels=tags,
+                                          target_names=target_names, sample_weight=None, digits=5,
+                                          output_dict=False))
+                classification_report_knn.append(
+                    classification_report(test_label, predict_label_KNN, labels=tags,
+                                          target_names=target_names, sample_weight=None, digits=5,
+                                          output_dict=False))
 
-            # svm_training_Score.append(SVM.score(training_features, training_label))
+                confusion_matrix_svm.append(confusionMatrixSVM)
+                confusion_matrix_dt.append(confusionMatrixDT)
+                confusion_matrix_knn.append(confusionMatrixKNN)
 
-            for i in test_index:
-                test_features.append(features.to_numpy()[images_name.index(str(onlyfiles[i].split('.')[0]))])
-                test_label.append(labels_name[images_name.index(str(onlyfiles[i].split('.')[0]))])
+                score_accuracy_SVM.append(accuracy_score(test_label, predict_label_SVM))
+                score_accuracy_DT.append(accuracy_score(test_label, predict_label_DT))
+                score_accuracy_KNN.append(accuracy_score(test_label, predict_label_KNN))
+            SVM_RESULTS = [confusion_matrix_svm, classification_report_svm, score_accuracy_SVM]
+            DT_RESULTS = [confusion_matrix_dt, classification_report_dt, score_accuracy_DT]
+            KNN_RESULTS = [confusion_matrix_knn, classification_report_knn, score_accuracy_KNN]
+            SVM.append(SVM_RESULTS)
+            KNN.append(KNN_RESULTS)
+            DT.append(DT_RESULTS)
+        return SVM, KNN, DT
 
-            predict_label_SVM = SVM.predict(test_features)
-            predict_label_DT = DT.predict(test_features)
-            predict_label_KNN = KNN.predict(test_features)
-
-            confusionMatrixSVM = confusion_matrix(test_label, predict_label_SVM)
-            confusionMatrixDT = confusion_matrix(test_label, predict_label_DT)
-            confusionMatrixKNN = confusion_matrix(test_label, predict_label_KNN)
-
-            classification_report_svm.append(
-                classification_report(test_label, predict_label_SVM, labels=tags,
-                                      target_names=target_names, sample_weight=None, digits=5,
-                                      output_dict=False))
-            classification_report_dt.append(
-                classification_report(test_label, predict_label_DT, labels=tags,
-                                      target_names=target_names, sample_weight=None, digits=5,
-                                      output_dict=False))
-            classification_report_knn.append(
-                classification_report(test_label, predict_label_KNN, labels=tags,
-                                      target_names=target_names, sample_weight=None, digits=5,
-                                      output_dict=False))
-
-            confusion_matrix_svm.append(confusionMatrixSVM)
-            confusion_matrix_dt.append(confusionMatrixDT)
-            confusion_matrix_knn.append(confusionMatrixKNN)
-
-            score_accuracy_SVM.append(accuracy_score(test_label, predict_label_SVM))
-            score_accuracy_DT.append(accuracy_score(test_label, predict_label_DT))
-            score_accuracy_KNN.append(accuracy_score(test_label, predict_label_KNN))
-        SVM_RESULTS = [confusion_matrix_svm, classification_report_svm, score_accuracy_SVM]
-        DT_RESULTS = [confusion_matrix_dt, classification_report_dt, score_accuracy_DT]
-        KNN_RESULTS = [confusion_matrix_knn, classification_report_knn, score_accuracy_KNN]
-        return SVM_RESULTS, DT_RESULTS, KNN_RESULTS
+    def CrossValidation(self, image, labels, test_size):
+        X = []
+        Y = []
+        X_train, X_test, y_train, y_test = train_test_split(image, labels, test_size=test_size)
+        X.append(X_train)
+        X.append(X_test)
+        Y.append(y_train)
+        Y.append(y_test)
+        print()
+        return X, Y
 
     def ROC_CURVE(self, label_test, label_score):
         n_classes = label_test.shape

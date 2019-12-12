@@ -211,36 +211,41 @@ class MainClass:
                 features_images = features.values
                 vals_to_replace = {'a1': '0', 'a2': '1', 'a3': '2', 'a35': '3'}
                 tags = ['0', '1', '2', '3']
-                folios = int(input('\nCantidad de folios a seperarar el conjunto de datos:'))
-                SVM, DT, KNN = cc.CrossValidation(self.PATH_IMAGES, features, labels, vals_to_replace, folios,
-                                                  tags)
-                matrix_confusion_SVM, report_clasification_SVM, report_scores_SVM = SVM.split()
-                matrix_confusion_DT, report_clasification_DT, report_scores_DT = DT.split()
-                matrix_confusion_KNN, report_clasification_KNN, report_scores_KNN = KNN.split()
+                target_names = ['a1', 'a2', 'a3', 'a35']
+                folds = int(input('\nCantidad de folios a seperarar el conjunto de datos:'))
+                test_size = int(input('\n Porcentaje de division del conjunto de datos trianing/test:'))
+                X, Y = cc.CrossValidation(features, labels, test_size / 100)
+                SVM, DT, KNN = cc.classification(self.PATH_IMAGES, X, Y, folds, tags, target_names, vals_to_replace)
+                print('--------- Training ---------')
+                for S, D, K in zip(SVM, DT, KNN):
 
-                print('\n')
-                print('-------SVM------')
-                '''for report in report_clasification_SVM:
-                    print(report)
-                    for item in report:
-                        print(report[item])'''
-                print('--------MEAN SVM--------')
-                print(np.mean(report_scores_SVM))
-                print('-------DT------')
-                '''for report in report_clasification_DT:
-                    print(report)
-                    for item in report:
-                        print(report[item])'''
-                print('--------MEAN DT--------')
-                print(np.mean(report_scores_DT))
+                    matrix_confusion_SVM, report_clasification_SVM, report_scores_SVM = S.split()
+                    matrix_confusion_DT, report_clasification_DT, report_scores_DT = D.split()
+                    matrix_confusion_KNN, report_clasification_KNN, report_scores_KNN = K.split()
+                    print('\n')
+                    print('-------SVM------')
+                    for report in report_clasification_SVM:
+                        print(report)
+                        for item in report:
+                            print(report[item])
+                    print('--------MEAN SVM--------')
+                    print(np.mean(report_scores_SVM))
+                    print('-------DT------')
+                    for report in report_clasification_DT:
+                        print(report)
+                        for item in report:
+                            print(report[item])
+                    print('--------MEAN DT--------')
+                    print(np.mean(report_scores_DT))
 
-                print('-------KNN------')
-                '''for report in report_clasification_KNN:
-                    print(report)
-                    for item in report:
-                        print(report[item])'''
-                print('--------MEAN KNN--------')
-                print(np.mean(report_scores_KNN))
+                    print('-------KNN------')
+                    for report in report_clasification_KNN:
+                        print(report)
+                        for item in report:
+                            print(report[item])
+                    print('--------MEAN KNN--------')
+                    print(np.mean(report_scores_KNN))
+                    print('--------- TEST ---------')
 
 
 if __name__ == '__main__':
