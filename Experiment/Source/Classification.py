@@ -93,15 +93,15 @@ class Classification:
         pd.options.mode.chained_assignment = None
         onlyfiles = [f for f in listdir(path_dataset) if
                      isfile(join(path_dataset, f))]
+        print(onlyfiles)
         k_folds = KFold(n_splits=n_splits)
-        k_folds.get_n_splits(onlyfiles)
         SVM = []
         KNN = []
         DT = []
         for stage, feature in zip(labels, features):
             stage['Color'] = stage['Color'].map(vals_to_replace)
             labels_color = stage['Color'].to_numpy().tolist()
-            images_name = stage['Nombre de la imagen']#.to_numpy().tolist()
+            images_name = stage['Nombre de la imagen'].to_numpy().tolist()
             svm_training_Score = []
             confusion_matrix_svm = []
             confusion_matrix_dt = []
@@ -112,20 +112,19 @@ class Classification:
             score_accuracy_SVM = []
             score_accuracy_DT = []
             score_accuracy_KNN = []
-            for train_index, test_index in k_folds.split(onlyfiles):
+            index_images_name = []
+            k_folds.get_n_splits(index_images_name)
+            print(list(images_name.index))
+
+            for train_index, test_index in k_folds.split(images_name):
                 train_label = []
                 test_label = []
                 train_features = []
                 test_features = []
                 for i in train_index:
-
-                    print(str(images_name))
-                    train_features.append(feature.to_numpy()[str(images_name.str(onlyfiles[i].split('.')[0]))])
-
-                    #print(images_name.str.)
-                    train_features.append(feature.to_numpy()[images_name.str(onlyfiles[i].split('.')[0])])
-
-                    train_label.append(labels_color[images_name.index(str(onlyfiles[i].split('.')[0]))])
+                    train_features.append(feature.to_numpy().tolist()[images_name.index(onlyfiles[i].split('.')[0])])
+                    # train_features.append(feature.to_numpy()[images_name.str(onlyfiles[i].split('.')[0])])
+                    train_label.append(labels_color[images_name.index(onlyfiles[i].split('.')[0])])
                 SVM_Classifier = self.classificatorSVM(train_features, train_label)
                 DT_Classifier = self.DecisionTree(train_features, train_label)
                 KNN_Classifier = self.KNN(train_features, train_label)
